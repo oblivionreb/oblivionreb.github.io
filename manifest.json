@@ -1,6 +1,12 @@
 {
   "short_name": "Tax My Gig",
   "name": "Tax My Gig",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
   ],
   "start_url": "https://www.taxmygig.com",
   "background_color": "#fff",
