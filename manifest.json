@@ -1,0 +1,11 @@
+{
+  "short_name": "Tax My Gig",
+  "name": "Tax My Gig",
+  ],
+  "start_url": "https://www.taxmygig.com",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "{{site.url}}/variables",
+  "theme_color": "#000",
+  
+}
