@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <link rel="stylesheet" type="text/css" href="{{site.url}}/style.css" />
+     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.tagline }}</title>
+    <link rel="shortcut icon" href="{{site.baseurl}}/images/fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.tagline }}" href="{{ site.url }}/feed.xml" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel="manifest" href="/manifest.json">
+  
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+<body>
+  
+  <div class="nav">
+   <img class="nav-image" src= "https://lh3.googleusercontent.com/T19kVN0KEx7NzgCUmxPaIFcA15q89MirPGsfDN_i-H4E42oA9AlpKXvkvojRgxx8B5ipUqTy6zbHNK5hktYOZ0F5OWLCV0F8wLUHkTsjHPMxl0ngM4O-DS0NoxdjKPoFQNuqPrWT0PprhGhpaBYOm2bGhlrmNsqkUeBuvWzz4lV7UGGwtyj5rw3Ly8ggvKqQwzA5BkhUcEpL0XVq3OSAGAvEb2xVuCqugAnHiupYNP2KmiZTlCn5i1vqEoWnMriLD-mockCMCvP-d6yK5HaBPfNEnShLeckVJJoYsWaJrQnQIsfSN65vo1lQcVR3RADHI_zevX6Jfeb7D9b1ay2TUjsXT4VwfT4wz0Kp9D21W2Y_ovkV-T_p-MQvZv0KhvRBEcp3A7LosTN59svR95qIHzjiwi4W1Fgpa8ZKrErOM_kTfmHIR_X9xvdHDkSv58SL301jsO_OkkE90B-LRzalhyP1s5dhhwgFBQ0NIw2vJ4G7zs5XZWnL2ojgfUY_uMahaPJbQuVyF_mANQg5z-jGfzP5fpOJF2qCY4GTZGEJLaHNNK8S02WDtDcgcbDLHlydd1l4n0-DNZgMtZ_mpQLUjdEvaUbyFu_8kzMvetyxHfVgvcyDcnCs5QrlrKOY5uz6I6e5OUw42J5TpYQGCnhfPP2wpRplOYVUcvgq_2A-hptbMaBpklO8Aq2X4KX3DQ=w200-h50-no" />
+ </div>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <div class="hd" >
+ <img class="hd-image" src="https://lh3.googleusercontent.com/E616g2Ay2cdTzbei04tVdLgyp10SRvegXDEufH35v2fScBdotXmGwtMCMcTOeDyg6pqGvt3IigNTNjqKfai7aEoHBib_TYGB6GgcoM1rWSd8fEp-ipWEZPM8fF__Nf9MTdON-wg-CTrsDw8s0JXISf_ZVeFZ9_8TWXtFSsKt6R6gj0LH8JW2lSciW92xphQ5E04uCRP2nDidMmOgBGt7xjTKAKgOqa0oJMbad5q0oYRVtliXbgQ15QzXZGZw_aphcqfYtN7jquovJ4fKleFenBJ6P1LfiIZZE24bH1jjL-umxjBBiW7I_k7CztrcrG7Bse0hemV_h-WnVf3deKfOyRAKCBv9H8qZIWBimTm9-oZhosxFIDbLlOjPlfIZ-24L4zi7oq_kX8DrsUfw3f-iOE2aE2AIXKRjvyhkMiSn9laWzd0qTgIleV7KUovqQJyDk8e5BOAU-iGF2ixHuBLPIopqChzhcW6BScumjvDCXmg6pY189NpLtO_9q-AhDanVwnaweFBQTawT6xZfHLwz8AISIzcI_utUWXI6_ZRnKYMovegYaKbSjgyy1LhFDmnYfkXD7eK_mnRMOka3tKSQ5FuCRne1ue3P1Qz1IFPr7Zw2UzDxmgapTYywzPpnkAfml7cLrJYsPQu9iyBHDKRS2JlZDKIDnUM9RaPBw9k_H-bXs6pLVCIC5L7v_36BZQ=w286-h200-no"/>
+    <img class="tree-img" src="https://lh3.googleusercontent.com/gUUknoTAZdH23W-bpKxtVFVxClJJgeecCjPA9r1qClmxWDUBbbDU89USO1udtQ0m0w0kJuvdSFkAQrYh1PigdGtLw_WIN6_36tjtqGxGh5fnw_IYujl0PnWSxtC-CeYL3KYVeKEAEUKm1fFFOnz7GKxAKXKelZL1gUAyIyK99Oakjkr1nPtBfs94bqh15UhfNZF4sZFMCU59g9--lw_tXvQEvuMWO7K3Gv1OBKz3fFDGBGh8FIv_LbP-0QQkRkTEGUZ-fbXFF2IXjRrioiRvRTxVmpGVWx3H1iY0Gec61BPTU00McUnLQSgyPCzL-X6VEkVP_oD5lnJFpMdS7sWpSo3RlcL8y38kLaCUg-cFZwWHR0N6CdAKZDLdry5C3Ck_kGZj4sODltdi_WFTcMKVGTBaNbxIKM4fBdWS_ggWj4pXpHt-UKytRn4NU-Awzp35CowpOU9Qr2r-2nOfJ4taeN6ZXYZ5hyB0Xho4cc6JAg9V2Ky3Q5CY7ruiMMN6_zok8bTxRUe69Hxw4vpHVH_IQysCAFZvViho-29qFssGkVWaxBA57LjpxhCifj-l_GsCttQWwg1SyQxnoTz7xTYn1CjqUXT-sATJs74UxIzIo4ZgTfD_Q1_a13aisCAJx_F0dmfdy4OX_DcwrmpdWgQHoH-2KGN6WK-XGnvSi9C17W1l0ogAEEah55yfxPnJ1A=w300-h100-no" />
+  </div>
+  <div class="content">
+ {{ content }}
+ </div>
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
