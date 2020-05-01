@@ -8,7 +8,7 @@ name: Tax My Gig
 # Short bio or description (displayed in the header)
 tagline: Calculate Your Freelance Tax With Ease
 
-description: The freelance tax calculator is for freelancers who want a quick snapshot of the maximum they might owe to the IRS. The calculator calculates self employment tax, federal tax, and state tax.
+description: Our freelance tax calculator calculates your self employment tax, federal tax, and state tax. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -36,14 +36,14 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: https-howtocodejs-com
+
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-119970438-1
+google_analytics: 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://www.howtocodejs.com
+url: https://www.taxmygig.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
