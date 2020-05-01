@@ -368,6 +368,19 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
     color: $blue;
    
   }
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  border-top: 0.5px solid $lightGray;
+   
+}
+footer span {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
 /**
   * Demo scaffolding
   * --------------------------------------------------
