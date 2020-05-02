@@ -1173,7 +1173,7 @@ function fedTaxController(year, status, income){
   let newfedBracketSingle = {ten:[0,9875,.10], twelve: [9876, 40125, .12], twentytwo: [40126, 85525, .22],twentyfour: [85526,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,518400, .35], thirtyseven: [518400, Infinity , .37] }
   let newfedBracketJointWed  = {ten:[0,19750,.10], twelve: [19751, 80250, .12], twentytwo: [80251, 171050, .22],twentyfour: [171051,326600, .24], thirtytwo: [326601,414700, .32], thirtyfive: [414701,622050, .35], thirtyseven: [622051, Infinity , .37] }
   let newfedBracketSepWed = {ten:[0,9875,.10], twelve: [9876, 40125, .12], twentytwo: [40126, 85525, .22],twentyfour: [85526,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,311025, .35], thirtyseven: [311026, Infinity , .37] }
-  let newfedBracketHead = {ten:[0,14100,.10], twelve: [14,101, 53700, .12], twentytwo: [53701, 85500, .22],twentyfour: [85501,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,518400, .35], thirtyseven: [518400, Infinity , .37] }
+  let newfedBracketHead = {ten:[0,14100,.10], twelve: [14101, 53700, .12], twentytwo: [53701, 85500, .22],twentyfour: [85501,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,518400, .35], thirtyseven: [518400, Infinity , .37] }
   if(year == "2019"){
     if(status == "Single"){
       fedTax = taxCalc(oldfedBracketSingle, income);
