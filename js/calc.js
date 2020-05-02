@@ -1389,7 +1389,13 @@ $taxButton.onclick = function(e){
   $chart.scrollIntoView()
   
 }
-
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if (iOS){
+  $taxButton.touchend = function(){
+    $incomeInput.blur();
+  }
+  
+}
 })
 /**
   * Donut Chart
