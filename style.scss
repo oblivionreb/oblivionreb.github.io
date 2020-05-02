@@ -314,8 +314,46 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
   }
  }
 
-
+ .ios-select-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+  .ios-state-select {
+   position: relative;
+    padding: 10px;
+    margin: 0px;
+  }
+  .ios-status-select {
+     position: relative;
+    min-width: 65%;
+    padding: 10px; 
+    margin: 0px;
 	
+  }
+  .ios-label {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    padding: 30px;
+    line-height: 40px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: white;
+    background: $blue;
+    border-radius: 3px 0 0 3px;  
+	}
+	
+  ios-form-row {
+	height: 300px;  
+	}
     input[type="tel"], input[type="password"]  {
     width: 95%;
     height: 40px;
