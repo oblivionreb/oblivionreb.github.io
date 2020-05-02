@@ -1393,6 +1393,7 @@ var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 if (iOS){
   $taxButton.touchend = function(){
     $incomeInput.blur();
+    $(this).blur();
   }
   
 }
