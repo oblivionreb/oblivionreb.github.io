@@ -198,6 +198,9 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
   }
   
   select {
+        position: relative; 
+      left: 50%;
+      transform: translate(50%);
     width: 90%;
     height: 40px;
     padding: 10px 10px 10px 90px;
