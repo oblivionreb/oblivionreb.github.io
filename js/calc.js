@@ -1,7 +1,20 @@
 
 
-// Jquery Dependency
-
+// IOS style bug fix
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+var $iosSelectRow = document.getElementById("selectRow");
+var $iosFormRow = document.getElementById("formRow");
+var $iosStateSelect  = document.getElementById("state-select");
+var $iosStatusSelect  = document.getElementById("status-select");
+var $iosLabels   = document.getElementsByName("label");
+if(iOS){
+$iosSelectRow.addClass("ios-select-row");
+$iosStateSelect.addClass("ios-state-select");
+$iosStatusSelect.addClass("ios-status-select"); 
+$iosLabels[0].addClass("ios-label");
+$iosLabels[1].addClass("ios-label");
+$iosFormRow.addClass("ios-form-row");
+}
 
 window.mobileCheck = function() {
   let check = false;
@@ -1389,7 +1402,7 @@ $taxButton.onclick = function(e){
   $chart.scrollIntoView()
   
 }
-var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
 if (iOS){
   $taxButton.touchend = function(){
     $incomeInput.blur();
