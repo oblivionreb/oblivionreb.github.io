@@ -201,14 +201,14 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
     width: 90%;
     height: 40px;
     padding: 10px 10px 10px 90px;
-    margin-right: 40px;
+    margin-right: 20px;
     box-sizing: border-box;
     border-top: 0.1px solid #fff;
     border-bottom: 1px solid $gray;
-    color: #333;
+    color: #fff;
     border-radius: 3px;
-    transition: all 0.3s $custom-easing;
   }
+
  .row >  label {
      position: absolute;
     top: 0;
