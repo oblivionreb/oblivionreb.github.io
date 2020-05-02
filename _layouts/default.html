@@ -2,7 +2,7 @@
 <html>
   <head>
  
-
+     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.tagline }}</title>
     {% include meta.html %}
 
     <!--[if lt IE 9]>
@@ -10,7 +10,9 @@
     <![endif]-->
 
       <link rel="stylesheet" type="text/css" href="{{site.url}}/style.css" />
-     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.tagline }}</title>
+     
+    
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="{{site.url}}/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.tagline }}" href="{{ site.url }}/feed.xml" />
@@ -33,12 +35,12 @@
 <body>
   
   <div class="nav">
-   <a  class="nav-image"  href="{{site.url}}"> <img src="{{site.url}}/images/taxmygig.jpg" /></a>
+   <a  class="nav-image" alt="taxlogo" href="{{site.url}}"> <img src="{{site.url}}/images/taxmygig.jpg" /></a>
  </div>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+ 
   <div class="hd" >
- <img class="hd-image" src="{{site.url}}/images/freelancer.png"/>
-    <img class="tree-img" src="{{site.url}}/images/trees.png" />
+ <img class="hd-image" alt="freelancer" src="{{site.url}}/images/freelancer.png"/>
+    <img class="tree-img" alt="tree" src="{{site.url}}/images/trees.png" />
   </div>
   <div class="content">
  {{ content }}
