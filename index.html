@@ -13,9 +13,10 @@ layout: default
         <span class="toggle_square"></span>
       </span>
     </label>
-    <div></div>
+
     <div class="formRow">
-      <div id="selectRow" class="row">
+      <div id="selectRow">
+        <div id="stateRow" class="row">
         <label for="fancy-select">State</label>
         <select name="fancy-select" id="state-select">
           <option>Ala.</option>
@@ -71,8 +72,8 @@ layout: default
 
         </select>
       </div>
-
-      <div class="row">
+    
+        <div id="statusRow" class="row" > 
         <label for="fancy-select">Status</label>
         <select name="fancy-select" id="status-select">
           <option>Single</option>
@@ -80,8 +81,11 @@ layout: default
           <option>Married Filing Seperately</option>
           <option>Head of Household</option>
         </select>
-      </div>
-    </div>
+         </div>
+        </div>
+     
+      
+      
     <div class="row">
       <input type="tel" name="fancy-text" id="income-input" data-type="currency" placeholder="$1,000,000.00" />
       <label for="fancy-text"> Income</label>
