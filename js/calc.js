@@ -1184,10 +1184,10 @@ function fedTaxController(year, status, income){
 
     }
     else if(status == "Married Filing Seperately"){
-      fedTax = taxCalc(oldfedBracketJointSep, income);
+      fedTax = taxCalc(oldfedBracketSepWed, income);
     }
     else if(status == "Head of Household"){
-      fedTax = taxCalc(oldfedBracketJointSep, income);
+      fedTax = taxCalc(oldfedBracketHead, income);
     }
   }
   else if(year == "2020"){
@@ -1199,10 +1199,10 @@ function fedTaxController(year, status, income){
 
     }
     else if(status == "Married Filing Seperately"){
-      fedTax = taxCalc(newfedBracketJointSep, income);
+      fedTax = taxCalc(newfedBracketSepWed, income);
     }
     else if(status == "Head of Household"){
-      fedTax = taxCalc(newfedBracketJointSep, income);
+      fedTax = taxCalc(newfedBracketHead, income);
     }
   }
   return fedTax;
