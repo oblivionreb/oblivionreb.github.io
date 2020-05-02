@@ -219,7 +219,7 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
     line-height: 40px;
     font-size: 12px;
     font-weight: bold;
-    max-width: 80px;
+    width: 80px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .05em;
@@ -229,6 +229,9 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
     transition: all 0.3s $custom-easing;
     transform: translateZ(0) translateX(0);
   }
+
+
+	
     input[type="tel"], input[type="password"]  {
     width: 95%;
     height: 40px;
