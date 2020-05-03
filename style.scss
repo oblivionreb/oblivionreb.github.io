@@ -402,15 +402,6 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
   option {
     outline: none;
   }
-  input[type="text"]:focus, input[type="password"]:focus {
-    padding-left: 10px; 
-    outline: none;
-  }
-  
-  input[type="text"]:focus + label, input[type="password"]:focus + label {
-    transform: translateZ(0) translateX(-100%);
-  }
- 
   
   input[type="radio"] + label {
     position: relative;
