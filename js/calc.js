@@ -1,6 +1,4 @@
 
-$( '*' ).click( function ( ) { } );
-$( 'html' ).css( "-webkit-tap-highlight-color", "rgba(0, 0, 0, 0)" );
 
 
 
@@ -14,11 +12,11 @@ if(window.mobileCheck() == true){
   console.log("I'm in.")
   $("input[data-type='currency']").on({
      input: function() {
-       document.body.firstElementChild.tabIndex = 1;
+      
       formatCurrency($(this));
     },
     touchend: function(e){
-      document.body.firstElementChild.tabIndex = 1;
+      
       e.target.blur();
     }
 });
@@ -26,11 +24,11 @@ if(window.mobileCheck() == true){
 }else{
   $("input[data-type='currency']").on({
     keyup: function() {
-      document.body.firstElementChild.tabIndex = 1;
+ 
       formatCurrency($(this));
     },
     touchend: function(e){
-      document.body.firstElementChild.tabIndex = 1;
+
      $(this).blur();
     }
 });
