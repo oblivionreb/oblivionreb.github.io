@@ -1,5 +1,6 @@
 
-
+$( '*' ).click( function ( ) { } );
+$( 'html' ).css( "-webkit-tap-highlight-color", "rgba(0, 0, 0, 0)" );
 
 
 
