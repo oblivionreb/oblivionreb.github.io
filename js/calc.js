@@ -9,6 +9,7 @@ window.mobileCheck = function() {
 };
 
 if(window.mobileCheck() == true){
+  console.log("I'm in.")
   $("input[data-type='currency']").on({
      input: function() {
       formatCurrency($(this));
