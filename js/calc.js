@@ -11,7 +11,7 @@ window.mobileCheck = function() {
 
 if(window.mobileCheck() == true){
   $("input[data-type='currency']").on({
-     input: function() {
+     touchend: function() {
       formatCurrency($(this));
     },
     blur: function() { 
