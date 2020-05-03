@@ -262,7 +262,7 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
 	-moz-appearance: none; 
 	-webkit-appearance: none; 
 	appearance: none;
-    max-width: 68%;
+    min-width: 68%;
     height: 40px;
     padding: 10px 10px 10px 90px;
     box-sizing: border-box;
@@ -313,7 +313,7 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
     color: #333;
     border-radius: 3px;
      @media screen and (max-width: 650px) {
-    width: 75%;
+    min-width: 80%;
     
   }
  }
