@@ -1,6 +1,7 @@
 
 
 
+document.body.firstElementChild.tabIndex = 1;
 
 window.mobileCheck = function() {
   let check = false;
