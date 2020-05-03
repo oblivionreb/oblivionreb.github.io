@@ -1395,13 +1395,14 @@ var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 var $iosStateSelect  = document.getElementById("state-select");
 var $iosStatusSelect  = document.getElementById("status-select");
 if (iOS){
+  console.log("I'm in.")
   $iosStateSelect.onclick = function(){
     $incomeInput.blur();
-   
+    $iosStateSelect.focus();
   }
    $iosStatusSelect.onclick = function(){
     $incomeInput.blur();
-   
+     $iosStatusSelect.focus();
   }
   
   
