@@ -17,10 +17,6 @@ if(window.mobileCheck() == true){
        document.body.firstElementChild.tabIndex = 1;
       formatCurrency($(this));
     },
-    blur: function() { 
-      document.body.firstElementChild.tabIndex = 1;
-      formatCurrency($(this), "blur");
-    },
     touchend: function(e){
       document.body.firstElementChild.tabIndex = 1;
       e.target.blur();
