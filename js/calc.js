@@ -1390,23 +1390,6 @@ $taxButton.onclick = function(e){
   $chart.scrollIntoView()
   
 }
-var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-var $iosStateSelect  = document.getElementById("state-select");
-var $iosStatusSelect  = document.getElementById("status-select");
-if (iOS){
-  console.log("I'm in.")
-  $iosStateSelect.touchend = function(){
-    $incomeInput.blur();
-    $iosStateSelect.focus();
-  }
-   $iosStatusSelect.touchend = function(){
-    $incomeInput.blur();
-     $iosStatusSelect.focus();
-  }
-  
-  
-}
 })
 /**
   * Donut Chart
