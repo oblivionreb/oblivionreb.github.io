@@ -27,6 +27,9 @@ if(window.mobileCheck() == true){
  
       formatCurrency($(this));
     },
+    blur: function(){
+     formatCurrency($(this), "blur");
+    }
     touchend: function(e){
 
      $(this).blur();
