@@ -1383,6 +1383,7 @@ Chart1.init({
 });
 $taxButton.onclick = function(e){
    $incomeInput.blur();
+    $chart.scrollIntoView()
   let income = Number(reformatNumber($incomeInput.value));
   let state = $stateSelect.value;
   let status = $statusSelect.value;
@@ -1404,7 +1405,7 @@ $taxButton.onclick = function(e){
   console.log(myTax)
   console.log(myTaxPercent)
 // $results.innerHTML= myTax + "";
-  $chart.scrollIntoView()
+
   
 }
 })
