@@ -15,14 +15,12 @@ if(window.mobileCheck() == true){
     },
     blur: function() { 
       formatCurrency($(this), "blur");
+    },
+    mouseleave: function(e){
+      e.target.blur();
     }
 });
-  $("select").on({
-    touchend: function(){
-      $("input[data-type='currency']").blur()
-     $(this).focus();
-    }
-  });
+ 
 }else{
   $("input[data-type='currency']").on({
     keyup: function() {
