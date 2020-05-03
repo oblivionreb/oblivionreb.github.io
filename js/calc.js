@@ -1396,11 +1396,11 @@ var $iosStateSelect  = document.getElementById("state-select");
 var $iosStatusSelect  = document.getElementById("status-select");
 if (iOS){
   console.log("I'm in.")
-  $iosStateSelect.onclick = function(){
+  $iosStateSelect.touchend = function(){
     $incomeInput.blur();
     $iosStateSelect.focus();
   }
-   $iosStatusSelect.onclick = function(){
+   $iosStatusSelect.touchend = function(){
     $incomeInput.blur();
      $iosStatusSelect.focus();
   }
