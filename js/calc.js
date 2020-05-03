@@ -1365,7 +1365,7 @@ Chart1.init({
   data: chartData1a
 });
 $taxButton.onclick = function(e){
-  
+   $incomeInput.blur();
   let income = Number(reformatNumber($incomeInput.value));
   let state = $stateSelect.value;
   let status = $statusSelect.value;
@@ -1390,8 +1390,22 @@ $taxButton.onclick = function(e){
   $chart.scrollIntoView()
   
 }
+var r iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-
+var $iosStateSelect  = document.getElementById("state-select");
+var $iosStatusSelect  = document.getElementById("status-select");
+if (iOS){
+  $iosStateSelect.onclick = function(){
+    $incomeInput.blur();
+   
+  }
+   $iosStatusSelect.onclick = function(){
+    $incomeInput.blur();
+   
+  }
+  
+  
+}
 })
 /**
   * Donut Chart
