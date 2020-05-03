@@ -18,7 +18,7 @@ if(window.mobileCheck() == true){
     blur: function() { 
       formatCurrency($(this), "blur");
     },
-    mouseleave: function(e){
+    touchend: function(e){
       e.target.blur();
     }
 });
