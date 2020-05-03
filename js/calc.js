@@ -1,6 +1,5 @@
 
 
-// IOS style bug fix
 
 
 window.mobileCheck = function() {
@@ -13,8 +12,17 @@ if(window.mobileCheck() == true){
   $("input[data-type='currency']").on({
      input: function() {
       formatCurrency($(this));
+    },
+    blur: function() { 
+      formatCurrency($(this), "blur");
     }
 });
+  $("select").on({
+    touchend: function(){
+      $("input[data-type='currency']").blur()
+     $(this).focus();
+    }
+  });
 }else{
   $("input[data-type='currency']").on({
     keyup: function() {
