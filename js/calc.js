@@ -1390,7 +1390,7 @@ $taxButton.onclick = function(e){
   $chart.scrollIntoView()
   
 }
-var r iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 var $iosStateSelect  = document.getElementById("state-select");
 var $iosStatusSelect  = document.getElementById("status-select");
