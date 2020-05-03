@@ -358,7 +358,7 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
   ios-form-row {
 	height: 300px;  
 	}
-    input[type="text"], input[type="password"]  {
+    input[type="tel"], input[type="password"]  {
     width: 95%;
     height: 40px;
     padding: 10px 10px 10px 90px;
@@ -377,7 +377,7 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
     padding: 50px 10px 10px 10px;
   }
   
-  input[type="text"] + label, input[type="password"] + label, textarea + label {
+  input[type="tel"] + label, input[type="password"] + label, textarea + label {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -402,7 +402,15 @@ box-shadow: 0px -2px 10px 0px #69D3A7;
   option {
     outline: none;
   }
+  input[type="tel"]:focus, input[type="password"]:focus {
+    padding-left: 10px; 
+    outline: none;
+  }
   
+  input[type="tel"]:focus + label, input[type="password"]:focus + label {
+    transform: translateZ(0) translateX(-100%);
+  }
+ 
   input[type="radio"] + label {
     position: relative;
     display: inline-block;
