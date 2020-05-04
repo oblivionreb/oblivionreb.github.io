@@ -1285,7 +1285,7 @@ function totalTaxCalc(state, year, status, income){
   
   if (income > stndDeduction){
       // self employment deduction
-      agi = income  - (ficaController(income)/ 2);
+      agi = income  - (ficaController(income * .9235)/ 2);
        showWork.totalFica =   roundPenny(ficaController(income * .9235));
       showWork.agi = roundPenny(agi);
       totalFed = fedTaxController(year, status, agi);
@@ -1294,16 +1294,16 @@ function totalTaxCalc(state, year, status, income){
       totalTax = totalFed + stateTaxController(year, state, status, income);
       showWork.totalState = roundPenny(stateTaxController(year, state,status, income)); 
     //medicare + aid tax
-      totalTax = totalTax + ficaController(income);
+      totalTax = totalTax + ficaController(income * .9235);
   }else{   
-    
-    totalTax =  stateTaxController(year, state, status, income); 
+    agi = income  - (ficaController(income * .9235)/ 2);
+    totalTax =  stateTaxController(year, state, status, agi); 
   
     //medicare + aid tax
     totalTax = totalTax + ficaController(income * .9235);
       showWork.totalFed = 0;
       showWork.totalFica =   roundPenny(ficaController(income * .9235));
-     showWork.totalState = roundPenny(stateTaxController(year, state,status, income)); 
+     showWork.totalState = roundPenny(stateTaxController(year, state,status, agi)); 
   }
 
  return roundPenny(totalTax);
