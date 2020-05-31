@@ -6,9 +6,9 @@
 name: Tax My Gig
 
 # Short bio or description (displayed in the header)
-tagline: The Tax Calculator for the Self-Employed
+tagline: The Tax Calculator for Freelancers
 
-description: Tax My Gig's freelance tax calculator calculates your self employment tax, federal tax, and state tax. Unlike some other calculators, this self-employment tax calculator is free and optimized for your phone.
+description: Tax My Gig's free tax calculator for freelancers calculates your self employment tax, federal tax, and state tax. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
