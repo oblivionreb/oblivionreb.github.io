@@ -1190,14 +1190,10 @@ else if(year =="2020"){
 
 function ficaController(income){
    let ssCap = 137700;
-   let ficaBracket = {one: [0,137700, .124], two: [0,200000, .029], three: [200001, Infinity, .038] }
+   let ficaBracket = {one: [0,137700, .124], two: [0, Infinity, .029], three: [200001, Infinity, .009] }
   if(income < 400){
     return 0;
-  }
- else if(income > ssCap){
-   return (ssCap * .124) + (income * .029)
- }
- 
+  } 
   else{
    return taxCalc(ficaBracket, income)
   }
