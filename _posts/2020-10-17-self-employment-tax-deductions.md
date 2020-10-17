@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 46 Self-Employment Tax Deduction You Didn't Know You Could Take 
+title: 46 Self-Employment Tax Deductions You Didn't Know You Could Take 
 description: If you want to reduce the amount of taxes you give to the IRS, learn the many ways you can deduct self-employment taxes.
 ---
 
-46 Self-Employment Tax Deduction You Didn't Know You Could Take 
+46 Self-Employment Tax Deductions You Didn't Know You Could Take 
 ===========
 
 If you’re hustling to make a living in the gig economy and you’re complaining about the amount of taxes you have to pay, it’s important for you to realize that you’re a business now. The government realizes that you’re going to have to make payments that others may not have to pay to further your business. For example, gas payments must be driving you crazy. But you can subtract that from your gross income. You can even subtract the depreciating value of your car due to the extra mileage.
@@ -13,11 +13,11 @@ Because when you work for companies like Uber, Lyft, GrubHub, or Doordash, you a
 
 Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. If you have doubts about whether your work is actually a business, talk to an experienced accountant. As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business. 
 
-With that in mind, let’s explore the different deductions a self-employed worker is entitled to. Keep in mind that the information is provided so that you can approach a tax professional from a place of knowledge. That’ll make the professional’s life easier(they’re dealing with hundreds of cases) and your life much easier.
+With that in mind, let’s explore the different deductions a self-employed worker is entitled to. Keep in mind that the information should be verified by a tax professional.
 
 
 <h4>Accounting</h4>
-Yes, you’re allowed to deduct accountant fees from your income. This includes but is not limited to accounting. bookkeeping, tax return preparation, and tax advice. You can even deduct the subscription cost of accounting and tax software used to determine your tax liability. 
+You’re actually allowed to deduct accountant fees from your income. This includes but is not limited to accounting. bookkeeping, tax return preparation, and tax advice. You can even deduct the subscription cost of accounting and tax software used to determine your tax liability. 
 
 <h4>Home Office</h4>
 When you set up a home office, there are various items that can be deducted. You can add up the total expenses and deduct them from your gross income. You don’t have to have a home-based business to set up a home office deduction. The space can be a traditional office, workshop, studio, warehouse, store, or showroom. “Home” is not limited to a house but also includes apartments, lofts, trailers, mobile homes, and detached structures that are part of your residence like garages, sheds, or other buildings. 
@@ -40,8 +40,7 @@ If you work as a freelance copywriter(or any type of other freelancer) and you a
 
 Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). Prizes are included as long as there is an incentive to generate sales. What sucks for the recipient of a prize is that they have to pay taxes on the value of the prize if that prize is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
 
-> Fun note: If you want to get into the YouTube game or if you use a drone to advertise your business, you can deduct the cost of the drone depending on the cost of course.
-
+> Fun note: If you want to get into the YouTube game or if you use a drone to advertise your business, you can deduct the cost of the drone. Keep in mind that the price of the drown can effect how much you can deduct in a year.
 
 <h4>Clothing</h4>
 Clothing with your company’s logo or uniforms worn exclusively for your work are deductible. But that doesn’t mean you can’t wear them outside of work as well. For example, YouTubers who create merch can deduct the costs of articles of clothing including hats, shirts, jackets, even if their logo appears on them. The cost of cleaning them is also deductible!  The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
