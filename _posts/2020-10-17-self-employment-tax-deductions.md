@@ -7,7 +7,6 @@ description: If you want to reduce the amount of taxes you give to the IRS, lear
 46 Self-Employment Tax Deductions You Didn't Know You Could Take 
 ===========
 
-![tax deductions](/images/tax-deduction-hd.jpg)
 
 If you’re hustling to make a living in the gig economy and you’re complaining about the amount of taxes you have to pay, it’s important for you to realize that you’re a business now. The government realizes that you’re going to have to make payments that others may not have to pay to further your business. For example, gas payments must be driving you crazy. But you can subtract that from your gross income. You can even subtract the depreciating value of your car due to the extra mileage.
 
