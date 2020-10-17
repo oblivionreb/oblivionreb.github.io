@@ -102,7 +102,7 @@ If you hired a freelance web developer to build a website for you, you can deduc
 
 ![apps](https://media.giphy.com/media/jAe22Ec5iICCk/giphy.gif)
 
-This section may be most beneficial to freelance web developers who may be paying a subscription fee for different software. But this also applies to other freelancers who may want to user <b>enterprise software</b> to increase their productivity. You can deduct the amount paid in case for the tax year from your income. Software also includes paid <b>apps</b>. All of these can be considered office expenses, but because they are intangible people may not  consider them as an expense.
+This section may be most beneficial to freelance web developers who may be paying a subscription fee for various types of software. But this also applies to other freelancers who use <b>enterprise software</b> to increase their productivity. You can deduct the amount paid in cash for the tax year from your gross income. Software also includes paid <b>apps</b>. 
 
 <h4>Lost Income</h4>
 
