@@ -15,7 +15,7 @@ If you’re hustling to make a living in the gig economy and you’re complainin
 
 Because when you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
 
-Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. If you have doubts about whether your work is actually a business, talk to an experienced accountant. As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business. 
+Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. If you have doubts about whether your work is actually a business, talk to an experienced accountant. As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business. The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, have createdd a [gig economy knowledge center](https://www.irs.gov/businesses/gig-economy-tax-center).
 
 With that in mind, let’s explore the different deductions a self-employed worker is entitled to. Keep in mind that the information should be verified by a tax professional.
 
@@ -42,9 +42,11 @@ Before you take a home office deduction, speak to a tax professional to see whet
 
 ![business](https://media.giphy.com/media/hpR27uz9Nk3M9SFPSu/giphy-downsized.gif)
 
-Additionally, you can deduct business assets like <b>tools, furniture, and vehicles</b>. It’s important to know that there are two modes of deduction when it comes to assets. One is the Safe Harbor method for anything $2,500 or less. The IRS doesn’t care if you fully deduct the cost there. 
+Additionally, you can deduct business assets like <b>tools, furniture, and vehicles</b>. It’s important to know that there are two modes of deduction when it comes to assets.
 
-But for anything $2,500 or more, section 179 applies and things get a bit more complex. For example, if you want to deduct expenses from a vehicle, you are subject to a maximum amount you can deduct and the deduction itself cannot exceed your gross income. Importantly, if you converted the car you previously into a car for business, you cannot deduct the price of the car under Section 179. You can only calculate depreciation. More on depreciation on the section for vehicles. Talk to your accountant to learn how much you can deduct from a vehicle. 
+One is the Safe Harbor rule for anything $2,500 or less. The IRS doesn’t care if you fully deduct the cost of the asset. 
+
+But for anything over $2,500, Section 179 applies and things get a bit more complex. For example, if you want to deduct expenses from a vehicle, you are subject to a maximum amount you can deduct. The deduction itself cannot exceed your gross income. Importantly, if you converted the car previously used for leisure into a car for business, you cannot deduct the price of the car under Section 179. You can only calculate depreciation. More on depreciation on the section for vehicles. Talk to your accountant to learn how much you can deduct from your expensive business assets. See [IRS Publication 535](https://www.irs.gov/pub/irs-pdf/p535.pdf) to learn about general business expenses.
 
 
 <h4>Promotion/ Advertising</h4>
