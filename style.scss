@@ -1,6 +1,110 @@
 ---
 ---
 
+
+
+//
+// VARIABLES
+//
+
+//Numbers
+
+
+// Colors
+$blue: #4183C4;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+$lexOrange: #fbb040;
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+// Mobile breakpoints
+
+@mixin landscape {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin wide-laptop {
+  @media screen and (max-width: 1380px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1175px) {
+    @content;
+  }
+}
+
+@mixin mini-top {
+  @media screen and (max-width: 1052px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media screen and (max-width: 973px) {
+    @content;
+  }
+}
+@mixin mini-pad {
+  @media screen and (max-width: 830px) {
+    @content;
+  }
+}
+
+@mixin kindle {
+  @media screen and (max-width: 771px) {
+    @content;
+  }
+}
+
+@mixin lg-mobile {
+  @media screen and (max-width: 670px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 570px) {
+    @content;
+  }
+}
+
+@mixin mini-mobile {
+  @media screen and (max-width: 481px) {
+    @content;
+  }
+}
+
+@mixin lg-mini-mobile {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin s-mini-mobile {
+  @media screen and (max-width: 325px) {
+    @content;
+  }
+}
+//Shadows
+
+$close-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+$btm-shadow: 0px 3px 5px -2px rgba(0,0,0,0.75);
+$blr-shadow: 6px -2px 23px -4px rgba(0,0,0,0.75);
+$flp-shadow: 6px -2px 8px -4px rgba(0,0,0,0.75);
+
 $custom-easing: cubic-bezier(1, .1, 0, 0.9);
 $blue: #04CDE8;
 $darkBlue: #01579B;
