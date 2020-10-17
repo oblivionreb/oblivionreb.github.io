@@ -7,6 +7,8 @@ description: If you want to reduce the amount of taxes you give to the IRS, lear
 46 Self-Employment Tax Deductions You Didn't Know You Could Take 
 ===========
 
+![tax deductions](/images/tax-deduction-hd.jpg)
+
 If you’re hustling to make a living in the gig economy and you’re complaining about the amount of taxes you have to pay, it’s important for you to realize that you’re a business now. The government realizes that you’re going to have to make payments that others may not have to pay to further your business. For example, gas payments must be driving you crazy. But you can subtract that from your gross income. You can even subtract the depreciating value of your car due to the extra mileage.
 
 Because when you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting,and others working an independent trade. Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
