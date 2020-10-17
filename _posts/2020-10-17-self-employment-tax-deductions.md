@@ -17,33 +17,32 @@ With that in mind, let’s explore the different deductions a self-employed work
 
 
 <h4>Accounting</h4>
-You’re actually allowed to deduct accountant fees from your income. This includes but is not limited to accounting. bookkeeping, tax return preparation, and tax advice. You can even deduct the subscription cost of accounting and tax software used to determine your tax liability. 
+You’re actually allowed to deduct accountant fees from your income. This includes but is not limited to <b>accounting</b>, <b>bookkeeping</b>, <b>tax return preparation</b>, and <b>tax advice</b>. You can even deduct the <b>subscription cost of accounting and tax software</b> used to determine your tax liability. 
 
 <h4>Home Office</h4>
 When you set up a home office, there are various items that can be deducted. You can add up the total expenses and deduct them from your gross income. You don’t have to have a home-based business to set up a home office deduction. The space can be a traditional office, workshop, studio, warehouse, store, or showroom. “Home” is not limited to a house but also includes apartments, lofts, trailers, mobile homes, and detached structures that are part of your residence like garages, sheds, or other buildings. 
 
-The tax deductions relate to expenses associated with the space, like rent or depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services, and much more.
+The tax deductions relate to expenses associated with the space, like <b>rent</b> or <b>depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services</b>, and much more.
 
 Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional.  See IRS Publication 587, Business Use of Your Home.
 
 > Fun note: A percentage of cell phone cost expense related to business can be deducted. Other deductible offense expenses include greeting cards and holiday cards
 
 <h4>Business Assets</h4>
-Additionally, you can deduct business assets like tools, furniture, and vehicles. It’s important to know that there are two modes of deduction when it comes to assets. One is the Safe Harbor method for anything $2,500 or less. The IRS doesn’t care if you fully deduct the cost there. 
+Additionally, you can deduct business assets like <b>tools, furniture, and vehicles</b>. It’s important to know that there are two modes of deduction when it comes to assets. One is the Safe Harbor method for anything $2,500 or less. The IRS doesn’t care if you fully deduct the cost there. 
 
 But for anything $2,500 or more, section 179 applies and things get a bit more complex. For example, if you want to deduct expenses from a vehicle, you are subject to a maximum amount you can deduct and the deduction itself cannot exceed your gross income. Importantly, if you converted the car you previously into a car for business, you cannot deduct the price of the car under Section 179. You can only calculate depreciation. More on depreciation on the section for vehicles. Talk to your accountant to learn how much you can deduct from a vehicle. 
 
 
-
 <h4>Promotion/ Advertising</h4>
-If you work as a freelance copywriter(or any type of other freelancer) and you advertise your services on Google or Facebook ads, you can deduct the cost of advertising your business from your income. Advertising includes promotional devices like giveaways. For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
+If you work as a freelance copywriter(or any type of other freelancer) and you advertise your services on Google or Facebook ads, you can deduct the cost of <b>advertising</b> your business from your income. Advertising includes promotional devices like <b>giveaways</b>. For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
 
-Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). Prizes are included as long as there is an incentive to generate sales. What sucks for the recipient of a prize is that they have to pay taxes on the value of the prize if that prize is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
+Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). Prizes are included as long as there is an incentive to generate sales. Unfortunately, the recipient of a prize has to pay taxes on the value of the prize if that prize's value is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
 
-> Fun note: If you want to get into the YouTube game or if you use a drone to advertise your business, you can deduct the cost of the drone. Keep in mind that the price of the drown can effect how much you can deduct in a year.
+> Fun note: If you want to get into the YouTube game or if you use a <b>drone</b> to advertise your business, you can deduct the cost of the drone. Keep in mind that the price of the drown can effect how much you can deduct in a year.
 
 <h4>Clothing</h4>
-Clothing with your company’s logo or uniforms worn exclusively for your work are deductible. But that doesn’t mean you can’t wear them outside of work as well. For example, YouTubers who create merch can deduct the costs of articles of clothing including hats, shirts, jackets, even if their logo appears on them. The cost of cleaning them is also deductible!  The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
+<b>Clothing with your company’s logo or uniforms</b> worn exclusively for your work are deductible. But that doesn’t mean you can’t wear them outside of work as well. For example, YouTubers who create merch can deduct the costs of articles of clothing including hats, shirts, jackets, even if their logo appears on them. The cost of cleaning them is also deductible!  The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
 
 
 <h4>Vehicles</h4>
@@ -55,7 +54,7 @@ You can also deduct the cost of the bike if it was purchased in the tax year, or
 
 <h4>Hiring Children</h4>
 
-You can hire your own children and get a deduction for their wages. The children themselves are not liable for federal income tax or payroll tax. The children must be under 18 and make a maximum of $6, 350(maximum subject to change from year to year) to exempt them from paying taxes. The children of course have to actually be doing work related to your business. IF you pay the children above the maximum, the children would have to file W-4s  and you will have to file W-2 and W-3 payroll forms at the end of the year. However, the children do not need to pay the Social Security and Medicare tax and you don’t have to pay payroll tax. 
+You can hire your own <b>children</b> and get a deduction for their wages. The children themselves are not liable for federal income tax or payroll tax. The children must be under 18 and make a maximum of $6, 350(maximum subject to change from year to year) to exempt them from paying taxes. The children of course have to actually be doing work related to your business. IF you pay the children above the maximum, the children would have to file W-4s  and you will have to file W-2 and W-3 payroll forms at the end of the year. However, the children do not need to pay the Social Security and Medicare tax and you don’t have to pay payroll tax. 
 
 See IRS Publication 15, Employer’s Tax Guide for more information. 
 
@@ -63,13 +62,13 @@ See IRS Publication 15, Employer’s Tax Guide for more information.
 
 <h4>Bank Charges</h4>
 
-Bank charges, services, ATM fees, penalties, check writing fees, check printing fees, and credit card fees are deductible. Specifically, you can deduct the interest cost of credit cards For any purchases made using the ATM, you can deduct the ATM fees from your gross income.
+<b>Bank charges</b>, <b>services</b>, <b>ATM fees</b>, <b>penalties</b>, <b>check writing fees</b>, <b>check printing fees</b>, and <b>credit card fees</b> are deductible. Specifically, you can deduct the <b>interest</b> cost of credit cards For any purchases made using the ATM, you can deduct the ATM fees from your gross income.
 
 <h4>Other Fees</h4>
-If you hired a freelance web developer to build a website for you, you can deduct that fee from your gross income under commission and fees. This applies to other freelancers and independent contractors. 
+If you hired a freelance web developer to build a website for you, you can deduct that fee from your gross income under <b>commission and fees</b>. This applies to other freelancers and independent contractors. 
 
 <h4>Software</h4>
-This section may be most beneficial to freelance web developers who may be paying a subscription fee for different software. But this also applies to other freelancers who may want to leverage the power of Software as a Service or other enterprise tools to increase their productivity. You can deduct the amount paid in case for the tax year from your income. Software also includes paid apps.
+This section may be most beneficial to freelance web developers who may be paying a subscription fee for different software. But this also applies to other freelancers who may want to leverage the power of Software as a Service or other <b>enterprise tools</b> to increase their productivity. You can deduct the amount paid in case for the tax year from your income. Software also includes paid <b>apps</b>. All of these can be considered office expenses, but because they are intangible people may not  consider them as an expense.
 
 <h4>Lost Income</h4>
 When you do freelance work long enough, you’re bound to encounter a customer that refuses to pay you for your services. This is called “bad debt,” Unfortunately, you can’t take a bad debt deduction for the time you spent working on that website. But if the customer pays you with a check that bounces, you can deduct the expense from your net income. 
@@ -87,7 +86,7 @@ You can actually deduct the cost of learning new skills while you are self-emplo
 
  Also, you can’t decide to learn how to program before starting your web design business, and then deduct the cost of learning from your gross income once you do start the business.  All learning must take place while you are in business for you to deduct expenses. And you can’t deduct education if that education is required to meet minimum requirements for the employment; a wannabe Uber driver can’t deduct cost of driving school, because you need to know how to drive to be self-employed in that field. 
 
-You can deduct as part of education expenses: tuition, registration fees, course fees, instructional material, textbooks, supplies, laboratory fees, and commuting fees to the education center. 
+You can deduct as part of education expenses: <b>tuition</b>, <b>registration fees</b>, <b>course fees</b>, <b>instructional material</b>, <b>textbooks</b>, <b>supplies</b>, <b>laboratory fees</b>, and <b>commuting fees</b> to the education center. 
 
 
 <h2>Conclusion</h2>
