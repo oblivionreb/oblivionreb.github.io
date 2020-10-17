@@ -13,7 +13,7 @@ Don't just give away money to the IRS.
 
 If you’re hustling to make a living in the gig economy and you’re complaining about the amount of taxes you have to pay, it’s important for you to realize that you’re a business now. The government realizes that you’re going to have to make payments that others may not have to pay to further your business. For example, gas payments must be driving you crazy. But you can subtract that from your gross income. You can even subtract the depreciating value of your car due to the extra mileage.
 
-Because when you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting,and others working an independent trade. Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
+Because when you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
 
 Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. If you have doubts about whether your work is actually a business, talk to an experienced accountant. As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business. 
 
@@ -133,4 +133,17 @@ You can deduct as part of education expenses: <b>tuition</b>, <b>registration fe
 <h2>Conclusion</h2>
 
 Phew. That was a lot of deductions! Now you can begin to see how important it is to either hire an accountant to bookkeep or use some type of accounting software to keep track of all of your expenses. Even if you only consider yourself as a gig worker, tracking your bank charges and vehicle depreciation can get a little overwhelming. Fuel and mileage alone require detailed accounting. But it’s worth it because reducing your tax liability can save you serious money.
+
+
+<h3> Resources </h3>
+
+
+1. Kamoroff, Bernard C.P.A. 475 Tax Deductions For Businesses And Self-Employed Individuals : An A-To-Z Guide To Hundreds Of Tax Write-Offs. Guilford, Connecticut, Lyons Press, 2019.
+
+2. IRS Publication 946
+
+3. IRS Publication 15
+
+4. IRS Publication 578
+
 
