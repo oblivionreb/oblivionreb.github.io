@@ -49,7 +49,7 @@ But for anything $2,500 or more, section 179 applies and things get a bit more c
 
 <h4>Promotion/ Advertising</h4>
 
-![ad](https://media.giphy.com/media/l0HUi9wxwHRrYBKSY/giphy-downsized.gif)
+![ad](https://media.giphy.com/media/l0HlOrRj8sqK1xiJa/giphy.gif)
 
 If you work as a freelance copywriter(or any type of other freelancer) and you advertise your services on Google or Facebook ads, you can deduct the cost of <b>advertising</b> your business from your income. Advertising includes promotional devices like <b>giveaways</b>. For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
 
@@ -66,7 +66,7 @@ Many YouTubers hold contests and the costs of operating these contests can be de
 
 <h4>Vehicles</h4>
 
-![car](https://media.giphy.com/media/3ov9jWu7BuHufyLs7m/giphy-downsized.gif)
+![car](https://media.giphy.com/media/1zRfp0Jwsag4yPekP4/giphy.gif)
 
 Those in the gig economy can deduct the cost of their car if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, How to Depreciate Property, https://www.irs.gov/pub/irs-pdf/p946.pdf  for more information. You can also deduct the cost of fuel when using your vehicle. 
 
@@ -98,9 +98,9 @@ If you hired a freelance web developer to build a website for you, you can deduc
 
 <h4>Software</h4>
 
-![apps](https://media.giphy.com/media/l3q2uGtWN3yawwBzO/giphy.gif)
+![apps](https://media.giphy.com/media/jAe22Ec5iICCk/giphy.gif)
 
-This section may be most beneficial to freelance web developers who may be paying a subscription fee for different software. But this also applies to other freelancers who may want to leverage the power of Software as a Service or other <b>enterprise tools</b> to increase their productivity. You can deduct the amount paid in case for the tax year from your income. Software also includes paid <b>apps</b>. All of these can be considered office expenses, but because they are intangible people may not  consider them as an expense.
+This section may be most beneficial to freelance web developers who may be paying a subscription fee for different software. But this also applies to other freelancers who may want to user <b>enterprise software</b> to increase their productivity. You can deduct the amount paid in case for the tax year from your income. Software also includes paid <b>apps</b>. All of these can be considered office expenses, but because they are intangible people may not  consider them as an expense.
 
 <h4>Lost Income</h4>
 
