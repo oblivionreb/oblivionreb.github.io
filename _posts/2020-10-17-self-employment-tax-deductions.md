@@ -73,7 +73,7 @@ Many YouTubers hold contests and the costs of operating these contests can be de
 Those in the gig economy can deduct the cost of their car if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, [How to Depreciate Property](https://www.irs.gov/pub/irs-pdf/p946.pdf) for more information. You can also deduct the cost of fuel when using your vehicle. 
 
 
-You can also deduct the cost of the bike if it was purchased in the tax year, or you can deduct the depreciating value of the bike. 
+> Fun note: You can actually deduct the cost of a bike if it was purchased in the tax year, or you can deduct the depreciating value of the bike. 
 
 
 <h4>Hiring Children</h4>
