@@ -34,7 +34,7 @@ When you set up a home office, there are various items that can be deducted. You
 
 The tax deductions relate to expenses associated with the space, like <b>rent</b> or <b>depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services</b>, and much more.
 
-Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional.  See IRS Publication 587, Business Use of Your Home.
+Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional.  See IRS Publication 587, [Business Use of Your Home](https://www.irs.gov/pub/irs-pdf/p587.pdf).
 
 > Fun note: A percentage of cell phone cost expense related to business can be deducted. Other deductible offense expenses include greeting cards and holiday cards
 
@@ -68,7 +68,7 @@ Many YouTubers hold contests and the costs of operating these contests can be de
 
 ![car](https://media.giphy.com/media/1zRfp0Jwsag4yPekP4/giphy.gif)
 
-Those in the gig economy can deduct the cost of their car if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, How to Depreciate Property, https://www.irs.gov/pub/irs-pdf/p946.pdf  for more information. You can also deduct the cost of fuel when using your vehicle. 
+Those in the gig economy can deduct the cost of their car if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, [How to Depreciate Property](https://www.irs.gov/pub/irs-pdf/p946.pdf) for more information. You can also deduct the cost of fuel when using your vehicle. 
 
 
 You can also deduct the cost of the bike if it was purchased in the tax year, or you can deduct the depreciating value of the bike. 
@@ -80,7 +80,7 @@ You can also deduct the cost of the bike if it was purchased in the tax year, or
 
 You can hire your own <b>children</b> and get a deduction for their wages. The children themselves are not liable for federal income tax or payroll tax. The children must be under 18 and make a maximum of $6, 350(maximum subject to change from year to year) to exempt them from paying taxes. The children of course have to actually be doing work related to your business. IF you pay the children above the maximum, the children would have to file W-4s  and you will have to file W-2 and W-3 payroll forms at the end of the year. However, the children do not need to pay the Social Security and Medicare tax and you don’t have to pay payroll tax. 
 
-See IRS Publication 15, Employer’s Tax Guide for more information. 
+See IRS Publication 15, [Employer’s Tax Guide](https://www.irs.gov/pub/irs-pdf/p15.pdf) for more information. 
 
 
 
