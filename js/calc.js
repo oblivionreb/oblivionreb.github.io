@@ -342,12 +342,12 @@ function taxCalc(bracket, income){
 function roundPenny(num){
  return Math.round((num + Number.EPSILON) * 100) / 100
 }
-function fedCalc(fedBracket, income){
-  return taxCalc(fedBracket, income);
+function fedTaxCalc(fedBracket, income, deduction){
+  return taxCalc(fedBracket, income - deduction);
 }
 
-function stateCalc(stateBracket, income){
-  return taxCalc(stateBracket, income);
+function stateTaxCalc(stateBracket, income, deduction){
+  return taxCalc(stateBracket, income - deduction);
 }
 
 function ficaCalc(ficaBracket, income){
@@ -358,219 +358,224 @@ var showWork = {
   agi: 0,
   totalFed: 0,
   totalState: 0,
-  totalFica: 0
+  totalFica: 0,
+  remainder: 0
   }
 
 function stateTaxController(year,state,status,income){
   let stateTax = 0;
-
-  let oldalaStateBracketSingle = {one:[0,500,.02], two: [501, 3000, .04], three: [3001, Infinity, .05] }
-  let oldalaStateBracketJoint = {one:[0,1000,.02], two: [1001, 6000, .04], three: [6001, Infinity, .05] }
+// old is actually 2021
   let newalaStateBracketSingle = {one:[0,500,.02], two: [501, 3000, .04], three: [3001, Infinity, .05] }
   let newalaStateBracketJoint = {one:[0,1000,.02], two: [1001, 6000, .04], three: [6001, Infinity, .05] }
+  
+  let oldalaStateBracketSingle = {one:[0,500,.02], two: [501, 3000, .04], three: [3001, Infinity, .05] }
+  let oldalaStateBracketJoint = {one:[0,1000,.02], two: [1001, 6000, .04], three: [6001, Infinity, .05] }
 
   let alaskaStateBracket = {one:[0,0,0]}
 
-  let oldarizStateBracketSingle = {one:[0,11047,.0259], two: [11047, 27614, .0288], three: [27615, 55226 , .0336], four: [55227, 165674 , .0424], five: [165675, Infinity, .0454] }
-  let oldarizStateBracketJoint = {one:[0,22092,.0259], two: [22093, 55226, .0288], three: [55227, 110450 , .0336], four: [110451, 331346 , .0454], five: [165675, Infinity, .0454] }
-  let newarizStateBracketSingle = {one:[0,26500,.0259], two: [26501, 53000, .0334], three: [53001, 159000 , .0417], four: [159001, Infinity , .045] }
-  let newarizStateBracketJoint = {one:[0,53000,.0259], two: [53001, 106000, .0334], three: [106001, 318000 , .0417], four: [318001, Infinity , .045] }
+   let newarizStateBracketSingle = {one:[0,27272,.0259], two: [27273, 54544, .0334], three: [54545, 163632, .0417], four: [163633, 250000, .045], five: [250001, Infinity, .08]}
+  let newarizStateBracketJoint = {one:[0,54544,.0259], two: [54545, 109088, .0334], three: [109089, 327263, .0417], four: [327264, 500000, .045], five: [500001, Infinity, .08]}
+  let oldarizStateBracketSingle = {one:[0,26500,.0259], two: [26501, 53000, .0334], three: [53001, 159000, .0417], four: [159001, Infinity , .045] }
+  let oldarizStateBracketJoint = {one:[0,53000,.0259], two: [53001, 106000, .0334], three: [106001, 318000, .0417], four: [318001, Infinity , .045] }
 
-  let oldarkStateBracketSingle = {one:[0,4500,.009], two: [4501, 8900, .0250], three: [8901, 13400 , .0350], four: [13401, 22200 , .0450], five: [22201, 37200, .05], six: [37200, Infinity, .0690] }
-  let oldarkStateBracketJoint = {one:[0,4500,.009], two: [4501, 8900, .0250], three: [8901, 13400 , .0350], four: [13401, 22200 , .0450], five: [22201, 37200, .05], six: [37200, Infinity, .0690] }
-  let newarkStateBracketSingle = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, 79300 , .059], four: [79301, Infinity , .066]}
-  let newarkStateBracketJoint = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, 79300 , .059], four: [79301, Infinity , .066]}
+  let newarkStateBracketSingle = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, Infinity , .059]}
+  let newarkStateBracketJoint = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, Infinity , .059]}
+  let oldarkStateBracketSingle = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, 79300 , .059], four: [79301, Infinity , .066]}
+  let oldarkStateBracketJoint = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, 79300 , .059], four: [79301, Infinity , .066]}
 
-  let oldcaliStateBracketSingle = {one:[0,8544,.01], two: [8545, 20255, .02], three: [20256, 31969, .04],four: [31970,44377, .06], five: [44378,56085, .08], six: [56086,286492, .0930], seven: [286493, 343788 , .1030], eight: [343789, 572980, .1130], nine: [572981, 1000000, .1230], ten: [1000001, Infinity, .1330] }
-  let oldcaliStateBracketJoint = {one:[0,17088,.01], two: [17089, 40510, .02], three: [40511, 62938, .04],four: [62939,88754, .06], five: [88755,112170, .08], six: [112171,572984, .0930], seven: [572985, 687576 , .1030], eight: [687577, 1000000, .1130], nine: [1000001, 1145960, .1230], ten: [1145961, Infinity, .1330] }
-  let newcaliStateBracketSingle = {one:[0,8809,.01], two: [8810, 20883, .02], three: [20884, 32960, .04],four: [32961,45753, .06], five: [45754,57824, .08], six: [57825,295373, .0930], seven: [295374, 354445 , .1030], eight: [354446, 590742, .1130], nine: [590743, 1000000, .1230], ten: [1000001, Infinity, .1330] }
-  let newcaliStateBracketJoint = {one:[0,17618,.01], two: [17619, 41766, .02], three: [41767, 65920, .04],four: [65921,91506, .06], five: [91507,115648, .08], six: [115649,590746, .0930], seven: [590747, 708890, .1030], eight: [708891, 1000000, .1130], nine: [1000001, 1181484, .1230], ten: [1181485, Infinity, .1330] }
+  let newcaliStateBracketSingle = {one:[0,8932,.01], two: [8933,21175, .02], three: [21176,33421, .04],four: [33422,46395,.06], five: [46396,58634, .08], six: [58635,299508, .0930], seven: [299509,359407 , .1030], eight: [35408, 599012, .1130], nine: [599013, 1000000, .1230], ten: [1000001, Infinity, .1330] }
+  let newcaliStateBracketJoint = {one:[0,17864,.01], two: [17865, 42350, .02], three: [42351,66842, .04],four: [66843,92788, .06], five: [92789,117268, .08], six: [117269,599016, .0930], seven: [599017, 718814, .1030], eight: [718814, 1000000, .1130], nine: [1000001, 1198024, .1230], ten: [1198025, Infinity, .1330] }
+  let oldcaliStateBracketSingle = {one:[0,8809,.01], two: [8810, 20883, .02], three: [20884, 32960, .04],four: [32961,45753, .06], five: [45754,57824, .08], six: [57825,295373, .0930], seven: [295374, 354445 , .1030], eight: [354446, 590742, .1130], nine: [590743, 1000000, .1230], ten: [1000001, Infinity, .1330] }
+  let oldcaliStateBracketJoint = {one:[0,17618,.01], two: [17619, 41766, .02], three: [41767, 65920, .04],four: [65921,91506, .06], five: [91507,115648, .08], six: [115649,590746, .0930], seven: [590747, 708890, .1030], eight: [708891, 1000000, .1130], nine: [1000001, 1181484, .1230], ten: [1181485, Infinity, .1330] }
 
 
   let coloStateBracket = {one:[0,Infinity,.0463] }
 
-  let oldconnStateBracketSingle = {one:[0,10000,.03], two: [10001, 50000, .05], three: [50001, 100000, .055], four: [100001, 200000 , .06], five: [200001, 250000, .065], six: [250001, 500000, .069], seven: [500001, Infinity, .0699] }
-  let oldconnStateBracketJoint = {one:[0,20000,.03], two: [20001, 100000, .05], three: [100001, 200000, .055], four: [200001, 400000 , .06], five: [400001, 500000, .065], six: [500001, 1000000, .069], seven: [1000001, Infinity, .0699] }
   let newconnStateBracketSingle = {one:[0,10000,.03], two: [10001, 50000, .05], three: [50001, 100000, .055], four: [100001, 200000 , .06], five: [200001, 250000, .065], six: [250001, 500000, .069], seven: [500001, Infinity, .0699] }
   let newconnStateBracketJoint = {one:[0,20000,.03], two: [20001, 100000, .05], three: [100001, 200000, .055], four: [200001, 400000 , .06], five: [400001, 500000, .065], six: [500001, 1000000, .069], seven: [1000001, Infinity, .0699] }
+  let oldconnStateBracketSingle = {one:[0,10000,.03], two: [10001, 50000, .05], three: [50001, 100000, .055], four: [100001, 200000 , .06], five: [200001, 250000, .065], six: [250001, 500000, .069], seven: [500001, Infinity, .0699] }
+  let oldconnStateBracketJoint = {one:[0,20000,.03], two: [20001, 100000, .05], three: [100001, 200000, .055], four: [200001, 400000 , .06], five: [400001, 500000, .065], six: [500001, 1000000, .069], seven: [1000001, Infinity, .0699] }
 
+  let newdelStateBracketSingle = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
+  let newdelStateBracketJoint = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699]  }
   let olddelStateBracketSingle = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
   let olddelStateBracketJoint = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
-  let newdelStateBracketSingle = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
-  let newdelStateBracketJoint = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
 
 
   let flaStateBracket = {one: [0,0,0]}
 
-  let oldgaStateBracketSingle = {one: [0, 750, .01], three: [751, 2250, .02], four: [2251, 3750 , .03], five: [3751, 5250, .04], six: [5251, 7000, .05], seven: [7001, Infinity, .0575] }
-  let oldgaStateBracketJoint = {one: [0, 1000, .01], three: [1001, 3000, .02], four: [3001, 5000 , .03], five: [5001, 7000, .04], six: [7001, 10000, .05], seven: [10001, Infinity, .0575] }
   let newgaStateBracketSingle = {one: [0, 750, .01], three: [751, 2250, .02], four: [2251, 3750 , .03], five: [3751, 5250, .04], six: [5251, 7000, .05], seven: [7001, Infinity, .0575] }
   let newgaStateBracketJoint = {one: [0, 1000, .01], three: [1001, 3000, .02], four: [3001, 5000 , .03], five: [5001, 7000, .04], six: [7001, 10000, .05], seven: [10001, Infinity, .0575] }
+  let oldgaStateBracketSingle = {one: [0, 750, .01], three: [751, 2250, .02], four: [2251, 3750 , .03], five: [3751, 5250, .04], six: [5251, 7000, .05], seven: [7001, Infinity, .0575] }
+  let oldgaStateBracketJoint = {one: [0, 1000, .01], three: [1001, 3000, .02], four: [3001, 5000 , .03], five: [5001, 7000, .04], six: [7001, 10000, .05], seven: [10001, Infinity, .0575] }
 
+  let newhawaiiStateBracketSingle = {one:[0,2400,.014], two: [2401, 4800, .032], three: [4801, 9600, .055],four: [9601,14400, .064], five: [14401,19200, .068], six: [19201,24000, .072], seven: [24001, 36000 , .076], eight: [36001, 48000, .079], nine: [48001, 150000, .0825], ten: [150001, 175000, .09], eleven: [175001, 200000, .10], twelve: [200000, Infinity, .11] }
+  let newhawaiiStateBracketJoint = {one:[0,4800,.014], two: [4801, 9600, .032], three: [9601, 19200, .055],four: [19201,28800, .064], five: [28801,38400, .068], six: [38401,48000, .072], seven: [48001, 72000 , .076], eight: [72001, 96000, .079], nine: [96001, 300000, .0825], ten: [300001, 350000, .09], eleven: [350001, 400000, .10], twelve: [400000, Infinity, .11]}
   let oldhawaiiStateBracketSingle = {one:[0,2400,.014], two: [2401, 4800, .032], three: [4801, 9600, .055],four: [9601,14400, .064], five: [14401,19200, .068], six: [19201,24000, .072], seven: [24001, 36000 , .076], eight: [36001, 48000, .079], nine: [48001, 150000, .0825], ten: [150001, 175000, .09], eleven: [175001, 200000, .10], twelve: [200000, Infinity, .11] }
   let oldhawaiiStateBracketJoint = {one:[0,4800,.014], two: [4801, 9600, .032], three: [9601, 19200, .055],four: [19201,28800, .064], five: [28801,38400, .068], six: [38401,48000, .072], seven: [48001, 72000 , .076], eight: [72001, 96000, .079], nine: [96001, 300000, .0825], ten: [300001, 350000, .09], eleven: [350001, 400000, .10], twelve: [400000, Infinity, .11] }
-  let newhawaiiStateBracketSingle = {one:[0,2400,.014], two: [2401, 4800, .032], three: [4801, 9600, .055],four: [9601,14400, .064], five: [14401,19200, .068], six: [19201,24000, .072], seven: [24001, 36000 , .076], eight: [36001, 48000, .079], nine: [48001, 150000, .0825], ten: [150001, 175000, .09], eleven: [175001, 200000, .10], twelve: [200000, Infinity, .11] }
-  let newhawaiiStateBracketJoint = {one:[0,4800,.014], two: [4801, 9600, .032], three: [9601, 19200, .055],four: [19201,28800, .064], five: [28801,38400, .068], six: [38401,48000, .072], seven: [48001, 72000 , .076], eight: [72001, 96000, .079], nine: [96001, 300000, .0825], ten: [300001, 350000, .09], eleven: [350001, 400000, .10], twelve: [400000, Infinity, .11] }
 
+  let newidahoStateBracketSingle = {one: [0, 1568, .01125], two: [1569,3136, .03125], three: [3137, 4704 , .03625], four: [4705, 6272, .04625], five: [6273, 7840, .05625], six: [7841, 11760, .06625], seven: [11761, Infinity, .06925] }
+  let newidahoStateBracketJoint = {one: [0, 3136, .01125], three: [3137, 6272, .03125], four: [6273, 9408 , .03625], five: [9409, 12544, .04625], six: [12545, 15680, .05625], seven: [15681, 23520, .06625], eight: [23521, Infinity, .06925] }
   let oldidahoStateBracketSingle = {one: [0, 1541, .01125], two: [1541, 3081, .03125], three: [3082, 4622 , .03625], four: [4623, 6162, .04625], five: [6163, 7703, .05625], six: [7704, 11554, .06625], seven: [11555, Infinity, .06925] }
   let oldidahoStateBracketJoint = {one: [0, 3081, .01125], three: [3082, 6162, .03125], four: [6163, 9243 , .03625], five: [9244, 12324, .04625], six: [12325, 15405, .05625], seven: [15406, 23108, .06625], eight: [23109, Infinity, .06925] }
-  let newidahoStateBracketSingle = {one: [0, 1541, .01125], two: [1541, 3081, .03125], three: [3082, 4622 , .03625], four: [4623, 6162, .04625], five: [6163, 7703, .05625], six: [7704, 11554, .06625], seven: [11555, Infinity, .06925] }
-  let newidahoStateBracketJoint = {one: [0, 3081, .01125], three: [3082, 6162, .03125], four: [6163, 9243 , .03625], five: [9244, 12324, .04625], six: [12325, 15405, .05625], seven: [15406, 23108, .06625], eight: [23109, Infinity, .06925] }
-
 
 
   let illStateBracket = {one: [0, Infinity, .0495]}
   let indStateBracket = {one: [0, Infinity, .0323]}
 
+  let newiowaStateBracketSingle = {one: [0, 1676, .0033], three: [1677, 3352, .0067], four: [3353, 6704 , .0225], five: [6705, 15084, .0414], six: [15085, 25140, .0562], seven: [25141, 33520, .0596], eight: [33521, 50280, .0625], nine: [50281, 75420, .0744], ten: [75421, Infinity, .0853] }
+  let newiowaStateBracketJoint = {one: [0, 1676, .0033], three: [1677, 3352, .0067], four: [3353, 6704 , .0225], five: [6705, 15084, .0414], six: [15085, 25140, .0562], seven: [25141, 33520, .0596], eight: [33521, 50280, .0625], nine: [50281, 75420, .0744], ten: [75421, Infinity, .0853] }
   let oldiowaStateBracketSingle = {one: [0, 1638, .0033], three: [1639, 3276, .0067], four: [3277, 6552 , .0225], five: [6553, 14742, .0414], six: [14743, 24570, .0562], seven: [24571, 32760, .0596], eight: [32761, 49140, .0625], nine: [49141, 73710, .0744], ten: [73711, Infinity, .0853] }
   let oldiowaStateBracketJoint = {one: [0, 1638, .0033], three: [1639, 3276, .0067], four: [3277, 6552 , .0225], five: [6553, 14742, .0414], six: [14743, 24570, .0562], seven: [24571, 32760, .0596], eight: [32761, 49140, .0625], nine: [49141, 73710, .0744], ten: [73711, Infinity, .0853] }
-  let newiowaStateBracketSingle = {one: [0, 1638, .0033], three: [1639, 3276, .0067], four: [3277, 6552 , .0225], five: [6553, 14742, .0414], six: [14743, 24570, .0562], seven: [24571, 32760, .0596], eight: [32761, 49140, .0625], nine: [49141, 73710, .0744], ten: [73711, Infinity, .0853] }
-  let newiowaStateBracketJoint = {one: [0, 1638, .0033], three: [1639, 3276, .0067], four: [3277, 6552 , .0225], five: [6553, 14742, .0414], six: [14743, 24570, .0562], seven: [24571, 32760, .0596], eight: [32761, 49140, .0625], nine: [49141, 73710, .0744], ten: [73711, Infinity, .0853] }
 
 
-  let oldkansStateBracketSingle = {one: [2500, 15000, .031], three: [15001, 30000, .0525], four: [30001, Infinity , .057] }
-  let oldkansStateBracketJoint = {one: [5000, 30000, .031], three: [30001, 60000, .0525], four: [60001, Infinity , .057] }
   let newkansStateBracketSingle = {one: [0, 15000, .031], three: [15001, 30000, .0525], four: [30001, Infinity , .057] }
   let newkansStateBracketJoint = {one: [0, 30000, .031], three: [30001, 60000, .0525], four: [60001, Infinity , .057] }
+  let oldkansStateBracketSingle = {one: [0, 15000, .031], three: [15001, 30000, .0525], four: [30001, Infinity , .057] }
+  let oldkansStateBracketJoint = {one: [0, 30000, .031], three: [30001, 60000, .0525], four: [60001, Infinity , .057] }
 
   let kyStateBracket = {one: [0, Infinity, .05]}
 
-  let oldlaStateBracketSingle = {one: [0, 12500, .02], three: [12501, 50000, .04], four: [50001, Infinity , .06] }
-  let oldlaStateBracketJoint = {one: [0, 25000, .02], three: [25001, 100000, .04], four: [100001, Infinity , .06] }
   let newlaStateBracketSingle = {one: [0, 12500, .02], three: [12501, 50000, .04], four: [50001, Infinity , .06] }
   let newlaStateBracketJoint = {one: [0, 25000, .02], three: [25001, 100000, .04], four: [100001, Infinity , .06] }
+  let oldlaStateBracketSingle = {one: [0, 12500, .02], three: [12501, 50000, .04], four: [50001, Infinity , .06] }
+  let oldlaStateBracketJoint = {one: [0, 25000, .02], three: [25001, 100000, .04], four: [100001, Infinity , .06] }
 
-  let oldmaineStateBracketSingle = {one: [0, 21850, .058], three: [21851, 51700, .0675], four: [51701, Infinity , .0715] }
-  let oldmaineStateBracketJoint = {one: [0, 43700, .058], three: [43701, 103400, .0675], four: [103401, Infinity , .0715] }
-  let newmaineStateBracketSingle = {one: [0, 22200, .058], three: [22201, 52600, .0675], four: [52601, Infinity , .0715] }
-  let newmaineStateBracketJoint = {one: [0, 44450, .058], three: [44451, 105200, .0675], four: [105201, Infinity , .0715] }
+  let newmaineStateBracketSingle = {one: [0, 22450, .058], three: [22451, 53150, .0675], four: [53151, Infinity , .0715] }
+  let newmaineStateBracketJoint = {one: [0, 44950, .058], three: [44951, 106350, .0675], four: [106351, Infinity , .0715] }
+  let oldmaineStateBracketSingle = {one: [0, 22200, .058], three: [22201, 52600, .0675], four: [52601, Infinity , .0715] }
+  let oldmaineStateBracketJoint = {one: [0, 44450, .058], three: [44451, 105200, .0675], four: [105201, Infinity , .0715] }
 
-  let oldmdStateBracketSingle = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 100000, .0475], six: [100001, 125000, .05], seven: [125001, 150000, .0525], eight: [150001, 250000, .055], nine: [250001, Infinity, .0575] }
-  let oldmdStateBracketJoint = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 150000, .0475], six: [150001, 175000, .05], seven: [175001, 225000, .0525], eight: [225001, 300000, .055], nine: [300001, Infinity, .0575] }
   let newmdStateBracketSingle = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 100000, .0475], six: [100001, 125000, .05], seven: [125001, 150000, .0525], eight: [150001, 250000, .055], nine: [250001, Infinity, .0575] }
   let newmdStateBracketJoint = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 150000, .0475], six: [150001, 175000, .05], seven: [175001, 225000, .0525], eight: [225001, 300000, .055], nine: [300001, Infinity, .0575] }
+  let oldmdStateBracketSingle = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 100000, .0475], six: [100001, 125000, .05], seven: [125001, 150000, .0525], eight: [150001, 250000, .055], nine: [250001, Infinity, .0575] }
+  let oldmdStateBracketJoint = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 150000, .0475], six: [150001, 175000, .05], seven: [175001, 225000, .0525], eight: [225001, 300000, .055], nine: [300001, Infinity, .0575] }
 
   let massStateBracket = {one: [0, Infinity, .0505]}
   let michStateBracket = {one: [0, Infinity, .0425]}
 
+  let newminnStateBracketSingle = {one: [0, 27230, .0535], three: [27231, 89440, .0705], four: [89441, 166040, .0785], five: [166041, Infinity, .0985] }
+  let newminnStateBracketJoint = {one: [0, 39810, .0535], three: [39811, 158140, .0705], four: [158141, 276200, .0785], five: [276201, Infinity, .0985] }
   let oldminnStateBracketSingle = {one: [0, 26960, .0535], three: [26961, 88550, .0705], four: [88551, 164400 , .0785], five: [164401, Infinity, .0985] }
   let oldminnStateBracketJoint = {one: [0, 39410, .0535], three: [39411, 156570, .0705], four: [156571, 273470, .0785], five: [273470, Infinity, .0985] }
-  let newminnStateBracketSingle = {one: [0, 26960, .0535], three: [26961, 88550, .0705], four: [88551, 164400 , .0785], five: [164401, Infinity, .0985] }
-  let newminnStateBracketJoint = {one: [0, 39410, .0535], three: [39411, 156570, .0705], four: [156571, 273470, .0785], five: [273470, Infinity, .0985] }
 
-  let oldmissStateBracketSingle = {one: [1000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
-  let oldmissStateBracketJoint = {one: [1000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .00] }
-  let newmissStateBracketSingle = {one: [1000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
-  let newmissStateBracketJoint = {one: [1000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .00] }
+  let newmissStateBracketSingle = {one: [4000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
+  let newmissStateBracketJoint = {one: [4000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
+  let oldmissStateBracketSingle = {one: [3000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
+  let oldmissStateBracketJoint = {one:  [3000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .00] }
 
-  let oldmoStateBracketSingle = {one: [0, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
-  let oldmoStateBracketJoint = {one: [0, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
-  let newmoStateBracketSingle = {one: [0, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
-  let newmoStateBracketJoint = {one: [0, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
+  let newmoStateBracketSingle = {one: [107, 1073, .015], three: [1074, 2146, .02], four: [2147, 3219 , .025], five: [3220, 4292, .03], six: [4293, 5365, .035], seven: [5366, 6438, .04], eight: [6439, 7511, .045], nine: [7512, 8584, .05], ten: [8585, Infinity, .054] }
+  let newmoStateBracketJoint = {one: [107, 1073, .015], three: [1074, 2146, .02], four: [2147, 3219 , .025], five: [3220, 4292, .03], six: [4293, 5365, .035], seven: [5366, 6438, .04], eight: [6439, 7511, .045], nine: [7512, 8584, .05], ten: [8585, Infinity, .054] }
+  let oldmoStateBracketSingle = {one: [105, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
+  let oldmoStateBracketJoint = {one: [105, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
 
+  let newmontStateBracketSingle = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11300, .04], six: [11301, 14500, .05], seven: [14501, 18700, .06], eight: [18701, Infinity, .069] }
+  let newmontStateBracketJoint = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11300, .04], six: [11301, 14500, .05], seven: [14501, 18700, .06], eight: [18701, Infinity, .069] }
   let oldmontStateBracketSingle = {one: [0, 3100, .01], three: [3101, 5400, .02], four: [5401, 8200 , .03], five: [8201, 11100, .04], six: [11101, 14300, .05], seven: [14301, 18400, .06], eight: [18401, Infinity, .069] }
   let oldmontStateBracketJoint = {one: [0, 3100, .01], three: [3101, 5400, .02], four: [5401, 8200 , .03], five: [8201, 11100, .04], six: [11101, 14300, .05], seven: [14301, 18400, .06], eight: [18401, Infinity, .069] }
-  let newmontStateBracketSingle = {one: [0, 3100, .01], three: [3101, 5400, .02], four: [5401, 8200 , .03], five: [8201, 11100, .04], six: [11101, 14300, .05], seven: [14301, 18400, .06], eight: [18401, Infinity, .069] }
-  let newmontStateBracketJoint = {one: [0, 3100, .01], three: [3101, 5400, .02], four: [5401, 8200 , .03], five: [8201, 11100, .04], six: [11101, 14300, .05], seven: [14301, 18400, .06], eight: [18401, Infinity, .069] }
 
-  let oldnebrStateBracketSingle = {one: [0, 3290, .0246], three: [3291, 19720, .0351], four: [19721, 31780, .0501], five: [31781, Infinity, .0684] }
-  let oldnebrStateBracketJoint = {one: [0, 6570, .0246], three: [6571, 39450, .0351], four: [39451, 63550, .0501], five: [63551, Infinity, .0684] }
-  let newnebrStateBracketSingle = {one: [0, 3290, .0246], three: [3291, 19700, .0351], four: [19701, 31750, .0501], five: [31751, Infinity, .0684] }
-  let newnebrStateBracketJoint = {one: [0, 6570, .0246], three: [6571, 39410, .0351], four: [39411, 63500, .0501], five: [63501, Infinity, .0684] }
+  let newnebrStateBracketSingle = {one: [0, 3340, .0246], three: [3341, 19990, .0351], four: [19991, 32210, .0501], five: [32211, Infinity, .0684] }
+  let newnebrStateBracketJoint = {one: [0, 6660, .0246], three: [6661, 39990, .0351], four: [39991, 64430, .0501], five: [64431, Infinity, .0684] }
+  let oldnebrStateBracketSingle = {one: [0, 3290, .0246], three: [3291, 19700, .0351], four: [19701, 31750, .0501], five: [31751, Infinity, .0684] }
+  let oldnebrStateBracketJoint = {one: [0, 6570, .0246], three: [6571, 39410, .0351], four: [39411, 63500, .0501], five: [63501, Infinity, .0684] }
 
-  let nhStateBracket = {one: [0, Infinity, .005]}
+  let nevStateBracket = {one: [0,0,0]}
+  let nhStateBracket = {one: [0, Infinity, .05]}
 
-  let oldnjStateBracketSingle = {one: [0, 20000, .014], three: [20001, 35000, .0175], four: [35001, 40000 , .035], five: [40001, 75000, .05525], six: [75001, 500000, .0637], seven: [500001, 5000000, .0897], eight: [5000001, Infinity, .1075] }
-  let oldnjStateBracketJoint = {one: [0, 20000, .014], three: [20001, 50000, .0175], four: [50001, 70000 , .0245], five: [70001, 80000, .035], six: [80001, 150000, .05525], seven: [150001, 500000, .0637], eight: [500001, 5000000, .0897], nine: [5000001, Infinity, .1075] }
   let newnjStateBracketSingle = {one: [0, 20000, .014], three: [20001, 35000, .0175], four: [35001, 40000 , .035], five: [40001, 75000, .05525], six: [75001, 500000, .0637], seven: [500001, 5000000, .0897], eight: [5000001, Infinity, .1075] }
   let newnjStateBracketJoint = {one: [0, 20000, .014], three: [20001, 50000, .0175], four: [50001, 70000 , .0245], five: [70001, 80000, .035], six: [80001, 150000, .05525], seven: [150001, 500000, .0637], eight: [500001, 5000000, .0897], nine: [5000001, Infinity, .1075] }
+  let oldnjStateBracketSingle = {one: [0, 20000, .014], three: [20001, 35000, .0175], four: [35001, 40000 , .035], five: [40001, 75000, .05525], six: [75001, 500000, .0637], seven: [500001, 5000000, .0897], eight: [5000001, Infinity, .1075] }
+  let oldnjStateBracketJoint = {one: [0, 20000, .014], three: [20001, 50000, .0175], four: [50001, 70000 , .0245], five: [70001, 80000, .035], six: [80001, 150000, .05525], seven: [150001, 500000, .0637], eight: [500001, 5000000, .0897], nine: [5000001, Infinity, .1075] }
 
+  let newnmStateBracketSingle = {one: [0, 5500, .017], three: [5501, 11000, .032], four: [11001, 16000, .047], five: [16001, 210000, .049], six: [210001, Infinity, .059] }
+  let newnmStateBracketJoint = {one: [0, 8000, .017], three: [8001, 16000, .032], four: [16001, 24000, .047], five: [24001, Infinity, .049], six: [315000, Infinity, .059] }
   let oldnmStateBracketSingle = {one: [0, 5500, .017], three: [5501, 11000, .032], four: [11001, 16000, .047], five: [16001, Infinity, .049] }
   let oldnmStateBracketJoint = {one: [0, 8000, .017], three: [8001, 16000, .032], four: [16001, 24000, .047], five: [24001, Infinity, .049] }
-  let newnmStateBracketSingle = {one: [0, 5500, .017], three: [5501, 11000, .032], four: [11001, 16000, .047], five: [16001, Infinity, .049] }
-  let newnmStateBracketJoint = {one: [0, 8000, .017], three: [8001, 16000, .032], four: [16001, 24000, .047], five: [24001, Infinity, .049] }
 
+  let newnyStateBracketSingle = {one:[0,8500,.04], two: [8501, 11700, .045], three: [11701, 13900, .0525],four: [13901,21400, .059], five: [21401,80650, .0597], six: [80651,215400, .0633], seven: [215401, 1077550 , .0685], eight: [1077551, Infinity, .0882] }
+  let newnyStateBracketJoint = {one:[0,17150,.04], two: [17151, 23600, .045], three: [23601, 27900, .0525],four: [27901,43000, .059], five: [43001,161550, .0633], six: [161551,323200, .0657], seven: [323201, 2155350 , .0685], eight: [2155351, Infinity, .0882] }
   let oldnyStateBracketSingle = {one:[0,8500,.04], two: [8501, 11700, .045], three: [11701, 13900, .0525],four: [13901,21400, .059], five: [21401,80650, .0633], six: [80651,215400, .0657], seven: [215401, 1077550 , .0685], eight: [1077551, Infinity, .0882] }
   let oldnyStateBracketJoint = {one:[0,17150,.04], two: [17151, 23600, .045], three: [23601, 27900, .0525],four: [27901,43000, .059], five: [43001,161550, .0633], six: [161551,323200, .0657], seven: [323201, 2155350 , .0685], eight: [2155351, Infinity, .0882] }
-  let newnyStateBracketSingle = {one:[0,8500,.04], two: [8501, 11700, .045], three: [11701, 13900, .0525],four: [13901,21400, .059], five: [21401,80650, .0633], six: [80651,215400, .0657], seven: [215401, 1077550 , .0685], eight: [1077551, Infinity, .0882] }
-  let newnyStateBracketJoint = {one:[0,17150,.04], two: [17151, 23600, .045], three: [23601, 27900, .0525],four: [27901,43000, .059], five: [43001,161550, .0633], six: [161551,323200, .0657], seven: [323201, 2155350 , .0685], eight: [2155351, Infinity, .0882] }
 
   let ncStateBracket = {one: [0, Infinity, .0525]}
 
+  let newndStateBracketSingle = {one: [0, 40125, .011], three: [40126, 97150, .0204], four: [97151, 202650, .0227], five: [202651, 440600, .0264], six: [440601, Infinity, .029] }
+  let newndStateBracketJoint = {one: [0, 67050, .011], three: [67051, 161950, .0204], four: [161951, 246700, .0227], five: [246701, 440600, .0264], six: [440601, Infinity, .029] }
   let oldndStateBracketSingle = {one: [0, 39450, .011], three: [39451, 95500, .0204], four: [95501, 199250, .0227], five: [199250, 433200, .0264], six: [433201, Infinity, .029] }
   let oldndStateBracketJoint = {one: [0, 65900, .011], three: [65901, 159200, .0204], four: [159201, 242550, .0227], five: [242551, 433200, .0264], six: [433201, Infinity, .029] }
-  let newndStateBracketSingle = {one: [0, 39450, .011], three: [39451, 95500, .0204], four: [95501, 199250, .0227], five: [199250, 433200, .0264], six: [433201, Infinity, .029] }
-  let newndStateBracketJoint = {one: [0, 65900, .011], three: [65901, 159200, .0204], four: [159201, 242550, .0227], five: [242551, 433200, .0264], six: [433201, Infinity, .029] }
 
-  let oldohioStateBracketSingle = {one:[10850,16300,.0198], two: [16301, 21750, .02746], three: [21751, 43450, .02969],four: [43451,86900, .03465], five: [86901,108700, .0396], six: [108701,217400, .04597], seven: [217401,Infinity, .04997] }
-  let oldohioStateBracketJoint = {one:[10850,16300,.0198], two: [16301, 21750, .02746], three: [21751, 43450, .02969],four: [43451,86900, .03465], five: [86901,108700, .0396], six: [108701,217400, .04597], seven: [217401,Infinity, .04997] }
-  let newohioStateBracketSingle = {one:[21750,43450,.0285], two: [43451, 86900, .03326], three: [86901, 108700, .03082],four: [108701,217400, .04413], five: [217401,Infinity, .04797]}
-  let newohioStateBracketJoint = {one:[21750,43450,.0285], two: [43451, 86900, .03326], three: [86901, 108700, .03082],four: [108701,217400, .04413], five: [217401,Infinity, .04797]}
+  let newohioStateBracketSingle = {one:[22150,44250,.0285], two: [44251, 88450, .03326], three: [88451, 110650, .03082],four: [110651,221300, .04413], five: [221301,Infinity, .04797]}
+  let newohioStateBracketJoint = {one:[22150,44250,.0285], two: [44251, 88450, .03326], three: [88451, 110650, .03082],four: [110651,221300, .04413], five: [221301,Infinity, .04797]}
+  let oldohioStateBracketSingle = {one:[21750,43450,.0285], two: [43451, 86900, .03326], three: [86901, 108700, .03082],four: [108701,217400, .04413], five: [217401,Infinity, .04797]}
+  let oldohioStateBracketJoint = {one:[21750,43450,.0285], two: [43451, 86900, .03326], three: [86901, 108700, .03082],four: [108701,217400, .04413], five: [217401,Infinity, .04797]}
 
-  let oldoklaStateBracketSingle = {one:[0,1000,.005], two: [1001, 2500, .01], three: [2501, 3750, .02],four: [3751,4900, .03], five: [4901,7200, .04], six: [7201,Infinity, .05] }
-  let oldoklaStateBracketJoint = {one:[0,2000,.005], two: [2001, 5000, .01], three: [5001, 7500, .02],four: [7501,9800, .03], five: [9801,12200, .04], six: [12201,Infinity, .05] }
   let newoklaStateBracketSingle = {one:[0,1000,.005], two: [1001, 2500, .01], three: [2501, 3750, .02],four: [3751,4900, .03], five: [4901,7200, .04], six: [7201,Infinity, .05] }
   let newoklaStateBracketJoint = {one:[0,2000,.005], two: [2001, 5000, .01], three: [5001, 7500, .02],four: [7501,9800, .03], five: [9801,12200, .04], six: [12201,Infinity, .05] }
+  let oldoklaStateBracketSingle = {one:[0,1000,.005], two: [1001, 2500, .01], three: [2501, 3750, .02],four: [3751,4900, .03], five: [4901,7200, .04], six: [7201,Infinity, .05] }
+  let oldoklaStateBracketJoint = {one:[0,2000,.005], two: [2001, 5000, .01], three: [5001, 7500, .02],four: [7501,9800, .03], five: [9801,12200, .04], six: [12201,Infinity, .05] }
 
+  let neworeStateBracketSingle = {one:[0,3650,.05], two: [3651, 9200, .07], three: [9201, 125000, .09],four: [125001,Infinity, .099]}
+  let neworeStateBracketJoint = {one:[0,7300,.05], two: [7301, 18400, .07], three: [18401, 250000, .09],four: [250001,Infinity, .099]}
   let oldoreStateBracketSingle = {one:[0,3550,.05], two: [3551, 8900, .07], three: [8901, 125000, .09],four: [125001,Infinity, .099]}
   let oldoreStateBracketJoint = {one:[0,7100,.05], two: [7101, 17800, .07], three: [17801, 250000, .09],four: [250001,Infinity, .099]}
-  let neworeStateBracketSingle = {one:[0,3550,.05], two: [3551, 8900, .07], three: [8901, 125000, .09],four: [125001,Infinity, .099]}
-  let neworeStateBracketJoint = {one:[0,7100,.05], two: [7101, 17800, .07], three: [17801, 250000, .09],four: [250001,Infinity, .099]}
 
   let paStateBracket = {one: [0, Infinity, .0307]}
 
-  let oldriStateBracketSingle = {one:[0,64050,.0375], two: [64051, 145600, .0475], three: [145601, Infinity, .0599]}
-  let oldriStateBracketJoint = {one:[0,64050,.0375], two: [64051, 145600, .0475], three: [145601, Infinity, .0599]}
-  let newriStateBracketSingle = {one:[0,65250,.0375], two: [65251, 148350, .0475], three: [148351, Infinity, .0599]}
-  let newriStateBracketJoint = {one:[0,65250,.0375], two: [65251, 148350, .0475], three: [148351, Infinity, .0599]}
+  let newriStateBracketSingle = {one:[0,66200,.0375], two: [66201, 150550, .0475], three: [150551, Infinity, .0599]}
+  let newriStateBracketJoint = {one:[0,66200,.0375], two: [66201, 150550, .0475], three: [150551, Infinity, .0599]}
+  let oldriStateBracketSingle = {one:[0,65250,.0375], two: [65251, 148350, .0475], three: [148351, Infinity, .0599]}
+  let oldriStateBracketJoint = {one:[0,65250,.0375], two: [65251, 148350, .0475], three: [148351, Infinity, .0599]}
 
-  let oldscStateBracketSingle = {one:[0,2450,.011], two: [2451, 4900, .03], three: [4901, 7350, .04],four: [7351,9800, .05], five: [9801,12250, .06], six: [12251,Infinity, .07] }
-  let oldscStateBracketJoint = {one:[0,2450,.011], two: [2451, 4900, .03], three: [4901, 7350, .04],four: [7351,9800, .05], five: [9801,12250, .06], six: [12251,Infinity, .07] }
-  let newscStateBracketSingle = {one:[0,3070,.0], two: [3071, 6150, .03], three: [6151, 9230, .04],four: [9231,12310, .05], five: [12311,15400, .06], six: [15401,Infinity, .07]}
-  let newscStateBracketJoint = {one:[0,3070,.0], two: [3071, 6150, .03], three: [6151, 9230, .04],four: [9231,12310, .05], five: [12311,15400, .06], six: [15401,Infinity, .07]}
+  let newscStateBracketSingle = {one:[0,2450,.011], two: [2451, 4900, .03], three: [4901, 7350, .04],four: [7351,9800, .05], five: [9801,12250, .06], six: [12251,Infinity, .07] }
+  let newscStateBracketJoint = {one:[0,2450,.011], two: [2451, 4900, .03], three: [4901, 7350, .04],four: [7351,9800, .05], five: [9801,12250, .06], six: [12251,Infinity, .07] }
+  let oldscStateBracketSingle = {one:[0,3070,.0], two: [3071, 6150, .03], three: [6151, 9230, .04],four: [9231,12310, .05], five: [12311,15400, .06], six: [15401,Infinity, .07]}
+  let oldscStateBracketJoint = {one:[0,3070,.0], two: [3071, 6150, .03], three: [6151, 9230, .04],four: [9231,12310, .05], five: [12311,15400, .06], six: [15401,Infinity, .07]}
 
   let sdStateBracket = {one: [0, 0, 0]}
-  let tennStateBracket = {one: [0, Infinity, .02]}
+  let tennStateBracket = {one: [0, 0, 0]}
   let texStateBracket = {one: [0, 0, 0]}
   let utahStateBracket = {one: [0, Infinity, .0495]}
 
-  let oldvtStateBracketSingle = {one:[0,39600,.0335], two: [39601, 95900, .066], three: [95901, 200100, .076],four: [200101,416650, .0875], five: [416651,Infinity, .0895] }
-  let oldvtStateBracketJoint = {one:[0,39600,.0335], two: [39601, 95900, .066], three: [95901, 200100, .076],four: [200101,416650, .0875], five: [416651,Infinity, .0895] }
-  let newvtStateBracketSingle = {one:[0,39600,.0335], two: [39601, 95900, .066], three: [95901, 200100, .076],four: [200101,416650, .0875], five: [416651,Infinity, .0895] }
-  let newvtStateBracketJoint = {one:[0,39600,.0335], two: [39601, 95900, .066], three: [95901, 200100, .076],four: [200101,416650, .0875], five: [416651,Infinity, .0895] }
+  let newvtStateBracketSingle = {one:[0,40350,.0335], two: [40351, 97800, .066], three: [97801, 204000, .076],four: [204001,Infinity, .0875]}
+  let newvtStateBracketJoint = {one:[0,67450,.0335], two: [67451, 163000, .066], three: [163001, 248350, .076],four: [248351,Infinity, .0875]}
+  let oldvtStateBracketSingle = {one:[0,39600,.0335], two: [39601, 96000, .066], three: [96001, 200200, .076],four: [200201,Infinity, .0875]}
+  let oldvtStateBracketJoint = {one:[0,39600,.0335], two: [39601, 96000, .066], three: [96001, 200200, .076],four: [200201,Infinity, .0875]}
 
-  let oldvaStateBracketSingle = {one:[0,3000,.02], two: [3001, 5000, .03], three: [5001, 17000, .05],four: [17001,Infinity, .0575] }
-  let oldvaStateBracketJoint = {one:[0,3000,.02], two: [3001, 5000, .03], three: [5001, 17000, .05],four: [17001,Infinity, .0575] }
   let newvaStateBracketSingle = {one:[0,3000,.02], two: [3001, 5000, .03], three: [5001, 17000, .05],four: [17001,Infinity, .0575] }
   let newvaStateBracketJoint = {one:[0,3000,.02], two: [3001, 5000, .03], three: [5001, 17000, .05],four: [17001,Infinity, .0575] }
+  let oldvaStateBracketSingle = {one:[0,3000,.02], two: [3001, 5000, .03], three: [5001, 17000, .05],four: [17001,Infinity, .0575] }
+  let oldvaStateBracketJoint = {one:[0,3000,.02], two: [3001, 5000, .03], three: [5001, 17000, .05],four: [17001,Infinity, .0575] }
 
   let washStateBracket = {one: [0, 0, 0]}
 
-  let oldwvaStateBracketSingle = {one:[0,10000,.03], two: [10001, 25000, .04], three: [25001, 40000, .045],four: [40001,60000, .06], five: [60001,Infinity, .065] }
-  let oldwvaStateBracketJoint = {one:[0,10000,.03], two: [10001, 25000, .04], three: [25001, 40000, .045],four: [40001,60000, .06], five: [60001,Infinity, .065] }
   let newwvaStateBracketSingle = {one:[0,10000,.03], two: [10001, 25000, .04], three: [25001, 40000, .045],four: [40001,60000, .06], five: [60001,Infinity, .065] }
   let newwvaStateBracketJoint = {one:[0,10000,.03], two: [10001, 25000, .04], three: [25001, 40000, .045],four: [40001,60000, .06], five: [60001,Infinity, .065] }
+  let oldwvaStateBracketSingle = {one:[0,10000,.03], two: [10001, 25000, .04], three: [25001, 40000, .045],four: [40001,60000, .06], five: [60001,Infinity, .065] }
+  let oldwvaStateBracketJoint = {one:[0,10000,.03], two: [10001, 25000, .04], three: [25001, 40000, .045],four: [40001,60000, .06], five: [60001,Infinity, .065] }
 
 
-  let oldwisStateBracketSingle = {one:[0,11760,.04], two: [11761, 23520, .0584], three: [23521, 258950, .0627], four: [258951, Infinity, .0765] }
-  let oldwisStateBracketJoint = {one:[0,15680,.04], two: [15681, 31360, .0584], three: [31361, 345270, .0627], four: [345271, Infinity, .0765] }
-  let newwisStateBracketSingle = {one:[0,11970,.04], two: [11971, 23930, .0584], three: [23931, 263480, .0627], four: [263481, Infinity, .0765] }
-  let newwisStateBracketJoint = {one:[0,15960,.04], two: [15961, 31910, .0584], three: [31911, 351310, .0627], four: [351311, Infinity, .0765] }
+  let newwisStateBracketSingle = {one:[0,12120,.0354], two: [12121, 24250, .0465], three: [24251, 266930, .0627], four: [266931, Infinity, .0765] }
+  let newwisStateBracketJoint = {one:[0,16160,.0354], two: [16161, 32330, .0465], three: [32331, 355910, .0627], four: [355911, Infinity, .0765] }
+  let oldwisStateBracketSingle = {one:[0,11970,.04], two: [11971, 23930, .0584], three: [23931, 263480, .0627], four: [263481, Infinity, .0765] }
+  let oldwisStateBracketJoint = {one:[0,15960,.04], two: [15961, 31910, .0584], three: [31911, 351310, .0627], four: [351311, Infinity, .0765] }
 
   let wyoStateBracket = {one: [0, 0, 0]}
 
-  let olddcStateBracketSingle = {one:[0,10000,.04], two: [10001, 40000, .06], three: [40001, 60000, .065],four: [60001,350000, .085], five: [350001,1000000, .0875], six: [1000001,Infinity, .0895] }
-  let olddcStateBracketJoint = {one:[0,10000,.04], two: [10001, 40000, .06], three: [40001, 60000, .065],four: [60001,350000, .085], five: [350001,1000000, .0875], six: [1000001,Infinity, .0895] }
   let newdcStateBracketSingle = {one:[0,10000,.04], two: [10001, 40000, .06], three: [40001, 60000, .065],four: [60001,350000, .085], five: [350001,1000000, .0875], six: [1000001,Infinity, .0895] }
   let newdcStateBracketJoint = {one:[0,10000,.04], two: [10001, 40000, .06], three: [40001, 60000, .065],four: [60001,350000, .085], five: [350001,1000000, .0875], six: [1000001,Infinity, .0895] }
- 
-  if(year =="2019"){
+  let olddcStateBracketSingle = {one:[0,10000,.04], two: [10001, 40000, .06], three: [40001, 60000, .065],four: [60001,350000, .085], five: [350001,1000000, .0875], six: [1000001,Infinity, .0895] }
+  let olddcStateBracketJoint = {one:[0,10000,.04], two: [10001, 40000, .06], three: [40001, 60000, .065],four: [60001,350000, .085], five: [350001,1000000, .0875], six: [1000001,Infinity, .0895] }
+ // stateTax - bracket, income - deduction/exemptions
+  
+  
+  
+  if(year =="2020"){
     if(state =="Ala."){
-       if(status =="Single"){
-        stateTax = taxCalc(oldalaStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldalaStateBracketSingle, Math.max(0, income - 2500))
         
       }else{
-        stateTax = taxCalc(oldalaStateBracketJoint,income)
+        stateTax = taxCalc(oldalaStateBracketJoint, Math.max(0, income - 7500))
       }
     }
     else if(state =="Alaska"){
@@ -578,69 +583,71 @@ function stateTaxController(year,state,status,income){
         stateTax = taxCalc(alaskaStateBracket,income)
     }
     else if(state =="Ariz."){
-       if(status =="Single"){
-        stateTax = taxCalc(oldarizStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldarizStateBracketSingle, Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldarizStateBracketJoint,income)
+        stateTax = taxCalc(oldarizStateBracketJoint, Math.max(0, income - 24800))
       }
     }
     else if(state =="Ark."){
-       if(status =="Single"){
-        stateTax = taxCalc(oldarkStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldarkStateBracketSingle, Math.max(0, income - 2200))
       }else{
-        stateTax = taxCalc(oldarkStateBracketJoint,income)
+        stateTax = taxCalc(oldarkStateBracketJoint, Math.max(0, income - 4400))
       }
     }
     else if(state =="Calif."){
-       if(status =="Single"){
-        stateTax = taxCalc(oldcaliStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldcaliStateBracketSingle, Math.max(0, income - 4537))
       }else{
-        stateTax = taxCalc(oldcaliStateBracketJoint,income)
+        stateTax = taxCalc(oldcaliStateBracketJoint, Math.max(0, income - 9074))
       }
     }
     else if(state =="Colo."){
-      
-        stateTax = taxCalc(coloStateBracket,income)
-    
+      if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(coloStateBracket, Math.max(0, income - 12400))
+      }else{
+        stateTax = taxCalc(coloStateBracket, Math.max(0, income - 24800))
+      } 
     }
     
     else if(state == "Conn."){
-       if(status == "Single"){
+       if(status == "Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(oldconnStateBracketSingle,income)
       }else{
         stateTax = taxCalc(oldconnStateBracketJoint,income)
       }
     }
     else if(state == "Del."){
-       if(status == "Single"){
-        stateTax = taxCalc(olddelStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(olddelStateBracketSingle, Math.max(0, income - 3250))
          console.log(stateTax);
       }else{
-        stateTax = taxCalc(olddelStateBracketJoint,income)
+        stateTax = taxCalc(olddelStateBracketJoint,Math.max(0, income - 6500))
       }
     }
     else if(state == "Fla."){
         stateTax = taxCalc(flaStateBracket,income)
     }
      else if(state == "Ga."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldgaStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldgaStateBracketSingle,Math.max(0, income - 4600))
       }else{
-        stateTax = taxCalc(oldgaStateBracketJoint,income)
+        stateTax = taxCalc(oldgaStateBracketJoint,Math.max(0, income - 6000))
       }
     }
     else if(state == "Hawaii"){
-       if(status == "Single"){
-        stateTax = taxCalc(oldhawaiiStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldhawaiiStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldhawaiiStateBracketJoint,income)
+        stateTax = taxCalc(oldhawaiiStateBracketJoint,Math.max(0, income - 24800))
       }
     }
     else if(state == "Idaho"){
-       if(status == "Single"){
-        stateTax = taxCalc(oldidahoStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldidahoStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldidahoStateBracketJoint,income)
+        stateTax = taxCalc(oldidahoStateBracketJoint,Math.max(0, income - 24800))
       }
     }
     else if(state == "Ill."){
@@ -654,36 +661,34 @@ function stateTaxController(year,state,status,income){
     
     }
     else if(state == "Iowa"){
-       if(status == "Single"){
-        stateTax = taxCalc(oldiowaStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldiowaStateBracketSingle,Math.max(0, income - 2080))
       }else{
-        stateTax = taxCalc(oldiowaStateBracketJoint,income)
+        stateTax = taxCalc(oldiowaStateBracketJoint,Math.max(0, income - 5120))
       }
     }
     else if(state == "Kans."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldkansStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldkansStateBracketSingle,Math.max(0, income - 3000))
       }else{
-        stateTax = taxCalc(oldkansStateBracketJoint,income)
+        stateTax = taxCalc(oldkansStateBracketJoint,Math.max(0, income - 7500))
       }
     }
     else if(state == "Ky."){
-   
-        stateTax = taxCalc(kyStateBracket,income)
-  
+        stateTax = taxCalc(kyStateBracket, Math.max(0, income - 2650))
     }
     else if(state == "Maine"){
-       if(status == "Single"){
-        stateTax = taxCalc(oldmaineStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldmaineStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldmaineStateBracketJoint,income)
+        stateTax = taxCalc(oldmaineStateBracketJoint,Math.max(0, income - 24800))
       }
     }
      else if(state == "Md."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldmdStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldmdStateBracketSingle,Math.max(0, income - 2300))
       }else{
-        stateTax = taxCalc(oldmdStateBracketJoint,income)
+        stateTax = taxCalc(oldmdStateBracketJoint,Math.max(0, income - 4600))
       }
     }
     else if(state == "Mass."){
@@ -696,43 +701,43 @@ function stateTaxController(year,state,status,income){
         stateTax = taxCalc(michStateBracket,income)
     }
     else if(state == "Minn."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldminnStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldminnStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldminnStateBracketJoint,income)
+        stateTax = taxCalc(oldminnStateBracketJoint,Math.max(0, income - 24800))
       }
     }
     else if(state == "Miss."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldmissStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldmissStateBracketSingle,Math.max(0, income - 2300))
       }else{
-        stateTax = taxCalc(oldmissStateBracketJoint,income)
+        stateTax = taxCalc(oldmissStateBracketJoint,Math.max(0, income - 4600))
       }
     }
     else if(state == "Mo."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldmoStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldmoStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldmoStateBracketJoint,income)
+        stateTax = taxCalc(oldmoStateBracketJoint,Math.max(0, income - 24800))
       }
     }
     else if(state == "Mont."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldmontStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldmontStateBracketSingle,Math.max(0, income - 4710))
       }else{
-        stateTax = taxCalc(oldmontStateBracketJoint,income)
+        stateTax = taxCalc(oldmontStateBracketJoint,Math.max(0, income - 9420))
       }
     }
     else if(state == "Nebr."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldnebrStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldnebrStateBracketSingle,Math.max(0, income - 7000))
       }else{
-        stateTax = taxCalc(oldnebrStateBracketJoint,income)
+        stateTax = taxCalc(oldnebrStateBracketJoint,Math.max(0, income - 1400))
       }
     }
     else if(state == "Nev."){
        
-        stateTax = taxCalc(nev)
+        stateTax = taxCalc(nevStateBracket, income)
 
     }
      else if(state == "N.H."){
@@ -741,56 +746,59 @@ function stateTaxController(year,state,status,income){
      
     }
     else if(state == "N.J."){
-       if(status == "Single"){
+       if(status == "Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(oldnjStateBracketSingle,income)
       }else{
         stateTax = taxCalc(oldnjStateBracketJoint,income)
       }
     }
     else if(state == "N.M."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldnmStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldnmStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldnmStateBracketJoint,income)
+        stateTax = taxCalc(oldnmStateBracketJoint,Math.max(0, income - 24800))
       }
     }
     else if(state == "N.Y."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldnyStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldnyStateBracketSingle,Math.max(0, income - 8000))
       }else{
-        stateTax = taxCalc(oldnyStateBracketJoint,income)
+        stateTax = taxCalc(oldnyStateBracketJoint,Math.max(0, income - 16050))
       }
     }
     else if(state == "N.C."){
-    
-        stateTax = taxCalc(ncStateBracket,income)
+     if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(ncStateBracket,Math.max(0, income - 10750))
+      }else{
+        stateTax = taxCalc(ncStateBracket,Math.max(0, income - 21500))
+      }
     }
     else if(state == "N.D."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldndStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldndStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldndStateBracketJoint,income)
+        stateTax = taxCalc(oldndStateBracketJoint,Math.max(0, income - 24800))
       }
     }
     else if(state == "Ohio"){
-       if(status == "Single"){
+       if(status == "Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(oldohioStateBracketSingle,income)
       }else{
         stateTax = taxCalc(oldohioStateBracketJoint,income)
       }
     }
     else if(state == "Okla."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldoklaStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldoklaStateBracketSingle,Math.max(0, income - 6350))
       }else{
-        stateTax = taxCalc(oldoklaStateBracketJoint,income)
+        stateTax = taxCalc(oldoklaStateBracketJoint,Math.max(0, income - 12700))
       }
     }
     else if(state == "Ore."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldoreStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldoreStateBracketSingle,Math.max(0, income - 2315))
       }else{
-        stateTax = taxCalc(oldoreStateBracketJoint,income)
+        stateTax = taxCalc(oldoreStateBracketJoint,Math.max(0, income - 4630))
       }
     }
      else if(state == "Pa."){
@@ -799,17 +807,17 @@ function stateTaxController(year,state,status,income){
      
     }
     else if(state == "R.I."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldriStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldriStateBracketSingle,Math.max(0, income - 8900))
       }else{
-        stateTax = taxCalc(oldriStateBracketJoint,income)
+        stateTax = taxCalc(oldriStateBracketJoint,Math.max(0, income - 17800))
       }
     }
     else if(state == "S.C."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldscStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldscStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(oldscStateBracketJoint,income)
+        stateTax = taxCalc(oldscStateBracketJoint,Math.max(0, income - 24800))
       }
     }
     else if(state == "S.D."){
@@ -828,58 +836,62 @@ function stateTaxController(year,state,status,income){
       
     }
     else if(state == "Utah"){
-  
+        if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(utahStateBracket,Math.max(0, income - 744))
+      }else{
+        stateTax = taxCalc(utahStateBracket,Math.max(0, income - 1488))
+      }
         stateTax = taxCalc(utahStateBracket,income)
     
     }
     else if(state == "Vt."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldvtStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldvtStateBracketSingle,Math.max(0, income - 6150))
       }else{
-        stateTax = taxCalc(oldvtStateBracketJoint,income)
+        stateTax = taxCalc(oldvtStateBracketJoint,Math.max(0, income - 12300))
       }
     }
     else if(state == "Va."){
-       if(status="Single"){
-        stateTax = taxCalc(oldvaStateBracketSingle,income)
+       if(status="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldvaStateBracketSingle,Math.max(0, income - 4500))
       }else{
-        stateTax = taxCalc(oldvaStateBracketJoint,income)
+        stateTax = taxCalc(oldvaStateBracketJoint,Math.max(0, income - 9000))
       }
     }
-    else if(state =="Wash."){
+    else if(state =="Wash." || status == "Married Filing Seperately"){
         stateTax = taxCalc(washStateBracket,income)
     }
     else if(state =="W.Va."){
-       if(status="Single"){
+       if(status="Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(oldwvaStateBracketSingle,income)
       }else{
         stateTax = taxCalc(oldwvaStateBracketJoint,income)
       }
     }
     else if(state == "Wis."){
-       if(status == "Single"){
-        stateTax = taxCalc(oldwisStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(oldwisStateBracketSingle,Math.max(0, income - 11050))
       }else{
-        stateTax = taxCalc(oldwisStateBracketJoint,income)
+        stateTax = taxCalc(oldwisStateBracketJoint,Math.max(0, income - 20470))
       }
     }
     else if(state == "Wyo."){
         stateTax = taxCalc(wyoStateBracket,income)  
     }
     else if(state =="D.C."){
-       if(status == "Single"){
-        stateTax = taxCalc(olddcStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(olddcStateBracketSingle,Math.max(0, income - 12400))
       }else{
-        stateTax = taxCalc(olddcStateBracketJoint,income)
+        stateTax = taxCalc(olddcStateBracketJoint,Math.max(0, income - 24800))
       }
     }     
   } 
-else if(year =="2020"){
+else if(year =="2021"){
    if(state =="Ala."){
-       if(status =="Single"){
-        stateTax = taxCalc(newalaStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newalaStateBracketSingle,Math.max(0, income - 2500))
       }else{
-        stateTax = taxCalc(newalaStateBracketJoint,income)
+        stateTax = taxCalc(newalaStateBracketJoint,Math.max(0, income - 7500))
       }
     }
     else if(state =="Alaska"){
@@ -887,73 +899,76 @@ else if(year =="2020"){
         stateTax = taxCalc(alaskaStateBracket,income)
     }
     else if(state =="Ariz."){
-       if(status =="Single"){
-        stateTax = taxCalc(newarizStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newarizStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newarizStateBracketJoint,income)
+        stateTax = taxCalc(newarizStateBracketJoint,Math.max(0, income - 25100))
       }
     }
     else if(state =="Ark."){
-       if(status =="Single"){
-        stateTax = taxCalc(newarkStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newarkStateBracketSingle,Math.max(0, income - 2200))
       }else{
-        stateTax = taxCalc(newarkStateBracketJoint,income)
+        stateTax = taxCalc(newarkStateBracketJoint,Math.max(0, income - 4400))
       }
     }
     else if(state =="Calif."){
-       if(status =="Single"){
-        stateTax = taxCalc(newcaliStateBracketSingle,income)
+       if(status =="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newcaliStateBracketSingle,Math.max(0, income - 4601))
       }else{
-        stateTax = taxCalc(newcaliStateBracketJoint,income)
+        stateTax = taxCalc(newcaliStateBracketJoint,Math.max(0, income - 9202))
       }
     }
     else if(state =="Colo."){
-      
-        stateTax = taxCalc(coloStateBracket,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(coloStateBracket,Math.max(0, income - 12550))
+      }else{
+        stateTax = taxCalc(coloStateBracket,Math.max(0, income - 25100))
+      }
+        
     
     }
     else if(state == "Conn."){
-       if(status == "Single"){
+       if(status == "Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(newconnStateBracketSingle,income)
       }else{
         stateTax = taxCalc(newconnStateBracketJoint,income)
       }
     }
     else if(state == "Del."){
-       if(status == "Single"){
-        stateTax = taxCalc(newdelStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newdelStateBracketSingle,Math.max(0, income - 3250))
       }else{
-        stateTax = taxCalc(newdelStateBracketJoint,income)
+        stateTax = taxCalc(newdelStateBracketJoint,Math.max(0, income - 6500))
       }
     }
     else if(state == "Fla."){
         stateTax = taxCalc(flaStateBracket,income)
     }
      else if(state == "Ga."){
-       if(status == "Single"){
-        stateTax = taxCalc(newgaStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newgaStateBracketSingle,Math.max(0, income - 4600))
       }else{
-        stateTax = taxCalc(newgaStateBracketJoint,income)
+        stateTax = taxCalc(newgaStateBracketJoint,Math.max(0, income - 6000))
       }
     }
     else if(state == "Hawaii"){
-       if(status == "Single"){
-        stateTax = taxCalc(newhawaiiStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newhawaiiStateBracketSingle,Math.max(0, income - 2200))
       }else{
-        stateTax = taxCalc(newhawaiiStateBracketJoint,income)
+        stateTax = taxCalc(newhawaiiStateBracketJoint,Math.max(0, income - 4400))
       }
     }
     else if(state == "Idaho"){
-       if(status == "Single"){
-        stateTax = taxCalc(newidahoStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newidahoStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newidahoStateBracketJoint,income)
+        stateTax = taxCalc(newidahoStateBracketJoint,Math.max(0, income - 25100))
       }
     }
     else if(state == "Ill."){
       
-        stateTax = taxCalc(illStateBracket,income)
-      
+        stateTax = taxCalc(illStateBracket,income)   
     }
     else if(state == "Ind."){
     
@@ -961,36 +976,39 @@ else if(year =="2020"){
     
     }
     else if(state == "Iowa"){
-       if(status == "Single"){
-        stateTax = taxCalc(newiowaStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newiowaStateBracketSingle,Math.max(0, income - 2130))
       }else{
-        stateTax = taxCalc(newiowaStateBracketJoint,income)
+        stateTax = taxCalc(newiowaStateBracketJoint,Math.max(0, income - 5240))
       }
     }
     else if(state == "Kans."){
-       if(status == "Single"){
-        stateTax = taxCalc(newkansStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newkansStateBracketSingle,Math.max(0, income - 3000))
       }else{
-        stateTax = taxCalc(newkansStateBracketJoint,income)
+        stateTax = taxCalc(newkansStateBracketJoint,Math.max(0, income - 7500))
       }
     }
     else if(state == "Ky."){
-   
-        stateTax = taxCalc(kyStateBracket,income)
-  
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(kyStateBracket,Math.max(0, income - 2690))
+      }else{
+        stateTax = taxCalc(kyStateBracket,Math.max(0, income - 5380))
+      }
+       
     }
     else if(state == "Maine"){
-       if(status == "Single"){
-        stateTax = taxCalc(newmaineStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newmaineStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newmaineStateBracketJoint,income)
+        stateTax = taxCalc(newmaineStateBracketJoint,Math.max(0, income - 25100))
       }
     }
      else if(state == "Md."){
-       if(status == "Single"){
-        stateTax = taxCalc(newmdStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newmdStateBracketSingle,Math.max(0, income - 2300))
       }else{
-        stateTax = taxCalc(newmdStateBracketJoint,income)
+        stateTax = taxCalc(newmdStateBracketJoint,Math.max(0, income - 4650))
       }
     }
     else if(state == "Mass."){
@@ -1003,43 +1021,43 @@ else if(year =="2020"){
         stateTax = taxCalc(michStateBracket,income)
     }
     else if(state == "Minn."){
-       if(status == "Single"){
-        stateTax = taxCalc(newminnStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newminnStateBracketSingle,Math.max(0, income - 12525))
       }else{
-        stateTax = taxCalc(newminnStateBracketJoint,income)
+        stateTax = taxCalc(newminnStateBracketJoint,Math.max(0, income - 25050))
       }
     }
     else if(state == "Miss."){
-       if(status == "Single"){
-        stateTax = taxCalc(newmissStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newmissStateBracketSingle,Math.max(0, income - 2300))
       }else{
-        stateTax = taxCalc(newmissStateBracketJoint,income)
+        stateTax = taxCalc(newmissStateBracketJoint,Math.max(0, income - 4600))
       }
     }
     else if(state == "Mo."){
-       if(status == "Single"){
-        stateTax = taxCalc(newmoStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newmoStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newmoStateBracketJoint,income)
+        stateTax = taxCalc(newmoStateBracketJoint,Math.max(0, income - 25100))
       }
     }
     else if(state == "Mont."){
-       if(status == "Single"){
-        stateTax = taxCalc(newmontStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newmontStateBracketSingle,Math.max(0, income - 4790))
       }else{
-        stateTax = taxCalc(newmontStateBracketJoint,income)
+        stateTax = taxCalc(newmontStateBracketJoint,Math.max(0, income - 9580))
       }
     }
     else if(state == "Nebr."){
-       if(status == "Single"){
-        stateTax = taxCalc(newnebrStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newnebrStateBracketSingle,Math.max(0, income - 7100))
       }else{
-        stateTax = taxCalc(newnebrStateBracketJoint,income)
+        stateTax = taxCalc(newnebrStateBracketJoint,Math.max(0, income - 14200))
       }
     }
     else if(state == "Nev."){
        
-        stateTax = taxCalc(nev)
+        stateTax = taxCalc(nevStateBracket, income)
 
     }
      else if(state == "N.H."){
@@ -1048,56 +1066,60 @@ else if(year =="2020"){
      
     }
     else if(state == "N.J."){
-       if(status == "Single"){
+       if(status == "Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(newnjStateBracketSingle,income)
       }else{
         stateTax = taxCalc(newnjStateBracketJoint,income)
       }
     }
     else if(state == "N.M."){
-       if(status == "Single"){
-        stateTax = taxCalc(newnmStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newnmStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newnmStateBracketJoint,income)
+        stateTax = taxCalc(newnmStateBracketJoint,Math.max(0, income - 25100))
       }
     }
     else if(state == "N.Y."){
-       if(status == "Single"){
-        stateTax = taxCalc(newnyStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newnyStateBracketSingle,Math.max(0, income - 8000))
       }else{
-        stateTax = taxCalc(newnyStateBracketJoint,income)
+        stateTax = taxCalc(newnyStateBracketJoint,Math.max(0, income - 16050))
       }
     }
     else if(state == "N.C."){
-    
-        stateTax = taxCalc(ncStateBracket,income)
+        if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(ncStateBracket,Math.max(0, income - 10750))
+      }else{
+        stateTax = taxCalc(ncStateBracket,Math.max(0, income - 21500))
+      }
+        
     }
     else if(state == "N.D."){
-       if(status == "Single"){
-        stateTax = taxCalc(newndStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newndStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newndStateBracketJoint,income)
+        stateTax = taxCalc(newndStateBracketJoint,Math.max(0, income - 25100))
       }
     }
     else if(state == "Ohio"){
-       if(status == "Single"){
+       if(status == "Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(newohioStateBracketSingle,income)
       }else{
         stateTax = taxCalc(newohioStateBracketJoint,income)
       }
     }
     else if(state == "Okla."){
-       if(status == "Single"){
-        stateTax = taxCalc(newoklaStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newoklaStateBracketSingle,Math.max(0, income - 6350))
       }else{
-        stateTax = taxCalc(newoklaStateBracketJoint,income)
+        stateTax = taxCalc(newoklaStateBracketJoint,Math.max(0, income - 12700))
       }
     }
     else if(state == "Ore."){
-       if(status == "Single"){
-        stateTax = taxCalc(neworeStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(neworeStateBracketSingle,Math.max(0, income - 2315))
       }else{
-        stateTax = taxCalc(neworeStateBracketJoint,income)
+        stateTax = taxCalc(neworeStateBracketJoint,Math.max(0, income - 4630))
       }
     }
      else if(state == "Pa."){
@@ -1106,17 +1128,17 @@ else if(year =="2020"){
      
     }
     else if(state == "R.I."){
-       if(status == "Single"){
-        stateTax = taxCalc(newriStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newriStateBracketSingle,Math.max(0, income - 9050))
       }else{
-        stateTax = taxCalc(newriStateBracketJoint,income)
+        stateTax = taxCalc(newriStateBracketJoint,Math.max(0, income - 18100))
       }
     }
     else if(state == "S.C."){
-       if(status == "Single"){
-        stateTax = taxCalc(newscStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newscStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newscStateBracketJoint,income)
+        stateTax = taxCalc(newscStateBracketJoint,Math.max(0, income - 25100))
       }
     }
     else if(state == "S.D."){
@@ -1140,34 +1162,34 @@ else if(year =="2020"){
     
     }
     else if(state == "Vt."){
-       if(status == "Single"){
-        stateTax = taxCalc(newvtStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newvtStateBracketSingle,Math.max(0, income - 6250))
       }else{
-        stateTax = taxCalc(newvtStateBracketJoint,income)
+        stateTax = taxCalc(newvtStateBracketJoint,Math.max(0, income - 12500))
       }
     }
     else if(state == "Va."){
-       if(status="Single"){
-        stateTax = taxCalc(newvaStateBracketSingle,income)
+       if(status="Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newvaStateBracketSingle,Math.max(0, income - 4500))
       }else{
-        stateTax = taxCalc(newvaStateBracketJoint,income)
+        stateTax = taxCalc(newvaStateBracketJoint,Math.max(0, income - 9000))
       }
     }
     else if(state =="Wash."){
         stateTax = taxCalc(washStateBracket,income)
     }
     else if(state =="W.Va."){
-       if(status="Single"){
+       if(status="Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(newwvaStateBracketSingle,income)
       }else{
         stateTax = taxCalc(newwvaStateBracketJoint,income)
       }
     }
     else if(state == "Wis."){
-       if(status == "Single"){
-        stateTax = taxCalc(newwisStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newwisStateBracketSingle,Math.max(0, income - 11050))
       }else{
-        stateTax = taxCalc(newwisStateBracketJoint,income)
+        stateTax = taxCalc(newwisStateBracketJoint,Math.max(0, income - 20470))
       }
     }
     else if(state == "Wyo."){
@@ -1176,10 +1198,10 @@ else if(year =="2020"){
       
     }
     else if(state =="D.C."){
-       if(status == "Single"){
-        stateTax = taxCalc(newdcStateBracketSingle,income)
+       if(status == "Single" || status == "Married Filing Seperately"){
+        stateTax = taxCalc(newdcStateBracketSingle,Math.max(0, income - 12550))
       }else{
-        stateTax = taxCalc(newdcStateBracketJoint,income)
+        stateTax = taxCalc(newdcStateBracketJoint,Math.max(0, income - 25100))
       }
 
     }     
@@ -1201,16 +1223,16 @@ function ficaController(income){
 
 function fedTaxController(year, status, income){
   let fedTax = 0;
-   let oldfedBracketSingle = {ten:[0,9700,.10], twelve: [9701, 39475, .12], twentytwo: [39476, 84200, .22],twentyfour: [84201,160725, .24], thirtytwo: [160726,204100, .32], thirtyfive: [204101,510300, .35], thirtyseven: [510300, Infinity , .37] }
-  let oldfedBracketJointWed = {ten:[0,19400,.10], twelve: [19401, 78950, .12], twentytwo: [78951, 168400, .22], twentyfour: [168401,321450,.24], thirtytwo: [321451,408200, .32], thirtyfive: [408201,612350, .35], thirtyseven: [612351, Infinity , .37] }
-  let oldfedBracketSepWed = {ten:[0,9700,.10], twelve: [9701, 39475, .12], twentytwo: [39476, 84200, .22],twentyfour: [84201,160725, .24], thirtytwo: [160726,204100, .32], thirtyfive: [204101,510300, .35], thirtyseven: [510300, Infinity , .37] }
-  let oldfedBracketHead = {ten:[0,13850,.10], twelve: [13851, 52850, .12], twentytwo: [52851, 84200, .22],twentyfour: [84201,160700, .24], thirtytwo: [160701, 204100, .32], thirtyfive: [204101,306750, .35], thirtyseven: [306751, Infinity , .37] }
+   let newfedBracketSingle = {ten:[0,9950,.10], twelve: [9951, 40525, .12], twentytwo: [40526, 86375, .22],twentyfour: [86376,164925, .24], thirtytwo: [164926,209425, .32], thirtyfive: [209426,523600, .35], thirtyseven: [523601, Infinity , .37] }
+  let newfedBracketJointWed = {ten:[0,19900,.10], twelve: [19901, 81050, .12], twentytwo: [81051, 172750, .22], twentyfour: [172751,329850,.24], thirtytwo: [329851,418850, .32], thirtyfive: [418851,628300, .35], thirtyseven: [628300, Infinity , .37] }
+  let newfedBracketSepWed = {ten:[0,9700,.10], twelve: [9701, 39475, .12], twentytwo: [39476, 84200, .22],twentyfour: [84201,160725, .24], thirtytwo: [160726,204100, .32], thirtyfive: [204101,510300, .35], thirtyseven: [510300, Infinity , .37] }
+  let newfedBracketHead = {ten:[0,14200,.10], twelve: [14201, 54200, .12], twentytwo: [54201, 86350, .22],twentyfour: [86351,164900, .24], thirtytwo: [164901, 209400, .32], thirtyfive: [209401,523600, .35], thirtyseven: [523601, Infinity , .37] }
 
-  let newfedBracketSingle = {ten:[0,9875,.10], twelve: [9876, 40125, .12], twentytwo: [40126, 85525, .22],twentyfour: [85526,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,518400, .35], thirtyseven: [518400, Infinity , .37] }
-  let newfedBracketJointWed  = {ten:[0,19750,.10], twelve: [19751, 80250, .12], twentytwo: [80251, 171050, .22],twentyfour: [171051,326600, .24], thirtytwo: [326601,414700, .32], thirtyfive: [414701,622050, .35], thirtyseven: [622051, Infinity , .37] }
-  let newfedBracketSepWed = {ten:[0,9875,.10], twelve: [9876, 40125, .12], twentytwo: [40126, 85525, .22],twentyfour: [85526,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,311025, .35], thirtyseven: [311026, Infinity , .37] }
-  let newfedBracketHead = {ten:[0,14100,.10], twelve: [14101, 53700, .12], twentytwo: [53701, 85500, .22],twentyfour: [85501,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,518400, .35], thirtyseven: [518400, Infinity , .37] }
-  if(year == "2019"){
+  let oldfedBracketSingle = {ten:[0,9875,.10], twelve: [9876, 40125, .12], twentytwo: [40126, 85525, .22],twentyfour: [85526,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,518400, .35], thirtyseven: [518400, Infinity , .37] }
+  let oldfedBracketJointWed  = {ten:[0,19750,.10], twelve: [19751, 80250, .12], twentytwo: [80251, 171050, .22],twentyfour: [171051,326600, .24], thirtytwo: [326601,414700, .32], thirtyfive: [414701,622050, .35], thirtyseven: [622051, Infinity , .37] }
+  let oldfedBracketSepWed = {ten:[0,9875,.10], twelve: [9876, 40125, .12], twentytwo: [40126, 85525, .22],twentyfour: [85526,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,311025, .35], thirtyseven: [311026, Infinity , .37] }
+  let oldfedBracketHead = {ten:[0,14100,.10], twelve: [14101, 53700, .12], twentytwo: [53701, 85500, .22],twentyfour: [85501,163300, .24], thirtytwo: [163301,207350, .32], thirtyfive: [207351,518400, .35], thirtyseven: [518400, Infinity , .37] }
+  if(year == "2020"){
     if(status == "Single"){
       fedTax = taxCalc(oldfedBracketSingle, income);
     }
@@ -1225,7 +1247,7 @@ function fedTaxController(year, status, income){
       fedTax = taxCalc(oldfedBracketHead, income);
     }
   }
-  else if(year == "2020"){
+  else if(year == "2021"){
      if(status == "Single"){
       fedTax = taxCalc(newfedBracketSingle, income);
     }
@@ -1245,18 +1267,18 @@ function fedTaxController(year, status, income){
 
 function stndDeductionController(status, year){
   let deduction = 0;
-  if(year == "2019"){
+  if(year == "2021"){
     if(status == "Single"){
-      deduction = 12200;
+      deduction = 12550;
     }
     else if(status == "Married Filing Jointly"){
-      deduction = 24400;
+      deduction = 25100;
     }
     else if(status == "Married Filing Seperately"){
-      deduction = 12200;
+      deduction = 12550;
     }
     else if(status == "Head of Household"){
-      deduction = 18350;
+      deduction = 18800;
     }
   }
   else if(year == "2020"){
@@ -1264,11 +1286,11 @@ function stndDeductionController(status, year){
       deduction = 12400;
     }
     else if(status == "Married Filing Jointly"){
-      deduction = 24400;
+      deduction = 24800;
 
     }
     else if(status == "Married Filing Seperately"){
-      deduction = 24800;
+      deduction = 12400;
     }
     else if(status == "Head of Household"){
       deduction = 18650;
@@ -1296,6 +1318,7 @@ function totalTaxCalc(state, year, status, income){
       showWork.totalState = roundPenny(stateTaxController(year, state,status, income)); 
     //medicare + aid tax
       totalTax = totalTax + ficaController(income * .9235);
+      showWork.remainder =  income - totalTax
   }else{   
     agi = income  - (ficaController(income * .9235)/ 2);
     totalTax =  stateTaxController(year, state, status, agi); 
@@ -1304,7 +1327,8 @@ function totalTaxCalc(state, year, status, income){
     totalTax = totalTax + ficaController(income * .9235);
       showWork.totalFed = 0;
       showWork.totalFica =   roundPenny(ficaController(income * .9235));
-     showWork.totalState = roundPenny(stateTaxController(year, state,status, agi)); 
+      showWork.totalState = roundPenny(stateTaxController(year, state,status, agi)); 
+      showWork.remainder =  income - totalTax
   }
 
  return roundPenny(totalTax);
@@ -1344,13 +1368,13 @@ var $chart = document.getElementsByClassName("donut-chart")[0];
 var $year = document.getElementsByClassName("toggle_square")[0];
 var $math = document.getElementsByClassName("math")[0];
 
-  var year = "2020";
+  var year = "2021";
 $toggle.onclick = function(){
   if ($year.offsetLeft == "0"){
-    year = "2020";
+    year = "2021";
  } 
   else if($year.offsetLeft == "40"){
-    year = "2019";
+    year = "2020";
   }
   console.log(year)
 }
@@ -1383,8 +1407,8 @@ Chart1.init({
   data: chartData1a
 });
 $taxButton.onclick = function(e){
-   $incomeInput.blur();
-    $chart.scrollIntoView()
+  $incomeInput.blur();
+  $chart.scrollIntoView()
   let income = Number(reformatNumber($incomeInput.value));
   let state = $stateSelect.value;
   let status = $statusSelect.value;
@@ -1397,14 +1421,14 @@ $taxButton.onclick = function(e){
   });
   
   $math.innerHTML = `
+  <p>You Keep: ${formatter.format(showWork.remainder)} </p>
   <p>Federal Tax: ${formatter.format(showWork.totalFed)} </p>
   <p>State Tax: ${formatter.format(showWork.totalState)} </p>
   <p>Self-Employment Tax: ${formatter.format(showWork.totalFica)} </p>
  <p>Estimated Tax: ${formatter.format(divider(myTax, 4))} per quarter </p>
 <p>Tax Percent: ${myTaxPercent}% </p>
 `
-  console.log(myTax)
-  console.log(myTaxPercent)
+
 // $results.innerHTML= myTax + "";
 
   
