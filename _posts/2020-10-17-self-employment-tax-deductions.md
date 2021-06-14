@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 46 Self-Employment Tax Deductions You Didn't Know You Could Take 
-description: If you want to reduce the amount of taxes you give to the IRS, learn the many ways you can deduct self-employment taxes.
+description: Learn how to reduce your self employment tax with these deductions.
 ---
 
 46 Self-Employment Tax Deductions You Didn't Know You Could Take 
