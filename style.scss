@@ -516,14 +516,14 @@ box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
   }
   z-index: 2;
 }
-// .content {
-//   width: 100%;
-//   border-top: 2px solid #69D3A7;
-//   -webkit-box-shadow: 0px 3px 10px 0px #69D3A7;
-// -moz-box-shadow: 0px 3px 10px 0px #69D3A7;
-// box-shadow: 0px -2px 10px 0px #69D3A7;
+.content {
+  width: 100%;
+  border-top: 2px solid #69D3A7;
+  -webkit-box-shadow: 0px 3px 10px 0px #69D3A7;
+-moz-box-shadow: 0px 3px 10px 0px #69D3A7;
+box-shadow: 0px -2px 10px 0px #69D3A7;
    
-// }
+}
 
 .toggle_bar {
   text-align:center;
@@ -1227,16 +1227,16 @@ Wave partition
 /* Animation */
 
 
-@media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .content {
-    height:30vh;
-  }
-  h1 {
-    font-size:24px;
-  }
-}
+// @media (max-width: 768px) {
+//   .waves {
+//     height:40px;
+//     min-height:40px;
+//   }
+//   .content {
+//     height:30vh;
+//   }
+//   h1 {
+//     font-size:24px;
+//   }
+// }
 
