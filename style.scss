@@ -198,18 +198,18 @@ body {
 }
 
 .bold {
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
 ol {
   font-size: 17px;
- margin-bottom: 5px;
+  margin-bottom: 15px;
 	
 }
 
-li {
-	margin-bottom: 3px;
+ol > li {
+	margin-bottom: 5px;
 	
 	}
 .nav {
