@@ -1203,14 +1203,7 @@ Wave partition
   background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
   color:white;
 }
-.logo {
-  width:50px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
-}
-
+.
 .inner-header {
   height:65vh;
   width:100%;
@@ -1218,12 +1211,7 @@ Wave partition
   padding: 0;
 }
 
-.flex { /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
 
 .waves {
   position:relative;
@@ -1234,12 +1222,7 @@ Wave partition
   max-height:150px;
 }
 
-.content {
-  position:relative;
-  height:20vh;
-  text-align:center;
-  background-color: white;
-}
+
 
 /* Animation */
 
