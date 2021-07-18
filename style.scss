@@ -198,11 +198,16 @@ body {
 }
 
 .bold {
+  margin-top: 5px;
   font-weight: bold;
 }
 
 ol {
   font-size: 17px;
+	li {
+	margin-bottom: 3px;
+	
+	}
 }
 .nav {
     width: 100%;
