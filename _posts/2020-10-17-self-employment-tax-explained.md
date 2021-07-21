@@ -181,15 +181,43 @@ According to section 1402 of the Tax Code, not everyone who would otherwise be c
 <div id="deduction-section"> 
 <h3> What Can You Deduct As A Self-Employed Worker? </h3>
  
- There are two main deductions. The <b>standard deduction</b> and the <b>itemized deduction</b>. You can only choose one of these deductions. 
+ <h4> self-employment tax deduction </h4>
+ Reduce your taxes by taking advantage of deductions and tax credits. Right off the bat, you can deduct half of your self-employment tax. This means that a self-employment tax bill of $3000 will result in a $1,500 deduction that you can take.
  
- So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). 
+ <h4> qualified business income tax deduction </h4>
+ Another deduction that may be immediately available to certain self-emplyed workers is the <b>qualified business expense deduction</b>(QBI). Those eligible for the deduction can deduct up to 20% percent of their taxable <b>business</b> income. 
  
-The standard deduction is a fixed amount and presents much less of a hassle. However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. 
+ The QBI is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates. 
  
-Lastly, the qualified business deduction is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates.
+ First off, one's total taxable income--including personal income(like W-2 income) and business income--must be less than $164,900 for single-filers and $329,800 for joint-filers to receive the full benefit of the deduction. This is called a phaseout and <b>specified service businesses</b> are subject to it. These businesses include:
  
-Additionally, you can take tax credits. Credits work differently from deductions because you subtract the credit from your total tax liability instead of subtracting from your gross income. Combining itemized deductions with tax credits can greatly reduce your tav liability. 
+ - accounting
+ - actuarial science,
+ - athletics,
+ - brokerage services,
+ - consulting,
+ - financial services,
+ - law,
+ - health, and
+  - the performing arts.
+ 
+ If you have a solo practise in any of the above fields and your "taxable income" or net income is less than the phaseout mark, you can take 20% of your net <b>business income</b> and deduct it from your taxable income. Once you start to pass the phaseout mark, the percent you can take diminshes. 
+ 
+At $213,300 in total taxable income for single filers and $426,600 total taxable income for joint-filers, the deduction is no longer available.
+ 
+> The phaseout does not apply to "nonspecified service buesiness," but the hard threshold listed above still applies. Speak to a tax professional to find out where your business stands. 
+ 
+Even if your income falls under the phaseout levels, depending on the structure of your business (number of employees on salary, for example), you may receive less than the 20% deduction. The 2017 Tax Act created the complications found in this type of deduction. But, if you can take advantage of the qualified business income deduction, you should do so because the Tax Act and the deduction it provides expires in 2025.
+ 
+ <h4> standard deduction and itemized deduction </4>
+Besides the self-employment tax deduction and the QBI deduction, there are two main deductions. The <b>standard deduction</b> and the <b>itemized deduction</b>. You can only choose one of these deductions. 
+ 
+ So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the <b>self employment tax deduction</b> or the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). 
+ 
+The standard deduction is a fixed amount and presents much less of a hassle. For 2021, single filers and married filing seperately get a $12,550 deduction; $25,100 for joint filers; and $18,880 for head of household. However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. The itemized deductions will be outlined later.
+  
+ <h4>tax credits</h4>
+Additionally, you can take tax credits. Credits work differently from deductions because you subtract the credit from your total tax liability instead of subtracting from your gross income. Combining itemized deductions with tax credits can greatly reduce your tax liability. 
  
 However, make sure you have proper documentation at hand to prove that you are eligible for deductions and credits in the event of an IRS audit. 
  
@@ -317,8 +345,9 @@ This is on top of the federal and state taxes you must pay. Things can get prett
 
 
 1. Kamoroff, Bernard C.P.A. 475 Tax Deductions For Businesses And Self-Employed Individuals : An A-To-Z Guide To Hundreds Of Tax Write-Offs. Guilford, Connecticut, Lyons Press, 2019.
-2. IRS Publication 946
-3. IRS Publication 15
-4. IRS Publication 578
+2. TAX ALERT—THE IMPACT OF THE 2017 TAX ACT ON BUSINESS ENTITIES, CD MA-CLE I-1 
+3. IRS Publication 946
+4. IRS Publication 15
+5. IRS Publication 578
 
 
