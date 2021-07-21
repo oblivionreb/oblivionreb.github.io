@@ -110,13 +110,13 @@ According to section 1401(b) of the Tax Code, self-employment generally means �
 
 One is engaged in a “trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” Groetzinger, 480 U.S. at 35, 107 S.Ct. 980.
 
-With this definition, a full time gambler is engaged in a trade or business. So he or she is considered self-employed according to the Groetzinger decision.
+With this definition, a <b>full time gambler</b> is engaged in a trade or business. So he or she, according to *Groetzinger*, is considered self-employed and would be subject to self-employment taxes.
 
-Those considered self-employed include but are not limited to independent contractors, see Turnidge v. C.I.R., U.S.Tax Ct.2003, 2003 WL 21321813, practitioner in a sole proprietorship (if they receive income), partners in a venture (if they receive income), and partners in a limited partnership/ partnership.
+Generally self-employed people fall into several catogeries that include but are not limited to <b>independent contractors</b> (Turnidge v. C.I.R.), <b>practitioners in a sole proprietorship</b> (if they receive income), <b>partners in a venture</b> (if they receive income), <b>partners in a limited partnership/ partnership</b>, officials of religious institutions, farmers and several others.
 
-However, the law is not that simple. It’s very hard to classify roles into neat little boxes. 
+Though many self-employed workers can be categorized, the law is not that simple.
 
-Take the gig economy, for example. As the gig economy continues to change, it may become difficult to classify who is an employee of the company or an independent contractor. Luckily courts have developed factors for determining who is an independent contractor for the purpose of levying self employment tax. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
+Take the gig economy, for example. As the gig economy continues to change, it may become difficult to classify who is an employee of the company or an independent contractor. Luckily, courts have developed factors for determining who is an independent contractor for the purpose of levying self employment tax. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
 
 These factors are:
 
@@ -124,7 +124,7 @@ These factors are:
 
 More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. Gen. Inv. Corp. v. United States, 823 F.2d 337, 342 (9th Cir.1987). 
 
-For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.2012, 2012 WL 5259054.
+For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.(2012).
 
 <h4> 2. Which party invests in work facilities used by the individual </h4>
 
@@ -142,7 +142,6 @@ Work that only allows discharge if the worker doesn’t meet certain specificati
 
 Work that is part of the principal’s regular business suggests that the person undertaking that work is an employee, but this is just one factor and must be viewed within the context of other factors. For example, a construction business that hires independent contractors is said to have construction as its principal business, with independent contractors who participate in construction. However, other factors like independent investment, permanence, control, etc. determines status.
 
-
 <h4> 6. The permanency of the relationship </h4>
 
 Transitory work points to independent contractor status, but transients can be employees, including those who work on and off or during specific times of the year. Also, independent contractors can also work for long periods. Herman v. Express Sixty–Minutes Delivery Serv., Inc., 161 F.3d 299, 305 (5th Cir.1998); Avis Rent A Car Sys., Inc. v. United States, 503 F.2d 423, 430 (2d Cir.1974).
@@ -151,7 +150,7 @@ Transitory work points to independent contractor status, but transients can be e
 
 The intended relationship can be viewed objectively by looking at the regular practise of the principal and whether or not the principal issued a Form 1099-MISC. Or whether the worker requested a W-2 or W-4\. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
 
-The above factors are weighed in a balancing test to see whether the facts show that the worker is an employee or independent contractor for the purpose of self-employment tax.
+The above factors are weighed in a balancing test to see whether the facts show that the worker is an employee or independent contractor for the purpose of self-employment tax. If you have any questions about where you stand, contact a tax professional.
 
 <h3> What Types of Income Can Be Taxed Under Self Employment?</h3>
 
