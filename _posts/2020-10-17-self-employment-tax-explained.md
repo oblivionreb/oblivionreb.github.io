@@ -68,11 +68,11 @@ You will incur a tax penalty for any amount that is underpaid for each period. T
 - Additionally, if you had **no tax liability** the **previous tax year of 12 months** and you were a **citizen or a resident** of the United States throughout the previous taxable year, you do not have to pay estimated taxes for the current taxable year. 
 - Further, if you are a **newly retired (62 or older)** or a **newly disabled individual** who **became disabled within the taxable year or previous taxable year** and had a **reasonable cause** for missing estimated taxes, you will not incur penalties. 
 
-<li> Why Do You Have To Pay Self Employment Tax? </li>
+<h3> Why Do You Have To Pay Self Employment Tax? </h3>
 
 Oftentimes, the federal government creates tax policies to generate revenue for programs. In this case, self employment tax ensures that those who do not work (or do not solely work) the normal 9-5, W-2 job pay taxes to fund social security benefits. In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. U.S. v. Cain, S.D.Miss.1953, 113 F.Supp. 304. This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
 
-<li> Who Is Considered Self-Employed?</li>
+<h3> Who Is Considered Self-Employed?</h3>
 
 According to section 1401(b) of the Tax Code, self-employment generally means “. . . any trade or business carried on by . . . an individual.” The phrase “trade or business” is broad. One is engaged in a “trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” Groetzinger, 480 U.S. at 35, 107 S.Ct. 980. With this definition, a full time gambler is engaged in a trade or business. So he or she is self-employed.
 
