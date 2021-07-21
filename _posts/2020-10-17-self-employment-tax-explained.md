@@ -82,21 +82,21 @@ However, the law is not that simple. It’s very hard to classify roles into nea
 
 These factors are:
 
-1.  the degree of control exercised by the principal
+<h4> The degree of control exercised by the principal </h4>
 
 More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. Gen. Inv. Corp. v. United States, 823 F.2d 337, 342 (9th Cir.1987) For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.2012, 2012 WL 5259054.
 
-2.  which party invests in work facilities used by the individual
+<h4> Which party invests in work facilities used by the individual </h4>
 
 If the principal primarily invests in work facilities, then the worker is more likely an employee. But if the worker provides his or her own tools, then it strongly indicates independent contractor status. Breaux & Daigle, Inc. v. United States, 900 F.2d 49, 53 (5th Cir.1990).
 
 This is why companies like Uber, Lyft, and Grubhub don’t provide bikes or vehicles to their workers. Doing so would be a strong showing that the workers are employees which would lead to liabilities. Though for the purpose of tax, the classification of employee versus independent contractor generally effects the worker, not the principal.
 
-3.  the opportunity of the individual for profit or loss
+<h4> The opportunity of the individual for profit or loss</h4>
 
 The ability to make or lose money based on factors within the control of the worker would lean towards independence. See Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
 
-4.  whether the principal can discharge the individual
+<h4> Whether the principal can discharge the individual </h4>
 
 Work that only allows discharge if the worker doesn’t meet certain specification or rules points to independent contractor status. See Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007). Work like this is more contractual in nature. For example, a freelance writer working for a tech company may make an agreement to write three 500-word articles a week for X amount of pay for X amount of weeks. A specific performance of this contract is required where the worker must meet the target of three 500-word articles a week. Not meeting this goal would be grounds for discharge.
 
@@ -104,17 +104,17 @@ On the other hand, independent contractors like Uber drivers, for example, have 
 
 The key here is that an independent contractor cannot be “fired” at will since they are under contract. The excuse for firing would have to be based on quality of service or violation of guidelines. This is why [companies like Uber](https://www.forbes.com/sites/ellenhuet/2014/10/30/uber-driver-firing-policy/?sh=4e1ae8091527) bend over backwards to make sure that they explain why they discharged their workers.
 
-5.  whether the work is part of the principal's regular business
+<h4> Whether the work is part of the principal's regular business </h4>
 
 Work that is part of the principal’s regular business suggests that the person undertaking that work is an employee, but this is just one factor and must be viewed within the context of other factors. For example, a construction business that hires independent contractors is said to have construction as its principal business, with independent contractors who participate in construction. However, other factors like independent investment, permanence, control, etc. determines status.
 
 Uber provides another great example for this prong. [Uber claims](https://www.washingtonpost.com/technology/2019/10/14/uber-ride-hailing-app-that-says-it-has-zero-drivers/) that the work of transporting people from one place to another is not part of its regular course of business. Rather, it is “a technology platform for several different types of digital marketplaces.” Uber, perhaps in an tempt to solidify this argument went on to create UberEats.
 
-6.  the permanency of the relationship
+<h4> The permanency of the relationship </h4>
 
 Transitory work points to independent contractor status, but transients can be employees, including those who work on and off or during specific times of the year. Also, independent contractors can also work for long periods. Herman v. Express Sixty–Minutes Delivery Serv., Inc., 161 F.3d 299, 305 (5th Cir.1998); Avis Rent A Car Sys., Inc. v. United States, 503 F.2d 423, 430 (2d Cir.1974).
 
-7.  the relationship the parties believed they were creating.
+<h4> The relationship the parties believed they were creating.</h4>
 
 The intended relationship can be viewed objectively by looking at the regular practise of the principal and whether or not the principal issued a Form 1099-MISC. Or whether the worker requested a W-2 or W-4\. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
 
