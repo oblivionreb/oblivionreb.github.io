@@ -278,7 +278,8 @@ box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 30px;
+	
+	
   position: relative;
   background-color: #fff;
   padding: 170px;
@@ -355,7 +356,10 @@ box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
   font-size: 18.5px;
 
 }
-
+	
+li {
+margin-bottom: 2px;
+}
   blockquote {
     margin: 1.8em .8em;
     border: 3px solid $darkerGray;
