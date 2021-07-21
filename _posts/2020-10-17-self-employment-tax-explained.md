@@ -39,13 +39,27 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 In the US, whether you have a W-2 job or not, if you earn income as an independent contractor or through informal side gigs, the IRS considers you a sole proprietor of a business, and your business profit is generally subject to self-employment tax. This tax consists of 15.3% of your adjusted gross income.
 
-You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. You pay 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. You will pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers--$250,000 for married filing jointly, and $125,000 married filing separate.
+You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. 
 
-You calculate your net income by <b>subtracting deductions like business expenses from your total income on a Schedule C form</b> You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to <b>determine your self employment tax on your Schedule SE</b>, so read the instructions for more information.
+You pay 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. 
+
+You will pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers--$250,000 for married filing jointly, and $125,000 married filing separate.
+
+You calculate your net income by <b>subtracting deductions like business expenses from your total income on a Schedule C form</b>.
+
+You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. 
+
+You then take 92.35% of your Schedule C net profit you calculated and use that to <b>determine your self employment tax on your Schedule SE</b>, so read the instructions for more information.
 
 <h3> How Do You Pay Self-Employment Tax?</h3>
 
-You should not wait till the end of the tax season to start calculating your self employment tax because the government requires that you pay your taxes in four installments (in most cases). This is called estimated tax and it includes all of your tax liabilities: federal, state, and self-employmenty tax. To calculate estimated taxes, you estimate your total tax liability for the year and multiply the amount by 90%. Then, you ideally pay 22.5% of that total amount (90%/4) for each installment. You can input the calculations on form 1040-ES.
+You should not wait till the end of the tax season to start calculating your self employment tax because the government requires that you pay your taxes in four installments (in most cases). 
+
+This is called <b>estimated tax</b> and it includes all of your tax liabilities: federal, state, and self-employmenty tax. 
+
+To calculate estimated taxes, you estimate your total tax liability for the year and multiply the amount by 90%. 
+
+Then, you ideally pay 22.5% of that total amount (90%/4) for each installment. You can input the calculations on form 1040-ES.
 
 The statutory due dates according to the Internal Revenue Code are:
 
@@ -56,9 +70,19 @@ The statutory due dates according to the Internal Revenue Code are:
  <li> January 15 of the following taxable year (90%) </li>
 </ul>
 
-You can usually use your tax amount for the previous year as a good baseline for an estimate. However, self-employed workers often don't see a predictable stream of income. That's where things get messy. If you suddenly receive a windfall near the end of your tax year that throws off your estimate, you are still required to file an amended return. See Steiner v. C. I. R., Tax Ct.1955, 25 T.C. 26. To amend an estimation, you can use [Worksheet 2-10 from Publication 505](https://www.irs.gov/publications/p505#en_US_2019_publink1000309056).
+You can usually use your tax amount for the previous year as a good baseline for an estimate. However, self-employed workers often don't see a predictable stream of income. 
 
-Additionally, if your gig is seasonal(you make more in certain periods than in others), you can annualize the payments of a given period rather than cleanly dividing the payments by four. This method is called an <b>annualized income installment</b>. You first complete the 2021 Estimated Tax Worksheet through line 14b. Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.gov/publications/p505#en_US_2019_publink1000194749) and file the calculations on Form 2210.
+That's where things get messy. 
+
+If you suddenly receive a windfall near the end of your tax year that throws off your estimate, you are still required to file an amended return. See Steiner v. C. I. R., Tax Ct.1955, 25 T.C. 26.
+
+To amend an estimation, you can use [Worksheet 2-10 from Publication 505](https://www.irs.gov/publications/p505#en_US_2019_publink1000309056).
+
+Additionally, if your gig is seasonal(you make more in certain periods than in others), you can annualize the payments of a given period rather than cleanly dividing the payments by four. 
+
+This method is called an <b>annualized income installment</b>. You first complete the 2021 Estimated Tax Worksheet through line 14b. 
+
+Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.gov/publications/p505#en_US_2019_publink1000194749) and file the calculations on Form 2210.
 
 <h3> What Happens If I Don't Pay Estimated Taxes? </h3>
 
@@ -70,27 +94,33 @@ You will incur a tax penalty for any amount that is underpaid for each period. T
 
 <h3> Why Do You Have To Pay Self Employment Tax? </h3>
 
-Oftentimes, the federal government creates tax policies to generate revenue for programs. In this case, self employment tax ensures that those who do not work (or do not solely work) the normal 9-5, W-2 job pay taxes to fund social security benefits. In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. U.S. v. Cain, S.D.Miss.1953, 113 F.Supp. 304. This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
+Oftentimes, the federal government creates tax policies to generate revenue for programs. In this case, self employment tax ensures that those who do not work (or do not solely work) the normal 9-5, W-2 job pay taxes to fund social security benefits. 
+
+In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. U.S. v. Cain, S.D.Miss.1953, 113 F.Supp. 304. This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
 
 <h3> Who Is Considered Self-Employed?</h3>
 
-According to section 1401(b) of the Tax Code, self-employment generally means “. . . any trade or business carried on by . . . an individual.” The phrase “trade or business” is broad. One is engaged in a “trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” Groetzinger, 480 U.S. at 35, 107 S.Ct. 980. With this definition, a full time gambler is engaged in a trade or business. So he or she is self-employed.
+According to section 1401(b) of the Tax Code, self-employment generally means “. . . any trade or business carried on by . . . an individual.” The phrase “trade or business” is broad.
+
+One is engaged in a “trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” Groetzinger, 480 U.S. at 35, 107 S.Ct. 980.
+
+With this definition, a full time gambler is engaged in a trade or business. So he or she is considered self-employed according to the Groetzinger decision.
 
 Those considered self-employed include but are not limited to independent contractors, see Turnidge v. C.I.R., U.S.Tax Ct.2003, 2003 WL 21321813, practitioner in a sole proprietorship (if they receive income), partners in a venture (if they receive income), and partners in a limited partnership/ partnership.
 
-However, the law is not that simple. It’s very hard to classify roles into neat little boxes. Take the gig economy, for example. As the gig economy continues to change, it may become difficult to classify who is an employee of the company or an independent contractor. Luckily courts have developed factors for determining who is an independent contractor for the purpose of levying self employment tax. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
+However, the law is not that simple. It’s very hard to classify roles into neat little boxes. 
+
+Take the gig economy, for example. As the gig economy continues to change, it may become difficult to classify who is an employee of the company or an independent contractor. Luckily courts have developed factors for determining who is an independent contractor for the purpose of levying self employment tax. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
 
 These factors are:
 
 <h4> 1. The degree of control exercised by the principal </h4>
 
-More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. Gen. Inv. Corp. v. United States, 823 F.2d 337, 342 (9th Cir.1987) For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.2012, 2012 WL 5259054.
+More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. Gen. Inv. Corp. v. United States, 823 F.2d 337, 342 (9th Cir.1987). For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.2012, 2012 WL 5259054.
 
 <h4> 2. Which party invests in work facilities used by the individual </h4>
 
 If the principal primarily invests in work facilities, then the worker is more likely an employee. But if the worker provides his or her own tools, then it strongly indicates independent contractor status. Breaux & Daigle, Inc. v. United States, 900 F.2d 49, 53 (5th Cir.1990).
-
-This is why companies like Uber, Lyft, and Grubhub don’t provide bikes or vehicles to their workers. Doing so would be a strong showing that the workers are employees which would lead to liabilities. Though for the purpose of tax, the classification of employee versus independent contractor generally effects the worker, not the principal.
 
 <h4> 3. The opportunity of the individual for profit or loss</h4>
 
@@ -99,10 +129,6 @@ The ability to make or lose money based on factors within the control of the wor
 <h4> 4. Whether the principal can discharge the individual </h4>
 
 Work that only allows discharge if the worker doesn’t meet certain specification or rules points to independent contractor status. See Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007). Work like this is more contractual in nature. For example, a freelance writer working for a tech company may make an agreement to write three 500-word articles a week for X amount of pay for X amount of weeks. A specific performance of this contract is required where the worker must meet the target of three 500-word articles a week. Not meeting this goal would be grounds for discharge.
-
-On the other hand, independent contractors like Uber drivers, for example, have a more open-ended timeline. Discharge would have to be based on violation of company rules and regulations.
-
-The key here is that an independent contractor cannot be “fired” at will since they are under contract. The excuse for firing would have to be based on quality of service or violation of guidelines. This is why [companies like Uber](https://www.forbes.com/sites/ellenhuet/2014/10/30/uber-driver-firing-policy/?sh=4e1ae8091527) bend over backwards to make sure that they explain why they discharged their workers.
 
 <h4> 5. Whether the work is part of the principal's regular business </h4>
 
@@ -121,7 +147,7 @@ The above factors are weighed in a balancing test to see whether the facts show 
 
 <h3> What Types of Income Can Be Taxed Under Self Employment?</h3>
 
-The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400\. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. Importantly, self-employment income, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized. 26 U.S.C.A. §§ 1401(a) For example, you can’t take a job as a freelancer, quit the job, receive your last freelance check while working at McDonalds and decide to forgo self employment tax since you are now a W-2 worker. The source of the income must be a “trade or business” as described above. Below is a list of some unconventional income sources that can be taxed based on case law:
+The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. Importantly, self-employment income, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized. 26 U.S.C.A. §§ 1401(a) For example, you can’t take a job as a freelancer, quit the job, receive your last freelance check while working at McDonalds and decide to forgo self employment tax since you are now a W-2 worker. The source of the income must be a “trade or business” as described above. Below is a list of some unconventional income sources that can be taxed based on case law:
 
 1.  Income obtained from religious work if Form 4361 is not filed in a timely manner.Gardner v. C.I.R., U.S.Tax Ct.2013, 2013 WL 892963\. More about this in the next section.
 2.  Income gained from selling capital like real estate if business earns profit, making it a primary means of generating income. Si Boo, LLC v. C.I.R., U.S.Tax Ct.2015, 2015 WL 468165.
@@ -132,35 +158,45 @@ The IRS, for the purposes of levying tax, places liability on those who receive 
 
 <h3> Who is exempt from the self employment tax? </h3>
 
-According to section 1402 of the Tax Code, not everyone who would otherwise be considered self employed has to pay self-employment tax. Those who are exempt from self-employment tax include but are not limited to: 1) “a duly ordained, commissioned, or licensed minister of a church or a member of a religious order . . .”, 2) Christian Science practitioners, 3) those who earn money from trading stocks or receiving dividends as long as they are not dealers in stocks and securities, 4) landlords who earn money from rentals and/or personal property leased with real estate, 5) partners of a firm who earn stipend without working in the course of business, and 6) limited partners who earn distributed shares.
+According to section 1402 of the Tax Code, not everyone who would otherwise be considered self employed has to pay self-employment tax. Those who are exempt from self-employment tax include but are not limited to: 
+
+1) “a duly ordained, commissioned, or licensed minister of a church or a member of a religious order . . .”, 
+2)  Christian Science practitioners,
+3)  those who earn money from trading stocks or receiving dividends as long as they are not dealers in stocks and securities 
+4)  landlords who earn money from rentals and/or personal property leased with real estate, 5) partners of a firm who earn stipend without working in the course of business, and 6) limited partners who earn distributed shares.
 
 <h3> What Can You Deduct As A Self-Employed Worker? </h3>
 
 
-When you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
+When you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. 
 
-Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. If you have doubts about whether your work is actually a business, talk to an experienced accountant. As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business. The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
+Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
 
-Importantly, taking a standard deduction will exempt you from tbe itemized deductions listed below, but not from the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). The standard deduction is a fixed amount and presents much less of a hassle. However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. The qualified business deduction is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates.
+Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. 
+
+If you have doubts about whether your work is actually a business, talk to an experienced accountant. As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business. The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
+
+Importantly, taking a standard deduction will exempt you from tbe itemized deductions listed below, but not from the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). The standard deduction is a fixed amount and presents much less of a hassle.
+
+However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. The qualified business deduction is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates.
 
 Below is a list of itemizable deductions you can use to reduce your total tax liability.
 
 <h4>Accounting</h4>
 
-You’re actually allowed to deduct accountant fees from your income. This includes but is not limited to **accounting**, **bookkeeping**, **tax return preparation**, and **tax advice**. You can even deduct the <b>subscription cost of accounting and tax software</b> used to determine your tax liability. 
+You’re actually allowed to deduct accountant fees from your income. This includes but is not limited to <b>accounting</b>, <b>bookkeeping</b>, <b>tax return preparation</b>, and <b>tax advice</b>. You can even deduct the <b>subscription cost of accounting and tax software</b> used to determine your tax liability. 
 
 <h4>Home Office</h4>
 
 When you set up a home office, there are various items that can be deducted. You can add up the total expenses and deduct them from your gross income. You don’t have to have a home-based business to set up a home office deduction. The space can be a traditional office, workshop, studio, warehouse, store, or showroom. “Home” is not limited to a house but also includes apartments, lofts, trailers, mobile homes, and detached structures that are part of your residence like garages, sheds, or other buildings. 
 
-The tax deductions relate to expenses associated with the space, like: **rent** or __depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services__, and much more.
+The tax deductions relate to expenses associated with the space, like: <b>rent</b> or <b>depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services</b>, and much more.
 
 Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional. See IRS Publication 587, [Business Use of Your Home](https://www.irs.gov/pub/irs-pdf/p587.pdf).
 
-> Fun note: A percentage of cell phone cost expense related to business can be deducted. Other deductible offense expenses include greeting cards and holiday cards
+>  A percentage of cell phone cost expense related to business can be deducted. Other deductible offense expenses include greeting cards and holiday cards
 
 <h4>Business Assets</h4>
-
 
 Additionally, you can deduct business assets like <b>tools, furniture, and vehicles</b>. It’s important to know that there are two modes of deduction when it comes to assets.
 
@@ -171,22 +207,22 @@ But for anything over $2,500, Section 179 applies and things get a bit more comp
 
 <h4>Promotion/ Advertising</h4>
 
-If you work as a freelancer and you advertise your services on Google or Facebook ads, you can deduct the cost of **advertising** your business from your income. Advertising includes promotional devices like **giveaways**. For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
+If you work as a freelancer and you advertise your services on Google or Facebook ads, you can deduct the cost of <b>advertising</b> your business from your income. Advertising includes promotional devices like <b>giveaways</b>. For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
 
-Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). **Prizes** are included as long as there is an incentive to generate sales. Unfortunately, the recipient of a prize has to pay taxes on the value of the prize if that prize's value is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
+Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). <b>Prizes</b> are included as long as there is an incentive to generate sales. Unfortunately, the recipient of a prize has to pay taxes on the value of the prize if that prize's value is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
 
-> Fun note: If you want to get into the YouTube game or if you use a <b>drone</b> to advertise your business, you can deduct the cost of the drone. Keep in mind that the price of the drown can effect how much you can deduct in a year.
+>  If you want to get into the YouTube game or if you use a <b>drone</b> to advertise your business, you can deduct the cost of the drone. Keep in mind that the price of the drown can effect how much you can deduct in a year.
 
 <h4>Clothing</h4>
 
-**Clothing with your company’s logo** or **uniforms worn exclusively for your work** are deductible. But that doesn’t mean you can’t wear them outside of work as well. For example, YouTubers who create **merch** can deduct the costs of articles of clothing including hats, shirts, jackets, even if their logo appears on them. The cost of cleaning them is also deductible!  The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
+<b>Clothing with your company’s logo</b> or <b>uniforms worn exclusively for your work</b> are deductible. But that doesn’t mean you can’t wear them outside of work as well. For example, YouTubers who create <b>merch</b> can deduct the costs of articles of clothing including <b>hats, shirts, jackets,</b> if their logo appears on them. The <b>cost of cleaning</b> them is also deductible! The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
 
 <h4>Vehicles</h4>
 
-Those in the gig economy can deduct the cost of their **vehicle** if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, [How to Depreciate Property](https://www.irs.gov/pub/irs-pdf/p946.pdf) for more information. You can also deduct the cost of fuel when using your vehicle. 
+Those in the gig economy can deduct the cost of their <b>vehicle</b> if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, [How to Depreciate Property](https://www.irs.gov/pub/irs-pdf/p946.pdf) for more information. You can also deduct the cost of fuel when using your vehicle. 
 
 
-> Fun note: You can actually deduct the cost of a **bike** if it was purchased in the tax year, or you can deduct the depreciating value of the bike. 
+> You can actually deduct the cost of a <b>bike</b> if it was purchased in the tax year, or you can deduct the depreciating value of the bike. 
 
 
 <h4>Hiring Children</h4>
