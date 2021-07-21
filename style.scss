@@ -362,15 +362,20 @@ box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
 	
 ul {
 margin-bottom: 30px;
-margin-left: 30px;
+
 padding: 8px;
- 
+ @include lg-mobile {
+   	margin-left: 5px;
+  	}
 }
 
 ol {
 margin-bottom: 30px;
 margin-left: 30px;
 padding: 8px;	
+  @include lg-mobile {
+   	margin-left: 5px;
+  	}
 }
 
 li {padding: 4px;}
