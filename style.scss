@@ -365,15 +365,12 @@ li {padding: 4px;}
 
   blockquote {
     margin: 1.8em .8em;
-    border-top: 0.5px solid $darkerGray;
-    border-bottom: 0.5px solid $darkerGray;
+    border-top: 0.5px solid $lightGray;
+    border-bottom: 0.5px solid $lightGray;
     padding: 5px;
     background-color: #fff;
     color: #000;
     font-size: 18.5px;
-    -moz-box-shadow: $close-shadow;
-    -webkit-box-shadow: $close-shadow;
-    box-shadow: $close-shadow;
   }
 }
 .comments {
