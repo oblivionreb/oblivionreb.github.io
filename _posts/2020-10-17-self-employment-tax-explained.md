@@ -214,7 +214,7 @@ Even if your income falls under the phaseout levels, depending on the structure 
  <h4> standard deduction and itemized deduction </h4>
 Besides the self-employment tax deduction and the QBI deduction, there are two main deductions. The <b>standard deduction</b> and the <b>itemized deduction</b>. You can only choose one of these deductions. 
  
- So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the <b>self employment tax deduction</b> or the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). 
+ So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the <b>self employment tax deduction</b> or the [qualified business income deduction](https://www.irs.gov/newsroom/qualified-business-income-deduction). 
  
 The standard deduction is a fixed amount and presents much less of a hassle. For 2021, single filers and married filing seperately get a $12,550 deduction; $25,100 for joint filers; and $18,880 for head of household. However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. The itemized deductions will be outlined later.
   
