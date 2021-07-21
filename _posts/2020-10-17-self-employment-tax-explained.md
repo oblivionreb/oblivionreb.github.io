@@ -41,7 +41,7 @@ In the US, whether you have a W-2 job or not, if you earn income as an independe
 
 You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. You pay 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. You will pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers--$250,000 for married filing jointly, and $125,000 married filing separate.
 
-You calculate your net income by <b>subtracting deductions like business expenses from your total income on a Schedule C form</b> You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to __determine your self employment tax on your Schedule SE__, so read the instructions for more information.
+You calculate your net income by <b>subtracting deductions like business expenses from your total income on a Schedule C form</b> You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to <b>determine your self employment tax on your Schedule SE</b>, so read the instructions for more information.
 
 <h3> How Do You Pay Self-Employment Tax?</h3>
 
@@ -58,15 +58,15 @@ The statutory due dates according to the Internal Revenue Code are:
 
 You can usually use your tax amount for the previous year as a good baseline for an estimate. However, self-employed workers often don't see a predictable stream of income. That's where things get messy. If you suddenly receive a windfall near the end of your tax year that throws off your estimate, you are still required to file an amended return. See Steiner v. C. I. R., Tax Ct.1955, 25 T.C. 26. To amend an estimation, you can use [Worksheet 2-10 from Publication 505](https://www.irs.gov/publications/p505#en_US_2019_publink1000309056).
 
-Additionally, if your gig is seasonal(you make more in certain periods than in others), you can annualize the payments of a given period rather than cleanly dividing the payments by four. This method is called an **annualized income installment**. You first complete the 2021 Estimated Tax Worksheet through line 14b. Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.gov/publications/p505#en_US_2019_publink1000194749) and file the calculations on Form 2210.
+Additionally, if your gig is seasonal(you make more in certain periods than in others), you can annualize the payments of a given period rather than cleanly dividing the payments by four. This method is called an <b>annualized income installment</b>. You first complete the 2021 Estimated Tax Worksheet through line 14b. Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.gov/publications/p505#en_US_2019_publink1000194749) and file the calculations on Form 2210.
 
 <h3> What Happens If I Don't Pay Estimated Taxes? </h3>
 
 You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steap penalty. However, there are exceptions: 
 
-- If your **total taxes owed after deducting tax credits is under $1000**, you won't have to sweat too much about not paying estimated taxes, though it's always a good habit to pay your taxes in installments. For corporations, this number is $500.
-- Additionally, if you had **no tax liability** the **previous tax year of 12 months** and you were a **citizen or a resident** of the United States throughout the previous taxable year, you do not have to pay estimated taxes for the current taxable year. 
-- Further, if you are a **newly retired (62 or older)** or a **newly disabled individual** who **became disabled within the taxable year or previous taxable year** and had a **reasonable cause** for missing estimated taxes, you will not incur penalties. 
+- If your <b>total taxes owed after deducting tax credits is under $1000</b>, you won't have to sweat too much about not paying estimated taxes, though it's always a good habit to pay your taxes in installments. For corporations, this number is $500.
+- Additionally, if you had <b>no tax liability** the **previous tax year of 12 months</b> and you were a <b>citizen or a resident</b> of the United States throughout the previous taxable year, you do not have to pay estimated taxes for the current taxable year. 
+- Further, if you are a <b>newly retired (62 or older)</b> or a <b>newly disabled individual</b> who <b>became disabled within the taxable year or previous taxable year</b> and had a <b>reasonable cause</b> for missing estimated taxes, you will not incur penalties. 
 
 <h3> Why Do You Have To Pay Self Employment Tax? </h3>
 
@@ -228,7 +228,7 @@ You can actually deduct the cost of learning new skills while you are self-emplo
 
  Also, you can’t decide to learn how to program before starting your web design business, and then deduct the cost of learning from your gross income once you do start the business.  All learning must take place while you are in business for you to deduct expenses. And you can’t deduct education if that education is required to meet minimum requirements for the employment; a wannabe Uber driver can’t deduct cost of driving school, because you need to know how to drive to be self-employed in that field. 
 
-You can deduct as part of education expenses: **tuition**, **registration fees**, **course fees**, **instructional material**, **textbooks**, **supplies**, **laboratory fees**, and **commuting fees** to the education center. 
+You can deduct as part of education expenses: <b>tuition</b>,<b>registration fees</b>, <b>course fees</b>, <b>instructional material</b>, <b>textbooks</b>, <b>supplies</b>, <b>laboratory fees</b>, and <b>commuting fees</b> to the education center. 
 
 
 <h2>Conclusion</h2>
