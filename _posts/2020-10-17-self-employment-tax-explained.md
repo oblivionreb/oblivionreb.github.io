@@ -116,7 +116,9 @@ These factors are:
 
 <h4> 1. The degree of control exercised by the principal </h4>
 
-More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. Gen. Inv. Corp. v. United States, 823 F.2d 337, 342 (9th Cir.1987). For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.2012, 2012 WL 5259054.
+More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. Gen. Inv. Corp. v. United States, 823 F.2d 337, 342 (9th Cir.1987). 
+
+For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.2012, 2012 WL 5259054.
 
 <h4> 2. Which party invests in work facilities used by the individual </h4>
 
@@ -147,7 +149,11 @@ The above factors are weighed in a balancing test to see whether the facts show 
 
 <h3> What Types of Income Can Be Taxed Under Self Employment?</h3>
 
-The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. Importantly, self-employment income, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized. 26 U.S.C.A. §§ 1401(a) For example, you can’t take a job as a freelancer, quit the job, receive your last freelance check while working at McDonalds and decide to forgo self employment tax since you are now a W-2 worker. The source of the income must be a “trade or business” as described above. Below is a list of some unconventional income sources that can be taxed based on case law:
+The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. 
+
+Importantly, self-employment income, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized. 26 U.S.C.A. §§ 1401(a).
+
+For example, you can’t take a job as a freelancer, quit the job, receive your last freelance check while working at McDonalds and decide to forgo self employment tax since you are now a W-2 worker. The source of the income must be a “trade or business” as described above. Below is a list of some unconventional income sources that can be taxed based on case law:
 
 1.  Income obtained from religious work if Form 4361 is not filed in a timely manner.Gardner v. C.I.R., U.S.Tax Ct.2013, 2013 WL 892963\. More about this in the next section.
 2.  Income gained from selling capital like real estate if business earns profit, making it a primary means of generating income. Si Boo, LLC v. C.I.R., U.S.Tax Ct.2015, 2015 WL 468165.
@@ -202,14 +208,20 @@ Additionally, you can deduct business assets like <b>tools, furniture, and vehic
 
 One is the Safe Harbor rule for anything $2,500 or less. The IRS doesn’t care if you fully deduct the cost of the asset. 
 
-But for anything over $2,500, Section 179 applies and things get a bit more complex. For example, if you want to deduct expenses from a vehicle, you are subject to a maximum amount you can deduct. The deduction itself cannot exceed your gross income. Importantly, if you converted the car previously used for leisure into a car for business, you cannot deduct the price of the car under Section 179. You can only calculate depreciation. More on depreciation on the section for vehicles. Talk to your accountant to learn how much you can deduct from your expensive business assets. See [IRS Publication 535](https://www.irs.gov/pub/irs-pdf/p535.pdf) to learn about general business expenses.
+But for anything over $2,500, Section 179 applies and things get a bit more complex. For example, if you want to deduct expenses from a vehicle, you are subject to a maximum amount you can deduct. The deduction itself cannot exceed your gross income. 
+
+Importantly, if you converted the car previously used for leisure into a car for business, you cannot deduct the price of the car under Section 179. You can only calculate depreciation.
+
+Talk to your accountant to learn how much you can deduct from your expensive business assets. See [IRS Publication 535](https://www.irs.gov/pub/irs-pdf/p535.pdf) to learn about general business expenses.
 
 
 <h4>Promotion/ Advertising</h4>
 
 If you work as a freelancer and you advertise your services on Google or Facebook ads, you can deduct the cost of <b>advertising</b> your business from your income. Advertising includes promotional devices like <b>giveaways</b>. For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
 
-Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). <b>Prizes</b> are included as long as there is an incentive to generate sales. Unfortunately, the recipient of a prize has to pay taxes on the value of the prize if that prize's value is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
+Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). 
+
+<b>Prizes</b> are included as long as there is an incentive to generate sales. Unfortunately, the recipient of a prize has to pay taxes on the value of the prize if that prize's value is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
 
 >  If you want to get into the YouTube game or if you use a <b>drone</b> to advertise your business, you can deduct the cost of the drone. Keep in mind that the price of the drown can effect how much you can deduct in a year.
 
@@ -227,7 +239,9 @@ Those in the gig economy can deduct the cost of their <b>vehicle</b> if purchase
 
 <h4>Hiring Children</h4>
 
-You can hire your own **children** and get a deduction for their wages. The children themselves are not liable for federal income tax or payroll tax. The children must be under 18 and make a maximum of $6, 350(maximum subject to change from year to year) to exempt them from paying taxes. The children of course have to actually be doing work related to your business. IF you pay the children above the maximum, the children would have to file W-4s  and you will have to file W-2 and W-3 payroll forms at the end of the year. However, the children do not need to pay the Social Security and Medicare tax and you don’t have to pay payroll tax. 
+You can hire your own **children** and get a deduction for their wages. The children themselves are not liable for federal income tax or payroll tax. The children must be under 18 and make a maximum of $6, 350(maximum subject to change from year to year) to exempt them from paying taxes. 
+
+The children of course have to actually be doing work related to your business. IF you pay the children above the maximum, the children would have to file W-4s  and you will have to file W-2 and W-3 payroll forms at the end of the year. However, the children do not need to pay the Social Security and Medicare tax and you don’t have to pay payroll tax. 
 
 See IRS Publication 15, [Employer’s Tax Guide](https://www.irs.gov/pub/irs-pdf/p15.pdf) for more information. 
 
