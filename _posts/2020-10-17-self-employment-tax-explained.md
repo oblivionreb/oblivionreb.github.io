@@ -88,7 +88,7 @@ Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.
 
 <h3> What Happens If I Don't Pay Estimated Taxes? </h3>
 
-You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steap penalty. 
+You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steep penalty. 
 
 However, there are exceptions: 
 
