@@ -172,10 +172,12 @@ For example, you can’t take a job as a freelancer, quit the job, receive your 
 
 According to section 1402 of the Tax Code, not everyone who would otherwise be considered self employed has to pay self-employment tax. Those who are exempt from self-employment tax include but are not limited to: 
 
-1) “a duly ordained, commissioned, or licensed minister of a church or a member of a religious order . . .”, 
-2)  Christian Science practitioners,
-3)  those who earn money from trading stocks or receiving dividends as long as they are not dealers in stocks and securities 
-4)  landlords who earn money from rentals and/or personal property leased with real estate, 5) partners of a firm who earn stipend without working in the course of business, and 6) limited partners who earn distributed shares.
+- “a duly ordained, commissioned, or licensed minister of a church or a member of a religious order . . .”, 
+- Christian Science practitioners,
+-  those who earn money from trading stocks or receiving dividends as long as they are not dealers in stocks and securities 
+-  landlords who earn money from rentals and/or personal property leased with real estate,
+-  partners of a firm who earn stipend without working in the course of business, and 
+-  limited partners who earn distributed shares.
 
 <h3 id="deduction-section"> What Can You Deduct As A Self-Employed Worker? </h3>
 
