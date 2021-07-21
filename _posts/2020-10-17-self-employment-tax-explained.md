@@ -33,7 +33,9 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 <h1> Self Employment Tax Explained </h1>
 
-
+<p><a href="#deduction-section"><span class="material-icons-outlined">
+keyboard_arrow_down
+</span> Skip to the part where you learn how to reduce your taxes.</a></p>
 
 <h3> How Do You Calculate Self-Employment Tax? </h3>
 
@@ -45,11 +47,11 @@ You're essentially responsible for paying the FICA portion of your tax that an e
 
 You pay 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. 
 
-You will pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers--$250,000 for married filing jointly, and $125,000 married filing separate.
+You pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers, $250,000 for married filing jointly, and $125,000 married filing separate.
 
 You calculate your net income by <b>subtracting deductions like business expenses from your total income on a Schedule C form</b>.
 
-You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. 
+> Learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. 
 
 You then take 92.35% of your Schedule C net profit you calculated and use that to <b>determine your self employment tax on your Schedule SE</b>, so read the instructions for more information.
 
@@ -100,7 +102,9 @@ However, there are exceptions:
 
 Oftentimes, the federal government creates tax policies to generate revenue for programs. In this case, self employment tax ensures that those who do not work (or do not solely work) the normal 9-5, W-2 job pay taxes to fund social security benefits. 
 
-In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. U.S. v. Cain, S.D.Miss.1953, 113 F.Supp. 304. This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
+In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. U.S. v. Cain, S.D.Miss.1953, 113 F.Supp. 304. 
+
+This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
 
 <h3> Who Is Considered Self-Employed?</h3>
 
@@ -175,7 +179,7 @@ According to section 1402 of the Tax Code, not everyone who would otherwise be c
 3)  those who earn money from trading stocks or receiving dividends as long as they are not dealers in stocks and securities 
 4)  landlords who earn money from rentals and/or personal property leased with real estate, 5) partners of a firm who earn stipend without working in the course of business, and 6) limited partners who earn distributed shares.
 
-<h3> What Can You Deduct As A Self-Employed Worker? </h3>
+<h3 id="deduction-section"> What Can You Deduct As A Self-Employed Worker? </h3>
 
 
 When you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. 
