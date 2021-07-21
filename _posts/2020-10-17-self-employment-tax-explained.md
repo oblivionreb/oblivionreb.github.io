@@ -179,12 +179,10 @@ According to section 1402 of the Tax Code, not everyone who would otherwise be c
 -  partners of a firm who earn stipend without working in the course of business, and 
 -  limited partners who earn distributed shares.
 
-<h3 id="deduction-section"> What Can You Deduct As A Self-Employed Worker? </h3>
-
-
-When you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. 
-
-Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
+<div id="deduction-section"> 
+<h3> What Can You Deduct As A Self-Employed Worker? </h3>
+ 
+As a sole proprietor, you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
 
 Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. 
 
@@ -192,11 +190,19 @@ If you have doubts about whether your work is actually a business, talk to an ex
 
 As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business.
 
-The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
+> The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
 
-Importantly, taking a standard deduction will exempt you from tbe itemized deductions listed below, but not from the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). The standard deduction is a fixed amount and presents much less of a hassle.
-
-However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. The qualified business deduction is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates.
+ There are two main deductions. The <b>standard deduction</b> and the <b>itemized deduction</b>. You can only choose one of these deductions. 
+ 
+ So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). 
+ 
+The standard deduction is a fixed amount and presents much less of a hassle. However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. 
+ 
+Lastly, the qualified business deduction is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates.
+ 
+Additionally, you can take tax credits. Credits work differently from deductions because you subtract the credit from your total tax liability instead of subtracting from your gross income. Combining itemized deductions with tax credits can greatly reduce your tav liability. 
+ 
+However, make sure you have proper documentation at hand to prove that you are eligible for deductions and credits in the event of an IRS audit. 
 
 Below is a list of itemizable deductions you can use to reduce your total tax liability.
 
@@ -300,10 +306,12 @@ You can actually deduct the cost of learning new skills while you are self-emplo
  And you can’t deduct education if that education is required to meet minimum requirements for the employment; a wannabe Uber driver can’t deduct cost of driving school, because you need to know how to drive to be self-employed in that field. 
 
 You can deduct as part of education expenses: <b>tuition</b>,<b>registration fees</b>, <b>course fees</b>, <b>instructional material</b>, <b>textbooks</b>, <b>supplies</b>, <b>laboratory fees</b>, and <b>commuting fees</b> to the education center. 
-
+</div>
 
 <h3>Conclusion</h3>
-Self employment tax can get complex because of the way it interacts with other forms of taxes. You are forced to withold taxes yourself and pay quarterly (estimated taxes), which triggers potential issues since self-employment is not the most reliable field when it comes to steady income. This is on top of the federal and state taxes you must pay. Things can get pretty hectic. For this reason, the information presented here is not mean to represent legal or accounting advise. The purpose of this article is to make the ordinary self-employed person or would-be self-employed person aware of the potential tax liability they may face.
+Self employment tax can get complex because of the way it interacts with other forms of taxes. You are forced to withold taxes yourself and pay quarterly (estimated taxes), which triggers potential issues since self-employment is not the most reliable field when it comes to steady income. 
+
+This is on top of the federal and state taxes you must pay. Things can get pretty hectic. For this reason, the information presented here is not mean to represent legal or accounting advise. The purpose of this article is to make the ordinary self-employed person or would-be self-employed person aware of the potential tax liability they may face.
 
 
 <h3> Additoional Resources </h3>
