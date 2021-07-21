@@ -357,9 +357,12 @@ box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
 
 }
 	
-li {
-margin-bottom: 2px;
+ul {
+margin-bottom: 4px;
+padding: 4px;
 }
+li {padding: 4px;}
+
   blockquote {
     margin: 1.8em .8em;
     border: 3px solid $darkerGray;
