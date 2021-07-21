@@ -22,16 +22,19 @@ You calculate your net income by **subtracting deductions like business expenses
 You should not wait till the end of the tax season to start calculating your self employment tax because the government requires that you pay your taxes in four installments (in most cases). This is called estimated tax and it includes all of your tax liabilities: federal, state, and self-employmenty tax. To calculate estimated taxes, you estimate your total tax liability for the year and multiply the amount by 90%. Then, you ideally pay 22.5% of that total amount (90%/4) for each installment. You can input the calculations on form 1040-ES.
 
 The statutory due dates according to the Internal Revenue Code are:
-- April 15 (22.5%)
-- June 15 (45%)
-- September 15 (67.5%)
-- January 15 of the following taxable year (90%)
+
+<ul>
+ <li> April 15 (22.5%) </li>
+ <li> June 15 (45%)</li>
+ <li> September 15 (67.5%) </li>
+ <li> January 15 of the following taxable year (90%) </li>
+</ul>
 
 You can usually use your tax amount for the previous year as a good baseline for an estimate. However, self-employed workers often don't see a predictable stream of income. That's where things get messy. If you suddenly receive a windfall near the end of your tax year that throws off your estimate, you are still required to file an amended return. See Steiner v. C. I. R., Tax Ct.1955, 25 T.C. 26. To amend an estimation, you can use [Worksheet 2-10 from Publication 505](https://www.irs.gov/publications/p505#en_US_2019_publink1000309056).
 
 Additionally, if your gig is seasonal(you make more in certain periods than in others), you can annualize the payments of a given period rather than cleanly dividing the payments by four. This method is called an **annualized income installment**. You first complete the 2021 Estimated Tax Worksheet through line 14b. Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.gov/publications/p505#en_US_2019_publink1000194749) and file the calculations on Form 2210.
 
-<h3> What Happens If I Don't Pay Estimated Taxes? </h3?
+<h3> What Happens If I Don't Pay Estimated Taxes? </h3>
 
 You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steap penalty. However, there are exceptions: 
 
@@ -39,11 +42,11 @@ You will incur a tax penalty for any amount that is underpaid for each period. T
 - Additionally, if you had **no tax liability** the **previous tax year of 12 months** and you were a **citizen or a resident** of the United States throughout the previous taxable year, you do not have to pay estimated taxes for the current taxable year. 
 - Further, if you are a **newly retired (62 or older)** or a **newly disabled individual** who **became disabled within the taxable year or previous taxable year** and had a **reasonable cause** for missing estimated taxes, you will not incur penalties. 
 
-## Why Do You Have To Pay Self Employment Tax?
+<li> Why Do You Have To Pay Self Employment Tax? </li>
 
 Oftentimes, the federal government creates tax policies to generate revenue for programs. In this case, self employment tax ensures that those who do not work (or do not solely work) the normal 9-5, W-2 job pay taxes to fund social security benefits. In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. U.S. v. Cain, S.D.Miss.1953, 113 F.Supp. 304. This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
 
-## Who Is Considered Self-Employed?
+<li> Who Is Considered Self-Employed?</li>
 
 According to section 1401(b) of the Tax Code, self-employment generally means “. . . any trade or business carried on by . . . an individual.” The phrase “trade or business” is broad. One is engaged in a “trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” Groetzinger, 480 U.S. at 35, 107 S.Ct. 980. With this definition, a full time gambler is engaged in a trade or business. So he or she is self-employed.
 
@@ -91,7 +94,7 @@ The intended relationship can be viewed objectively by looking at the regular pr
 
 The above factors are weighed in a balancing test to see whether the facts show that the worker is an employee or independent contractor for the purpose of self-employment tax.
 
-## What Types of Income Can Be Taxed Under Self Employment?
+<li> What Types of Income Can Be Taxed Under Self Employment?</li>
 
 The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400\. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. Importantly, self-employment income, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized. 26 U.S.C.A. §§ 1401(a) For example, you can’t take a job as a freelancer, quit the job, receive your last freelance check while working at McDonalds and decide to forgo self employment tax since you are now a W-2 worker. The source of the income must be a “trade or business” as described above. Below is a list of some unconventional income sources that can be taxed based on case law:
 
@@ -102,11 +105,11 @@ The IRS, for the purposes of levying tax, places liability on those who receive 
 5.  Income earned running a business entity, including a solo law practice.
 6.  Receiving profits from shares of caught fish with less than 10 crew members. Anderson v. C.I.R., T.C.M. (RIA) 2010-001 (Tax 2010), aff'd, (1st Cir. Mar. 15, 2011).
 
-## Who is exempt from the self employment tax?
+<li> Who is exempt from the self employment tax? </li>
 
 According to section 1402 of the Tax Code, not everyone who would otherwise be considered self employed has to pay self-employment tax. Those who are exempt from self-employment tax include but are not limited to: 1) “a duly ordained, commissioned, or licensed minister of a church or a member of a religious order . . .”, 2) Christian Science practitioners, 3) those who earn money from trading stocks or receiving dividends as long as they are not dealers in stocks and securities, 4) landlords who earn money from rentals and/or personal property leased with real estate, 5) partners of a firm who earn stipend without working in the course of business, and 6) limited partners who earn distributed shares.
 
-## What Can You Deduct As A Self-Employed Worker?
+<li> What Can You Deduct As A Self-Employed Worker? </li>
 
 
 When you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
@@ -125,10 +128,7 @@ You’re actually allowed to deduct accountant fees from your income. This inclu
 
 When you set up a home office, there are various items that can be deducted. You can add up the total expenses and deduct them from your gross income. You don’t have to have a home-based business to set up a home office deduction. The space can be a traditional office, workshop, studio, warehouse, store, or showroom. “Home” is not limited to a house but also includes apartments, lofts, trailers, mobile homes, and detached structures that are part of your residence like garages, sheds, or other buildings. 
 
-The tax deductions relate to expenses associated with the space, like:
-
--**rent** or 
--**depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services**, and much more.
+The tax deductions relate to expenses associated with the space, like: **rent** or <span class="bold>**depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services**</span>, and much more.
 
 Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional. See IRS Publication 587, [Business Use of Your Home](https://www.irs.gov/pub/irs-pdf/p587.pdf).
 
