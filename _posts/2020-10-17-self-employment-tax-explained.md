@@ -185,7 +185,7 @@ According to section 1402 of the Tax Code, not everyone who would otherwise be c
  Reduce your taxes by taking advantage of deductions and tax credits. Right off the bat, you can deduct half of your self-employment tax. This means that a self-employment tax bill of $3000 will result in a $1,500 deduction that you can take.
  
  <h4> qualified business income tax deduction </h4>
- Another deduction that may be immediately available to certain self-emplyed workers is the <b>qualified business expense deduction</b>(QBI). Those eligible for the deduction can deduct up to 20% percent of their taxable <b>business</b> income. 
+ Another deduction that may be immediately available to certain self-emplyed workers is the <b>qualified business income deduction</b>(QBI). Those eligible for the deduction can deduct up to 20% percent of their taxable <b>business</b> income. 
  
  The QBI is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates. 
  
@@ -209,7 +209,9 @@ At $213,300 in total taxable income for single filers and $426,600 total taxable
  
 Even if your income falls under the phaseout levels, depending on the structure of your business (number of employees on salary, for example), you may receive less than the 20% deduction. The 2017 Tax Act created the complications found in this type of deduction. But, if you can take advantage of the qualified business income deduction, you should do so because the Tax Act and the deduction it provides expires in 2025.
  
- <h4> standard deduction and itemized deduction </4>
+ > QBI deductions do not go on Schedule C, but go on Form 1040 or 1040-SR.
+ 
+ <h4> standard deduction and itemized deduction </h4>
 Besides the self-employment tax deduction and the QBI deduction, there are two main deductions. The <b>standard deduction</b> and the <b>itemized deduction</b>. You can only choose one of these deductions. 
  
  So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the <b>self employment tax deduction</b> or the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). 
@@ -221,6 +223,7 @@ Additionally, you can take tax credits. Credits work differently from deductions
  
 However, make sure you have proper documentation at hand to prove that you are eligible for deductions and credits in the event of an IRS audit. 
  
+ <h3> Itemized deductions for 2021 </h3>
 As a sole proprietor, you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
 
 Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. 
@@ -231,8 +234,10 @@ As a general rule, if you don’t show profit for at least three out of five con
 
 > The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
 
-Below is a list of itemizable deductions you can use to reduce your total tax liability.
+ Below are some itemizable deductions you can use to reduce your total tax liability.
 
+ > The 2017 Tax Act exluded both business-related entertainment expenses and meal expenses from deduction.
+ 
 <h4>Accounting</h4>
 
 You’re actually allowed to deduct accountant fees from your income. This includes but is not limited to <b>accounting</b>, <b>bookkeeping</b>, <b>tax return preparation</b>, and <b>tax advice</b>. You can even deduct the <b>subscription cost of accounting and tax software</b> used to determine your tax liability. 
