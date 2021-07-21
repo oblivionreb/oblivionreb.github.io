@@ -31,8 +31,8 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 </div>
 
-Self Employment Tax Explained
-===========
+<h1> Self Employment Tax Explained </h1>
+
 
 
 <h3> How Do You Calculate Self-Employment Tax? </h3>
