@@ -41,7 +41,7 @@ In the US, whether you have a W-2 job or not, if you earn income as an independe
 
 You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. You pay 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. You will pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers--$250,000 for married filing jointly, and $125,000 married filing separate.
 
-You calculate your net income by **subtracting deductions like business expenses from your total income on a Schedule C form.** You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to __determine your self employment tax on your Schedule SE__, so read the instructions for more information.
+You calculate your net income by <b>subtracting deductions like business expenses from your total income on a Schedule C form</b> You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to __determine your self employment tax on your Schedule SE__, so read the instructions for more information.
 
 <h3> How Do You Pay Self-Employment Tax?</h3>
 
@@ -120,7 +120,7 @@ The intended relationship can be viewed objectively by looking at the regular pr
 
 The above factors are weighed in a balancing test to see whether the facts show that the worker is an employee or independent contractor for the purpose of self-employment tax.
 
-<li> What Types of Income Can Be Taxed Under Self Employment?</li>
+<h3> What Types of Income Can Be Taxed Under Self Employment?</h3>
 
 The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400\. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. Importantly, self-employment income, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized. 26 U.S.C.A. §§ 1401(a) For example, you can’t take a job as a freelancer, quit the job, receive your last freelance check while working at McDonalds and decide to forgo self employment tax since you are now a W-2 worker. The source of the income must be a “trade or business” as described above. Below is a list of some unconventional income sources that can be taxed based on case law:
 
