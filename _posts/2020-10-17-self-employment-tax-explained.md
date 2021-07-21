@@ -314,7 +314,7 @@ Self employment tax can get complex because of the way it interacts with other f
 This is on top of the federal and state taxes you must pay. Things can get pretty hectic. For this reason, the information presented here is not mean to represent legal or accounting advise. The purpose of this article is to make the ordinary self-employed person or would-be self-employed person aware of the potential tax liability they may face.
 
 
-<h3> Additoional Resources </h3>
+<h3> Additional Resources </h3>
 
 
 1. Kamoroff, Bernard C.P.A. 475 Tax Deductions For Businesses And Self-Employed Individuals : An A-To-Z Guide To Hundreds Of Tax Write-Offs. Guilford, Connecticut, Lyons Press, 2019.
