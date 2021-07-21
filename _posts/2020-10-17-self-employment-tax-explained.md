@@ -53,7 +53,7 @@ You calculate your net income by <b>subtracting deductions like business expense
 
 You then take 92.35% of your Schedule C net profit you calculated and use that to <b>determine your self employment tax on your Schedule SE</b>, so read the instructions for more information.
 
-<h3> How Do You Pay Self-Employment Tax?</h3>
+<h3 id="estimated-tax"> How Do You Pay Self-Employment Tax?</h3>
 
 You should not wait till the end of the tax season to start calculating your self employment tax because the government requires that you pay your taxes in four installments (in most cases). 
 
