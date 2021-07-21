@@ -37,7 +37,9 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 <h3> How Do You Calculate Self-Employment Tax? </h3>
 
-In the US, whether you have a W-2 job or not, if you earn income as an independent contractor or through informal side gigs, the IRS considers you a sole proprietor of a business, and your business profit is generally subject to self-employment tax. This tax consists of 15.3% of your adjusted gross income.
+In the US, whether you have a W-2 job or not, if you earn income as an independent contractor or through informal side gigs, your profit is generally subject to self-employment tax. 
+
+This tax consists of 15.3% of your adjusted gross income.
 
 You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. 
 
@@ -86,7 +88,9 @@ Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.
 
 <h3> What Happens If I Don't Pay Estimated Taxes? </h3>
 
-You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steap penalty. However, there are exceptions: 
+You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steap penalty. 
+
+However, there are exceptions: 
 
 - If your <b>total taxes owed after deducting tax credits is under $1000</b>, you won't have to sweat too much about not paying estimated taxes, though it's always a good habit to pay your taxes in installments. For corporations, this number is $500.
 - Additionally, if you had <b>no tax liability</b> the <b>previous tax year of 12 months</b> and you were a <b>citizen or a resident</b> of the United States throughout the previous taxable year, you do not have to pay estimated taxes for the current taxable year. 
@@ -180,7 +184,11 @@ Legally, you’re a sole proprietor, meaning  you are in business for yourself a
 
 Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. 
 
-If you have doubts about whether your work is actually a business, talk to an experienced accountant. As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business. The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
+If you have doubts about whether your work is actually a business, talk to an experienced accountant.
+
+As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business.
+
+The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
 
 Importantly, taking a standard deduction will exempt you from tbe itemized deductions listed below, but not from the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). The standard deduction is a fixed amount and presents much less of a hassle.
 
@@ -194,11 +202,15 @@ You’re actually allowed to deduct accountant fees from your income. This inclu
 
 <h4>Home Office</h4>
 
-When you set up a home office, there are various items that can be deducted. You can add up the total expenses and deduct them from your gross income. You don’t have to have a home-based business to set up a home office deduction. The space can be a traditional office, workshop, studio, warehouse, store, or showroom. “Home” is not limited to a house but also includes apartments, lofts, trailers, mobile homes, and detached structures that are part of your residence like garages, sheds, or other buildings. 
+When you set up a home office, there are various items that can be deducted. You can add up the total expenses and deduct them from your gross income. You don’t have to have a home-based business to set up a home office deduction. 
+
+The space can be a traditional office, workshop, studio, warehouse, store, or showroom. “Home” is not limited to a house but also includes apartments, lofts, trailers, mobile homes, and detached structures that are part of your residence like garages, sheds, or other buildings. 
 
 The tax deductions relate to expenses associated with the space, like: <b>rent</b> or <b>depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services</b>, and much more.
 
-Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional. See IRS Publication 587, [Business Use of Your Home](https://www.irs.gov/pub/irs-pdf/p587.pdf).
+Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). 
+
+Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional. See IRS Publication 587, [Business Use of Your Home](https://www.irs.gov/pub/irs-pdf/p587.pdf).
 
 >  A percentage of cell phone cost expense related to business can be deducted. Other deductible offense expenses include greeting cards and holiday cards
 
@@ -227,7 +239,9 @@ Many YouTubers hold contests and the costs of operating these contests can be de
 
 <h4>Clothing</h4>
 
-<b>Clothing with your company’s logo</b> or <b>uniforms worn exclusively for your work</b> are deductible. But that doesn’t mean you can’t wear them outside of work as well. For example, YouTubers who create <b>merch</b> can deduct the costs of articles of clothing including <b>hats, shirts, jackets,</b> if their logo appears on them. The <b>cost of cleaning</b> them is also deductible! The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
+<b>Clothing with your company’s logo</b> or <b>uniforms worn exclusively for your work</b> are deductible. But that doesn’t mean you can’t wear them outside of work as well.
+
+For example, YouTubers who create <b>merch</b> can deduct the costs of articles of clothing including <b>hats, shirts, jackets,</b> if their logo appears on them. The <b>cost of cleaning</b> them is also deductible! The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
 
 <h4>Vehicles</h4>
 
@@ -256,7 +270,9 @@ If you hired a freelance web developer to build a website for you, you can deduc
 
 <h4>Software</h4>
 
-This section may be most beneficial to freelance web developers who may be paying a subscription fee for various types of software, like **development environments**. But this also applies to other freelancers who use **enterprise software** to increase their productivity. You can deduct the amount paid in cash for the tax year from your gross income. Software also includes **paid apps** used in the course of business. 
+This section may be most beneficial to freelance web developers who may be paying a subscription fee for various types of software, like **development environments**. 
+
+But this also applies to other freelancers who use **enterprise software** to increase their productivity. You can deduct the amount paid in cash for the tax year from your gross income. Software also includes **paid apps** used in the course of business. 
 
 <h4>Lost Income</h4>
 
@@ -275,12 +291,14 @@ Even if you’re a drop shipper who doesn’t physically hold inventory, goods y
 
 You can actually deduct the cost of learning new skills while you are self-employed if what you are learning improves your skill in your business. For example, a freelance web developer who already knows how to program can pay for an advanced programming course and deduct the cost of that course. But a freelance programmer cannot deduct money spent on a cooking course because it doesn’t improve his programming skills.
 
- Also, you can’t decide to learn how to program before starting your web design business, and then deduct the cost of learning from your gross income once you do start the business.  All learning must take place while you are in business for you to deduct expenses. And you can’t deduct education if that education is required to meet minimum requirements for the employment; a wannabe Uber driver can’t deduct cost of driving school, because you need to know how to drive to be self-employed in that field. 
+ Also, you can’t decide to learn how to program before starting your web design business, and then deduct the cost of learning from your gross income once you do start the business.  All learning must take place while you are in business for you to deduct expenses. 
+ 
+ And you can’t deduct education if that education is required to meet minimum requirements for the employment; a wannabe Uber driver can’t deduct cost of driving school, because you need to know how to drive to be self-employed in that field. 
 
 You can deduct as part of education expenses: <b>tuition</b>,<b>registration fees</b>, <b>course fees</b>, <b>instructional material</b>, <b>textbooks</b>, <b>supplies</b>, <b>laboratory fees</b>, and <b>commuting fees</b> to the education center. 
 
 
-<h2>Conclusion</h2>
+<h3>Conclusion</h3>
 Self employment tax can get complex because of the way it interacts with other forms of taxes. You are forced to withold taxes yourself and pay quarterly (estimated taxes), which triggers potential issues since self-employment is not the most reliable field when it comes to steady income. This is on top of the federal and state taxes you must pay. Things can get pretty hectic. For this reason, the information presented here is not mean to represent legal or accounting advise. The purpose of this article is to make the ordinary self-employed person or would-be self-employed person aware of the potential tax liability they may face.
 
 
