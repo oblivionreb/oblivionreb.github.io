@@ -65,7 +65,7 @@ Additionally, if your gig is seasonal(you make more in certain periods than in o
 You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steap penalty. However, there are exceptions: 
 
 - If your <b>total taxes owed after deducting tax credits is under $1000</b>, you won't have to sweat too much about not paying estimated taxes, though it's always a good habit to pay your taxes in installments. For corporations, this number is $500.
-- Additionally, if you had <b>no tax liability** the **previous tax year of 12 months</b> and you were a <b>citizen or a resident</b> of the United States throughout the previous taxable year, you do not have to pay estimated taxes for the current taxable year. 
+- Additionally, if you had <b>no tax liability</b> the <b>previous tax year of 12 months</b> and you were a <b>citizen or a resident</b> of the United States throughout the previous taxable year, you do not have to pay estimated taxes for the current taxable year. 
 - Further, if you are a <b>newly retired (62 or older)</b> or a <b>newly disabled individual</b> who <b>became disabled within the taxable year or previous taxable year</b> and had a <b>reasonable cause</b> for missing estimated taxes, you will not incur penalties. 
 
 <h3> Why Do You Have To Pay Self Employment Tax? </h3>
@@ -238,11 +238,8 @@ Self employment tax can get complex because of the way it interacts with other f
 
 
 1. Kamoroff, Bernard C.P.A. 475 Tax Deductions For Businesses And Self-Employed Individuals : An A-To-Z Guide To Hundreds Of Tax Write-Offs. Guilford, Connecticut, Lyons Press, 2019.
-
 2. IRS Publication 946
-
 3. IRS Publication 15
-
 4. IRS Publication 578
 
 
