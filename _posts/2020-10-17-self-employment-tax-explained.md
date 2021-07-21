@@ -9,8 +9,7 @@ Self Employment Tax Explained
 ===========
 
 
-## How Do You Calculate Self-Employment Tax?
-
+<h3> How Do You Calculate Self-Employment Tax? </h3>
 
 In the US, whether you have a W-2 job or not, if you earn income as an independent contractor or through informal side gigs, the IRS considers you a sole proprietor of a business, and your business profit is generally subject to self-employment tax. This tax consists of 15.3% of your adjusted gross income.
 
@@ -18,7 +17,7 @@ You're essentially responsible for paying the FICA portion of your tax that an e
 
 You calculate your net income by **subtracting deductions like business expenses from your total income on a Schedule C form.** You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to **determine your self employment tax on your Schedule SE**, so read the instructions for more information.
 
-## How Do You Pay Self-Employment Tax?
+<h3> How Do You Pay Self-Employment Tax?</h3>
 
 You should not wait till the end of the tax season to start calculating your self employment tax because the government requires that you pay your taxes in four installments (in most cases). This is called estimated tax and it includes all of your tax liabilities: federal, state, and self-employmenty tax. To calculate estimated taxes, you estimate your total tax liability for the year and multiply the amount by 90%. Then, you ideally pay 22.5% of that total amount (90%/4) for each installment. You can input the calculations on form 1040-ES.
 
@@ -32,7 +31,7 @@ You can usually use your tax amount for the previous year as a good baseline for
 
 Additionally, if your gig is seasonal(you make more in certain periods than in others), you can annualize the payments of a given period rather than cleanly dividing the payments by four. This method is called an **annualized income installment**. You first complete the 2021 Estimated Tax Worksheet through line 14b. Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.gov/publications/p505#en_US_2019_publink1000194749) and file the calculations on Form 2210.
 
-## What Happens If I Don't Pay Estimated Taxes?
+<h3> What Happens If I Don't Pay Estimated Taxes? </h3?
 
 You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steap penalty. However, there are exceptions: 
 
