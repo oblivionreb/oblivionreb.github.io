@@ -181,16 +181,6 @@ According to section 1402 of the Tax Code, not everyone who would otherwise be c
 <div id="deduction-section"> 
 <h3> What Can You Deduct As A Self-Employed Worker? </h3>
  
-As a sole proprietor, you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
-
-Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. 
-
-If you have doubts about whether your work is actually a business, talk to an experienced accountant.
-
-As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business.
-
-> The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
-
  There are two main deductions. The <b>standard deduction</b> and the <b>itemized deduction</b>. You can only choose one of these deductions. 
  
  So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the [qualified business deduction](https://www.nerdwallet.com/article/taxes/qualified-business-income-deduction). 
@@ -202,6 +192,16 @@ Lastly, the qualified business deduction is complex in that it benefits smaller 
 Additionally, you can take tax credits. Credits work differently from deductions because you subtract the credit from your total tax liability instead of subtracting from your gross income. Combining itemized deductions with tax credits can greatly reduce your tav liability. 
  
 However, make sure you have proper documentation at hand to prove that you are eligible for deductions and credits in the event of an IRS audit. 
+ 
+As a sole proprietor, you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
+
+Remember that your self employment work has to be conducted with a “reasonable degree of regularity” to be considered a business rather than a hobby. If your work is considered a hobby, you will not be able to take full advantage of the deductions listed below. 
+
+If you have doubts about whether your work is actually a business, talk to an experienced accountant.
+
+As a general rule, if you don’t show profit for at least three out of five consecutive years, the IRS can decide that your work is a hobby if they are not otherwise convinced you are operating a legitimate business.
+
+> The IRS is doing a great job of catching up with the gig economy and, as recently as 2019, has created a [gig economy knowledge center](https://www.irs.gov/businessces/gig-economy-tax-center).
 
 Below is a list of itemizable deductions you can use to reduce your total tax liability.
 
