@@ -41,7 +41,7 @@ In the US, whether you have a W-2 job or not, if you earn income as an independe
 
 You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. You pay 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. You will pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers--$250,000 for married filing jointly, and $125,000 married filing separate.
 
-You calculate your net income by **subtracting deductions like business expenses from your total income on a Schedule C form.** You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to **determine your self employment tax on your Schedule SE**, so read the instructions for more information.
+You calculate your net income by **subtracting deductions like business expenses from your total income on a Schedule C form.** You can learn more about deductible business expenses by reading the Schedule C instructions and reading the IRS' Publication 535 Business Expenses. You then take 92.35% of your Schedule C net profit you calculated and use that to __determine your self employment tax on your Schedule SE__, so read the instructions for more information.
 
 <h3> How Do You Pay Self-Employment Tax?</h3>
 
@@ -131,11 +131,11 @@ The IRS, for the purposes of levying tax, places liability on those who receive 
 5.  Income earned running a business entity, including a solo law practice.
 6.  Receiving profits from shares of caught fish with less than 10 crew members. Anderson v. C.I.R., T.C.M. (RIA) 2010-001 (Tax 2010), aff'd, (1st Cir. Mar. 15, 2011).
 
-<li> Who is exempt from the self employment tax? </li>
+<h3> Who is exempt from the self employment tax? </h3>
 
 According to section 1402 of the Tax Code, not everyone who would otherwise be considered self employed has to pay self-employment tax. Those who are exempt from self-employment tax include but are not limited to: 1) “a duly ordained, commissioned, or licensed minister of a church or a member of a religious order . . .”, 2) Christian Science practitioners, 3) those who earn money from trading stocks or receiving dividends as long as they are not dealers in stocks and securities, 4) landlords who earn money from rentals and/or personal property leased with real estate, 5) partners of a firm who earn stipend without working in the course of business, and 6) limited partners who earn distributed shares.
 
-<li> What Can You Deduct As A Self-Employed Worker? </li>
+<h3> What Can You Deduct As A Self-Employed Worker? </h3>
 
 
 When you work for companies like Uber, Lyft, GrubHub, or Doordash, you are not an employee; you’re an “on-demand” worker or an “independent contractor.” The same goes for anyone working freelance, consulting, and other independent trades. Legally, you’re a sole proprietor, meaning  you are in business for yourself and can deduct expenses from your gross income to get your total taxable income. This information is filed on Schedule C, Profit or Loss from Business, which attaches to your 1040 income tax return. 
