@@ -33,9 +33,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 <h1> Self Employment Tax Explained </h1>
 
-<p><a href="#deduction-section"><span class="material-icons-outlined">
-keyboard_arrow_down
-</span> Skip to the part where you learn how to reduce your taxes.</a></p>
+<p><a href="#deduction-section"><span class="material-icons-outlined">e313</span> Skip to the part where you learn how to reduce your taxes.</a></p>
 
 <h3> How Do You Calculate Self-Employment Tax? </h3>
 
