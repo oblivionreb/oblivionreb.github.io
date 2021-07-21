@@ -154,7 +154,7 @@ You’re actually allowed to deduct accountant fees from your income. This inclu
 
 When you set up a home office, there are various items that can be deducted. You can add up the total expenses and deduct them from your gross income. You don’t have to have a home-based business to set up a home office deduction. The space can be a traditional office, workshop, studio, warehouse, store, or showroom. “Home” is not limited to a house but also includes apartments, lofts, trailers, mobile homes, and detached structures that are part of your residence like garages, sheds, or other buildings. 
 
-The tax deductions relate to expenses associated with the space, like: **rent** or <span class="bold>**depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services**</span>, and much more.
+The tax deductions relate to expenses associated with the space, like: **rent** or __depreciation, utilities, insurance, property taxes, maintenance, home repairs, remodeling, air conditioning,  alarm systems, answering machines, telephone answering service fees, internet services__, and much more.
 
 Before you take a home office deduction, speak to a tax professional to see whether your office space qualifies. Generally, the space needs to be your “principal place of business” and it needs to be used “regularly and exclusively”(with few exceptions). Like many rules, the definitions for some of the terms create complexities that are best handled by a tax professional. See IRS Publication 587, [Business Use of Your Home](https://www.irs.gov/pub/irs-pdf/p587.pdf).
 
