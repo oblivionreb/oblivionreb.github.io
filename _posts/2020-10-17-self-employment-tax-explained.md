@@ -112,7 +112,7 @@ One is engaged in a “trade or business” if they engage with “the activity 
 
 With this definition, a <b>full time gambler</b> is engaged in a trade or business. So he or she, according to *Groetzinger*, is considered self-employed and would be subject to self-employment taxes.
 
-Generally self-employed people fall into several catogeries that include but are not limited to <b>independent contractors</b> (Turnidge v. C.I.R.), <b>practitioners in a sole proprietorship</b> (if they receive income), <b>partners in a venture</b> (if they receive income), <b>partners in a limited partnership/ partnership</b>, officials of religious institutions, farmers and several others.
+Generally, self-employed people fall into several catogeries that include but are not limited to <b>independent contractors</b> (Turnidge v. C.I.R.), <b>practitioners in a sole proprietorship</b>, <b>partners in a venture</b>, <b>partners in a limited partnership/ partnership</b>, officials of religious institutions, farmers and several others.
 
 Though many self-employed workers can be categorized, the law is not that simple.
 
@@ -136,15 +136,23 @@ The ability to make or lose money based on factors within the control of the wor
 
 <h4> 4. Whether the principal can discharge the individual </h4>
 
-Work that only allows discharge if the worker doesn’t meet certain specification or rules points to independent contractor status. See Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007). Work like this is more contractual in nature. For example, a freelance writer working for a tech company may make an agreement to write three 500-word articles a week for X amount of pay for X amount of weeks. A specific performance of this contract is required where the worker must meet the target of three 500-word articles a week. Not meeting this goal would be grounds for discharge.
+Work that only allows discharge if the worker doesn’t meet certain specification or rules points to independent contractor status. See Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007). Work like this is more contractual in nature.
+
+For example, a freelance writer working for a tech company may make an agreement to write three 500-word articles a week for X amount of pay for X amount of weeks. 
+
+A specific performance of this contract is required where the worker must meet the target of three 500-word articles a week. Not meeting this goal would be grounds for discharge.
 
 <h4> 5. Whether the work is part of the principal's regular business </h4>
 
-Work that is part of the principal’s regular business suggests that the person undertaking that work is an employee, but this is just one factor and must be viewed within the context of other factors. For example, a construction business that hires independent contractors is said to have construction as its principal business, with independent contractors who participate in construction. However, other factors like independent investment, permanence, control, etc. determines status.
+Work that is part of the principal’s regular business suggests that the person undertaking that work is an employee, but this is just one factor and must be viewed within the context of other factors. 
+
+For example, a construction business that hires independent contractors is said to have construction as its principal business, with independent contractors who participate in construction. However, other factors like independent investment, permanence, control, etc. determine status.
 
 <h4> 6. The permanency of the relationship </h4>
 
-Transitory work points to independent contractor status, but transients can be employees, including those who work on and off or during specific times of the year. Also, independent contractors can also work for long periods. Herman v. Express Sixty–Minutes Delivery Serv., Inc., 161 F.3d 299, 305 (5th Cir.1998); Avis Rent A Car Sys., Inc. v. United States, 503 F.2d 423, 430 (2d Cir.1974).
+Transitory work generally points to independent contractor status, but transients can also be employees. 
+
+Conversely, independent contractors can work for long periods. This factor does no have a heavy weight.  Herman v. Express Sixty–Minutes Delivery Serv., Inc., 161 F.3d 299, 305 (5th Cir.1998); Avis Rent A Car Sys., Inc. v. United States, 503 F.2d 423, 430 (2d Cir.1974).
 
 <h4> 7. The relationship the parties believed they were creating.</h4>
 
