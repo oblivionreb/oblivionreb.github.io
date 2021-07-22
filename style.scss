@@ -200,6 +200,36 @@ body {
   font-weight: bold;
 }
 
+a {
+  outline: none;
+  text-decoration: none;	
+  padding: 2px 1px 0;	
+}
+
+a:link {
+    color: #04CDE8;
+}
+
+a:visited {
+   color: #4b0082;
+}
+
+a:focus {
+  background: #defbff;
+ border-bottom: 1px solid;
+}
+
+a:hover {
+ background: #defbff;
+ border-bottom: 1px solid;
+}
+
+a:active {
+ background: #04CDE8;
+ color: #defbff	
+	 
+}
+
 ol {
   font-size: 17px;
   margin-bottom: 15px;
