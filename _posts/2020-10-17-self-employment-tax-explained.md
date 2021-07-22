@@ -104,7 +104,7 @@ In other words, the government is not just trying to tax your business but is al
 
 This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
 
-<h3> Who Is Considered Self-Employed?</h3>
+<h3> Who is Considered Self-Employed?</h3>
 
 According to section 1401(b) of the Tax Code, self-employment generally means “. . . any trade or business carried on by . . . an individual.” The phrase “trade or business” is broad.
 
@@ -160,7 +160,7 @@ The intended relationship can be viewed objectively by looking at the regular pr
 
 The above factors are weighed in a balancing test to see whether the facts show that the worker is an employee or independent contractor for the purpose of self-employment tax. If you have any questions about where you stand, contact a tax professional.
 
-<h3> What Types of Income Can Be Taxed Under Self Employment?</h3>
+<h3> What Types of Income Can Be Taxed Under The Self Employment Tax?</h3>
 
 The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. 
 
@@ -175,7 +175,7 @@ For example, you can’t take a job as a freelancer, quit the job, receive your 
 5.  Income earned running a business entity, including a solo law practice.
 6.  Receiving profits from shares of caught fish with less than 10 crew members. Anderson v. C.I.R., T.C.M. (RIA) 2010-001 (Tax 2010), aff'd, (1st Cir. Mar. 15, 2011).
 
-<h3> Who is exempt from the self employment tax? </h3>
+<h3> Who is Exempt From the Self Employment Tax? </h3>
 
 According to section 1402 of the Tax Code, not everyone who would otherwise be considered self employed has to pay self-employment tax. Those who are exempt from self-employment tax include but are not limited to: 
 
