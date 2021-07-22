@@ -189,10 +189,10 @@ According to section 1402 of the Tax Code, not everyone who would otherwise be c
 <div id="deduction-section"> 
 <h3> What Can You Deduct As A Self-Employed Worker? </h3>
  
- <h4> self-employment tax deduction </h4>
+ <h4> Self-Employment Tax Deduction </h4>
  Reduce your taxes by taking advantage of deductions and tax credits. Right off the bat, you can deduct half of your self-employment tax. This means that a self-employment tax bill of $3000 will result in a $1,500 deduction that you can take.
  
- <h4> qualified business income tax deduction </h4>
+ <h4> Qualified Business Income Tax Deduction </h4>
  Another deduction that may be immediately available to certain self-emplyed workers is the <b>qualified business income deduction</b>(QBI). Those eligible for the deduction can deduct up to 20% percent of their taxable <b>business</b> income. 
  
  The QBI is complex in that it benefits smaller businesses, but becomes increasingly difficult to take advantage of depending on the type of business and the amount of income the business generates. 
@@ -219,14 +219,14 @@ Even if your income falls under the phaseout levels, depending on the structure 
  
  > QBI deductions do not go on Schedule C, but go on Form 1040 or 1040-SR.
  
- <h4> standard deduction and itemized deduction </h4>
+ <h4> The Standard and Itemized Deductions </h4>
 Besides the self-employment tax deduction and the QBI deduction, there are two main deductions. The <b>standard deduction</b> and the <b>itemized deduction</b>. You can only choose one of these deductions. 
  
  So, taking a standard deduction will exempt you from the itemized deductions listed below, but not from the <b>self employment tax deduction</b> or the [qualified business income deduction](https://www.irs.gov/newsroom/qualified-business-income-deduction). 
  
 The standard deduction is a fixed amount and presents much less of a hassle. For 2021, single filers and married filing seperately get a $12,550 deduction; $25,100 for joint filers; and $18,880 for head of household. However, if you have substantial deductible business expenses, then you may want to take advantage of itemized deductions. The itemized deductions will be outlined later.
   
- <h4>tax credits</h4>
+ <h4>Tax Credits</h4>
 Additionally, you can take tax credits. Credits work differently from deductions because you subtract the credit from your total tax liability instead of subtracting from your gross income. Combining itemized deductions with tax credits can greatly reduce your tax liability. 
  
 However, make sure you have proper documentation at hand to prove that you are eligible for deductions and credits in the event of an IRS audit. 
