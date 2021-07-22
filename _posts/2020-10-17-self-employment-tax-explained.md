@@ -271,11 +271,15 @@ Talk to your accountant to learn how much you can deduct from your expensive bus
 
 <h4>Promotion/ Advertising</h4>
 
-If you work as a freelancer and you advertise your services on Google or Facebook ads, you can deduct the cost of <b>advertising</b> your business from your income. Advertising includes promotional devices like <b>giveaways</b>. For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
+If you work as a freelancer and you advertise your services on Google or Facebook ads, you can deduct the cost of <b>advertising</b> your business from your income. Advertising includes promotional devices like <b>giveaways</b>. 
+ 
+ For example, you might give away pens with the name of your business on them and then be able to deduct the cost of those pens. 
 
 Many YouTubers hold contests and the costs of operating these contests can be deductible. Also, when a YouTuber gives away money to random strangers, they may take a deduction for promotion since the act of giving increases goodwill(you can’t deduct under charity if you’re not a corporation). 
 
-<b>Prizes</b> are included as long as there is an incentive to generate sales. Unfortunately, the recipient of a prize has to pay taxes on the value of the prize if that prize's value is over $600. So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
+<b>Prizes</b> are included as long as there is an incentive to generate sales. Unfortunately, the recipient of a prize has to pay taxes on the value of the prize if that prize's value is over $600. 
+ 
+ So, if you win an iPhone from an influencer, know that you owe taxes on that phone and that they likely received a nice tax deduction.
 
 >  If you want to get into the YouTube game or if you use a <b>drone</b> to advertise your business, you can deduct the cost of the drone. Keep in mind that the price of the drown can effect how much you can deduct in a year.
 
@@ -283,11 +287,15 @@ Many YouTubers hold contests and the costs of operating these contests can be de
 
 <b>Clothing with your company’s logo</b> or <b>uniforms worn exclusively for your work</b> are deductible. But that doesn’t mean you can’t wear them outside of work as well.
 
-For example, YouTubers who create <b>merch</b> can deduct the costs of articles of clothing including <b>hats, shirts, jackets,</b> if their logo appears on them. The <b>cost of cleaning</b> them is also deductible! The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
+For example, YouTubers who create <b>merch</b> can deduct the costs of articles of clothing including <b>hats, shirts, jackets,</b> if their logo appears on them. The <b>cost of cleaning</b> them is also deductible! 
+ 
+The reasoning behind this is that clothing with logos on them can be considered a form of promotion, and promotions are deductible. This type of expense category is still considered under supplies. 
 
 <h4>Vehicles</h4>
 
-Those in the gig economy can deduct the cost of their <b>vehicle</b> if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, [How to Depreciate Property](https://www.irs.gov/pub/irs-pdf/p946.pdf) for more information. You can also deduct the cost of fuel when using your vehicle. 
+Those in the gig economy can deduct the cost of their <b>vehicle</b> if purchased for business or they can deduct the Standard Mileage Rate, a method used to calculate depreciation. 
+ 
+ The policy is that your car goes down in value the more you use it, so by continually using your vehicle, you’re losing money. Read IRS Publication 946, [How to Depreciate Property](https://www.irs.gov/pub/irs-pdf/p946.pdf) for more information. You can also deduct the cost of fuel when using your vehicle. 
 
 
 > You can actually deduct the cost of a <b>bike</b> if it was purchased in the tax year, or you can deduct the depreciating value of the bike. 
@@ -295,20 +303,28 @@ Those in the gig economy can deduct the cost of their <b>vehicle</b> if purchase
 
 <h4>Hiring Children</h4>
 
-You can hire your own **children** and get a deduction for their wages. The children themselves are not liable for federal income tax or payroll tax. The children must be under 18 and make a maximum of $6, 350(maximum subject to change from year to year) to exempt them from paying taxes. 
+You can hire your own **children** and get a deduction for their wages. The children themselves are not liable for federal income tax or payroll tax. 
+ 
+ The children must be under 18 and make a maximum of $6, 350(maximum subject to change from year to year) to exempt them from paying taxes. 
 
-The children of course have to actually be doing work related to your business. IF you pay the children above the maximum, the children would have to file W-4s  and you will have to file W-2 and W-3 payroll forms at the end of the year. However, the children do not need to pay the Social Security and Medicare tax and you don’t have to pay payroll tax. 
+The children of course have to actually be doing work related to your business. If you pay the children above the maximum, the children would have to file W-4s  and you will have to file W-2 and W-3 payroll forms at the end of the year. 
+ 
+ However, the children do not need to pay the Social Security and Medicare tax and you don’t have to pay payroll tax. 
 
 See IRS Publication 15, [Employer’s Tax Guide](https://www.irs.gov/pub/irs-pdf/p15.pdf) for more information. 
 
 
 <h4>Bank Charges</h4>
 
-**Bank charges**, **services**, **ATM fees**, **penalties**, **check writing fees**, **check printing fees**, and **credit card fees** are deductible. Specifically, you can deduct the **interest cost of credit cards** For any purchases made using the ATM, you can deduct the ATM fees from your gross income.
+**Bank charges**, **services**, **ATM fees**, **penalties**, **check writing fees**, **check printing fees**, and **credit card fees** are deductible. 
+ 
+ Specifically, you can deduct the **interest cost of credit cards** For any purchases made using the ATM, you can deduct the ATM fees from your gross income.
 
 <h4>Other Fees</h4>
 
-If you hired a freelance web developer to build a website for you, you can deduct that fee from your gross income under <b>commission and fees</b>. This applies to other freelancers and independent contractors. 
+If you hired a freelance web developer to build a website for you, you can deduct that fee from your gross income under <b>commission and fees</b>. 
+ 
+This applies to other freelancers and independent contractors. 
 
 <h4>Software</h4>
 
@@ -318,7 +334,9 @@ But this also applies to other freelancers who use **enterprise software** to in
 
 <h4>Lost Income</h4>
 
-When you do freelance work long enough, you’re bound to encounter a customer that refuses to pay you for your services. This is called “bad debt,” Unfortunately, you can’t take a bad debt deduction for the time you spent working on that website or copy. But if the customer pays you with a **check that bounces**, you can deduct the expense from your net income. 
+When you do freelance work long enough, you’re bound to encounter a customer that refuses to pay you for your services. This is called “bad debt.” 
+ 
+ Unfortunately, you can’t take a bad debt deduction for the time you spent working on that website or copy. But if the customer pays you with a **check that bounces**, you can deduct the expense from your net income. 
 
 > Note: If you’re a drop ship seller on Shopify, you can take a bad debt deduction even  if the customer does not pay. That’s because inventory is deductible at the end of the year as costs of goods sold. 
 
@@ -331,11 +349,13 @@ Even if you’re a drop shipper who doesn’t physically hold inventory, goods y
 
 <h4>Education</h4>
 
-You can actually deduct the cost of learning new skills while you are self-employed if what you are learning improves your skill in your business. For example, a freelance web developer who already knows how to program can pay for an advanced programming course and deduct the cost of that course. But a freelance programmer cannot deduct money spent on a cooking course because it doesn’t improve his programming skills.
-
- Also, you can’t decide to learn how to program before starting your web design business, and then deduct the cost of learning from your gross income once you do start the business.  All learning must take place while you are in business for you to deduct expenses. 
+You can actually deduct the cost of learning new skills while you are self-employed if what you are learning improves your skill in your business. For example, a freelance web developer who already knows how to program can pay for an advanced programming course and deduct the cost of that course.
  
- And you can’t deduct education if that education is required to meet minimum requirements for the employment; a wannabe Uber driver can’t deduct cost of driving school, because you need to know how to drive to be self-employed in that field. 
+ But a freelance programmer cannot deduct money spent on a cooking course because it doesn’t improve his programming skills.
+
+ Also, you can’t decide to learn how to program before starting your web design business, and then deduct the cost of learning from your gross income once you do start the business. Learning must take place while you are in business for you to deduct expenses. 
+ 
+ And you cannot deduct education if that education is required to meet minimum requirements for the employment; a wannabe Uber driver can’t deduct cost of driving school, because you need to know how to drive to be self-employed in that field. 
 
 You can deduct as part of education expenses: <b>tuition</b>,<b>registration fees</b>, <b>course fees</b>, <b>instructional material</b>, <b>textbooks</b>, <b>supplies</b>, <b>laboratory fees</b>, and <b>commuting fees</b> to the education center. 
 </div>
