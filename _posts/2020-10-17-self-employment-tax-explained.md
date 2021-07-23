@@ -110,7 +110,7 @@ According to the federal government, <a href="https://www.law.cornell.edu/suprem
 
 One is engaged in a "trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” 
 
-> A full time gambler was once considered engaged in a trade or business. So would have been self-employed and his earnings would have been subject to self-employment taxes. The 1982 amendments to the Tax Code put gamblers on par with investers, who are not considered self-employed.
+> A full time gambler was once considered engaged in a trade or business. So she would have been self-employed and her earnings would have been subject to self-employment taxes. The 1982 amendments to the Tax Code put gamblers on par with investers, who are not considered self-employed.
 
 Generally, self-employed people fall into several catogeries that include but are not limited to <b>independent contractors</b>, <b>practitioners in a sole proprietorship</b>, <b>partners in a venture</b>, <b>partners in a limited partnership/ partnership</b>, officials of religious institutions, farmers and several others.
 
