@@ -39,7 +39,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 In the US, whether you have a W-2 job or not, if you earn income as an independent contractor or through informal side gigs, your profit is generally subject to self-employment tax. 
 
-This tax consists of 15.3% of your adjusted gross income.
+This tax consists of <a href="https://www.law.cornell.edu/uscode/text/26/1401">15.3% of your adjusted gross income</a>.
 
 You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. 
 
@@ -57,13 +57,13 @@ You then take 92.35% of your Schedule C net profit you calculated and use that t
 
 You should not wait till the end of the tax season to start calculating your self employment tax because the government requires that you pay your taxes in four installments (in most cases). 
 
-This is called <b>estimated tax</b> and it includes all of your tax liabilities: federal, state, and self-employmenty tax. 
+This is called estimated tax</b> and it includes all of your tax liabilities: federal, state, and self-employmenty tax. 
 
 To calculate estimated taxes, you estimate your total tax liability for the year and multiply the amount by 90%. 
 
 Then, you ideally pay 22.5% of that total amount (90%/4) for each installment. You can input the calculations on form 1040-ES.
 
-The statutory due dates according to the Internal Revenue Code are:
+The <a href="https://www.law.cornell.edu/uscode/text/26/6654">statutory due dates</a> according to the Internal Revenue Code are:
 
 <ul>
  <li> April 15 (22.5%) </li>
@@ -76,19 +76,19 @@ You can usually use your tax amount for the previous year as a good baseline for
 
 That's where things get messy. 
 
-If you suddenly receive a windfall near the end of your tax year that throws off your estimate, you are still required to file an amended return. See Steiner v. C. I. R., Tax Ct.1955, 25 T.C. 26.
+If you suddenly receive a windfall near the end of your tax year that throws off your estimate, you are still required to file an amended return. See <a href="https://casetext.com/case/steiner-v-commissioner-of-internal-revenue-2">Steiner v. C. I. R.</a>.
 
 To amend an estimation, you can use [Worksheet 2-10 from Publication 505](https://www.irs.gov/publications/p505#en_US_2019_publink1000309056).
 
 Additionally, if your gig is seasonal(you make more in certain periods than in others), you can annualize the payments of a given period rather than cleanly dividing the payments by four. 
 
-This method is called an <b>annualized income installment</b>. You first complete the 2021 Estimated Tax Worksheet through line 14b. 
+This method is called an <a href="https://www.investopedia.com/terms/a/annualized-incomeinstallment-method.asp">annualized income installment</a>. You first complete the 2021 Estimated Tax Worksheet through line 14b. 
 
 Then, you complete the [Annualized Estimated Tax Worksheet 2-7](https://www.irs.gov/publications/p505#en_US_2019_publink1000194749) and file the calculations on Form 2210.
 
 <h3> What Happens If I Don't Pay Estimated Taxes? </h3>
 
-You will incur a tax penalty for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steep penalty. 
+You will incur a <a href="https://www.irs.gov/irm/part20/irm_20-001-003r">tax penalty</a> for any amount that is underpaid for each period. There are four periods, so paying nothing will likely incur a steep penalty. 
 
 However, there are exceptions: 
 
@@ -100,43 +100,43 @@ However, there are exceptions:
 
 Oftentimes, the federal government creates tax policies to generate revenue for programs. In this case, self employment tax ensures that those who do not work (or do not solely work) the normal 9-5, W-2 job pay taxes to fund social security benefits. 
 
-In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. U.S. v. Cain, S.D.Miss.1953, 113 F.Supp. 304. 
+In other words, the government is not just trying to tax your business but is also trying to make sure you also contribute to the welfare of the American people. See <a href="https://casetext.com/case/united-states-v-cain-7">U.S. v. Cain.</a>
 
 This obligation is a mandatory one, even if you don’t ever plan to take advantage of social benefits. See Eanes v. C.I.R., U.S.Tax Ct.2000, 2000 WL 1131904.
 
 <h3> Who is Considered Self-Employed?</h3>
 
-According to section 1401(b) of the Tax Code, self-employment generally means “. . . any trade or business carried on by . . . an individual.” The phrase “trade or business” is broad.
+According to the federal government, <a href="https://www.law.cornell.edu/supremecourt/text/480/23">self-employment</a> generally means “. . . any trade or business carried on by . . . an individual.” The phrase “trade or business” is broad.
 
-One is engaged in a “trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” Groetzinger, 480 U.S. at 35, 107 S.Ct. 980.
+One is engaged in a "trade or business” if they engage with “the activity with continuity and regularity and ... the taxpayer's primary purpose for engaging in the activity must be for income or profit.” 
 
-With this definition, a <b>full time gambler</b> is engaged in a trade or business. So he or she, according to *Groetzinger*, is considered self-employed and would be subject to self-employment taxes.
+> A full time gambler was once considered engaged in a trade or business. So would have been self-employed and his earnings would have been subject to self-employment taxes. The 1982 amendments to the Tax Code put gamblers on par with investers, who are not considered self-employed.
 
-Generally, self-employed people fall into several catogeries that include but are not limited to <b>independent contractors</b> (Turnidge v. C.I.R.), <b>practitioners in a sole proprietorship</b>, <b>partners in a venture</b>, <b>partners in a limited partnership/ partnership</b>, officials of religious institutions, farmers and several others.
+Generally, self-employed people fall into several catogeries that include but are not limited to <b>independent contractors</b>, <b>practitioners in a sole proprietorship</b>, <b>partners in a venture</b>, <b>partners in a limited partnership/ partnership</b>, officials of religious institutions, farmers and several others.
 
 Though many self-employed workers can be categorized, the law is not that simple.
 
-Take the gig economy, for example. As the gig economy continues to change, it may become difficult to classify who is an employee of the company or an independent contractor. Luckily, courts have developed factors for determining who is an independent contractor for the purpose of levying self employment tax. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
+Take the gig economy, for example. As the gig economy continues to change, it may become difficult to classify who is an employee of the company or an independent contractor. Luckily, courts have developed factors for determining who is an independent contractor for the purpose of levying self employment tax. See <a href="https://caselaw.findlaw.com/us-4th-circuit/1301380.html">Weber v. C.I.R.</a>
 
 These factors are:
 
 <h4> 1. The degree of control exercised by the principal </h4>
 
-More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. Gen. Inv. Corp. v. United States, 823 F.2d 337, 342 (9th Cir.1987). 
+More control by the principal means the worker is likely an employee. The principal does not necessarily have to hover over the worker like a hawk. See <a href="https://casetext.com/case/general-inv-corp-v-us">Gen. Inv. Corp. v. United States.</a>
 
-For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence. See Blodgett v. C.I.R., U.S.Tax Ct.(2012).
+For example, workers that set their own hours and clock in and out whenever they want can still be considered employees. This factor is a crucial factor, one that can swing the balance, which makes sense since what separates employees from independent contractors is independence.
 
 <h4> 2. Which party invests in work facilities used by the individual </h4>
 
-If the principal primarily invests in work facilities, then the worker is more likely an employee. But if the worker provides his or her own tools, then it strongly indicates independent contractor status. Breaux & Daigle, Inc. v. United States, 900 F.2d 49, 53 (5th Cir.1990).
+If the principal primarily invests in work facilities, then the worker is more likely an employee. But if the worker provides his or her own tools, then it strongly indicates independent contractor status. See <a href="https://casetext.com/case/breaux-and-daigle-inc-v-us">Breaux & Daigle, Inc. v. United States</a>.
 
 <h4> 3. The opportunity of the individual for profit or loss</h4>
 
-The ability to make or lose money based on factors within the control of the worker would lean towards independence. See Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
+The ability to make or lose money based on factors within the control of the worker would lean towards independence.
 
 <h4> 4. Whether the principal can discharge the individual </h4>
 
-Work that only allows discharge if the worker doesn’t meet certain specification or rules points to independent contractor status. See Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007). Work like this is more contractual in nature.
+Work that only allows discharge if the worker doesn’t meet certain specification or rules points to independent contractor status. Work like this is more contractual in nature.
 
 For example, a freelance writer working for a tech company may make an agreement to write three 500-word articles a week for X amount of pay for X amount of weeks. 
 
@@ -152,11 +152,11 @@ For example, a construction business that hires independent contractors is said 
 
 Transitory work generally points to independent contractor status, but transients can also be employees. 
 
-Conversely, independent contractors can work for long periods. This factor does no have a heavy weight.  Herman v. Express Sixty–Minutes Delivery Serv., Inc., 161 F.3d 299, 305 (5th Cir.1998); Avis Rent A Car Sys., Inc. v. United States, 503 F.2d 423, 430 (2d Cir.1974).
+Conversely, independent contractors can work for long periods. This factor does not weigh heavily in determining whether someone is an independant contractor. See <a href="https://casetext.com/case/herman-v-express-sixty-minutes-delivery-serv">Herman v. Express Sixty–Minutes Delivery Serv., Inc.</a>
 
 <h4> 7. The relationship the parties believed they were creating.</h4>
 
-The intended relationship can be viewed objectively by looking at the regular practise of the principal and whether or not the principal issued a Form 1099-MISC. Or whether the worker requested a W-2 or W-4\. Jones v. C.I.R., 94 T.C.M. (CCH) 230 (Tax 2007).
+The intended relationship can be viewed objectively by looking at the regular practise of the principal and whether or not the principal issued a Form 1099-MISC. Or whether the worker requested a W-2 or W-4.
 
 The above factors are weighed in a balancing test to see whether the facts show that the worker is an employee or independent contractor for the purpose of self-employment tax. If you have any questions about where you stand, contact a tax professional.
 
@@ -164,20 +164,20 @@ The above factors are weighed in a balancing test to see whether the facts show 
 
 The IRS, for the purposes of levying tax, places liability on those who receive net “income” greater than $400. See 1401(b). Net income is determined by subtracting your gross income (total income) from your losses. 
 
-Importantly, self-employment income, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized. 26 U.S.C.A. §§ 1401(a).
+Importantly, <a href="https://codes.findlaw.com/us/title-26-internal-revenue-code/26-usc-sect-1401.html">self-employment income</a>, subject to self-employment tax, is determined by the source of the income, not the taxpayer's status at the time income is realized.
 
 For example, you can’t take a job as a freelancer, quit the job, receive your last freelance check while working at McDonalds and decide to forgo self employment tax since you are now a W-2 worker. The source of the income must be a “trade or business” as described above. Below is a list of some unconventional income sources that can be taxed based on case law:
 
-1.  Income obtained from religious work if Form 4361 is not filed in a timely manner.Gardner v. C.I.R., U.S.Tax Ct.2013, 2013 WL 892963\. More about this in the next section.
-2.  Income gained from selling capital like real estate if business earns profit, making it a primary means of generating income. Si Boo, LLC v. C.I.R., U.S.Tax Ct.2015, 2015 WL 468165.
+1.  Income obtained from religious work if Form 4361 is not filed in a timely manner. Gardner v. C.I.R., U.S.Tax Ct.2013, 2013 WL 892963. 
+2.  Income gained from selling capital like real estate if your business makes it a primary means of generating income. Si Boo, LLC v. C.I.R., U.S.Tax Ct.2015, 2015 WL 468165.
 3.  Income earned from Real Estate commissions. Jondahl v. C.I.R., U.S.Tax Ct.2005, 2005 WL 675444.
 4.  Value-added income earned from cooperatives. Fultz v. C.I.R., U.S.Tax Ct.2005, 2005 WL 555269.
 5.  Income earned running a business entity, including a solo law practice.
-6.  Receiving profits from shares of caught fish with less than 10 crew members. Anderson v. C.I.R., T.C.M. (RIA) 2010-001 (Tax 2010), aff'd, (1st Cir. Mar. 15, 2011).
+6.  Receiving profits from shares of caught fish with less than 10 crew members. Anderson v. C.I.R., T.C.M. (RIA) 2010-001 (Tax 2010).
 
 <h3> Who is Exempt From the Self Employment Tax? </h3>
 
-According to section 1402 of the Tax Code, not everyone who would otherwise be considered self employed has to pay self-employment tax. Those who are exempt from self-employment tax include but are not limited to: 
+Not everyone who would otherwise be considered self employed has to pay self-employment tax. <a href="https://www.law.cornell.edu/uscode/text/26/1402">Those who are exempt</a> from self-employment tax include but are not limited to: 
 
 - “a duly ordained, commissioned, or licensed minister of a church or a member of a religious order . . .”, 
 - Christian Science practitioners,
