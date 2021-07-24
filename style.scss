@@ -354,12 +354,7 @@ box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-  byline {
-	font-size: 14.5px;
-	 padding: 10px;
-	align-items: center;
-	
-	}
+
 
   h1 {
     text-align: center;
@@ -396,11 +391,19 @@ box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
   @include lg-mobile {
     font-size: 16.5px;
   }
+	  	  
 }
+
+ byline {
+	 display: flex;
+	 align-items: center;
 	
+	font-size: 14.5px;
+	 padding: 10px;
+	
+	}	
 ul {
 margin-bottom: 30px;
-
 padding: 8px;
  @include lg-mobile {
    	margin-left: 5px;
