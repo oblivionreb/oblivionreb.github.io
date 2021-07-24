@@ -10,7 +10,7 @@ description: The self-employment tax may seem like it comes out of nowhere to st
 
 
 <p class="byline">
-       <a href="{{site.url/about}}">Raji Ayinla</a> | <span class="date">July 7, 2021</span> 
+       <a href="https://www.taxmygig.com/about">Raji Ayinla</a> | <span class="date">July 7, 2021</span> 
       </p>
      
 			    
