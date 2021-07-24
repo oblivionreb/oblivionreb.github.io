@@ -7,13 +7,13 @@ description: The self-employment tax may seem like it comes out of nowhere to st
 ---
 
 <h1>  Self Employment Tax Explained </h1>
-<p class="byline">
+
+
+<p>
        <a href="{{site.url/about}}">Raji Ayinla</a>  <span class="date">July 7, 2021</span> 
       </p>
      
 			    
-
-
 <p><a href="#deduction-section"><span><img src="/images/outline_expand_more_black_18dp.png" /></span> Skip to the part where you learn how to reduce your taxes.</a></p>
 
 <h3> How Do You Calculate Self-Employment Tax? </h3>
