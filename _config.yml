@@ -13,6 +13,11 @@ description: Tax My Gig's 2021 self employment tax calculator calculates your se
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
+# author details
+raji_ayinla:
+  name: Raji Ayinla
+  email: rajiayinla858@gmail.com
+
 #
 # Flags below are optional
 #
