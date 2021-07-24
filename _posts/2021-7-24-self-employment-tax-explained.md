@@ -9,7 +9,7 @@ description: The self-employment tax may seem like it comes out of nowhere to st
 <h1>  Self Employment Tax Explained </h1>
 
 
-<p id="byline">
+<p class="byline">
        <a href="https://www.taxmygig.com/about" alt="author">Raji Ayinla</a> | <span class="date" alt="date">July 7, 2021</span> 
       </p>
      
