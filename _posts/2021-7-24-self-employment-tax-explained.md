@@ -7,9 +7,10 @@ description: The self-employment tax may seem like it comes out of nowhere to st
 ---
 
 <h1>  Self Employment Tax Explained </h1>
-				  <p class="byline">
+<p class="byline">
        <a href="{{site.url/about}}">Raji Ayinla</a>
       </p>
+      <span class="date">July 7, 2021</span> 
 			    
 
 
