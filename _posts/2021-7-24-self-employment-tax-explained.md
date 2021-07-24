@@ -20,11 +20,11 @@ description: The self-employment tax may seem like it comes out of nowhere to st
 
 In the US, whether you have a W-2 job or not, if you earn income as an independent contractor or through informal side gigs, your profit is generally subject to self-employment tax. 
 
-This tax consists of <a href="https://www.law.cornell.edu/uscode/text/26/1401">15.3% of your adjusted gross income</a>.
+The self employment tax rate consists of <a href="https://www.law.cornell.edu/uscode/text/26/1401">15.3% of your adjusted gross income</a>.
 
 You're essentially responsible for paying the FICA portion of your tax that an employer would have witheld had you been an employee. The FICA tax consists of Social Security and Medicare. 
 
-You pay 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. 
+You pay a rate of 12.4% on the first 137,700 of earnings(2020) for Social Security and 2.9% on all of your earnings for the Medicare portion. 
 
 You pay an additional 0.9% Medicare tax on the amount that your annual income exceeds $200,000 for single filers, $250,000 for married filing jointly, and $125,000 married filing separate.
 
@@ -38,7 +38,7 @@ You then take 92.35% of your Schedule C net profit you calculated and use that t
 
 You should not wait till the end of the tax season to start calculating your self employment tax because the government requires that you pay your taxes in four installments (in most cases). 
 
-This is called estimated tax</b> and it includes all of your tax liabilities: federal, state, and self-employmenty tax. 
+This is called <b>estimated tax</b> and it includes all of your tax liabilities--federal, state, and self-employmenty tax. 
 
 To calculate estimated taxes, you estimate your total tax liability for the year and multiply the amount by 90%. 
 
