@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+     <title>404 Page</title>
+  
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <link rel="stylesheet" type="text/css" href="{{site.url}}/style.css" />
+     
+    
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="{{site.url}}/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.tagline }}" href="{{ site.url }}/feed.xml" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel="manifest" href="/manifest.json">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119970438-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119970438-3');
+    </script>
+
+  
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+<body>
+  
+  
+  <div class="content">
+ <div class="w-container">
+	<div class='content-bucket'>
+	  <div class="sidebar col-1-4">
+			
+		</div>
+
+		<div class="post col-3-4">
+			 <div class="wave-header">
+<!--Content before waves-->
+			<div class="inner-header flex">
+
+<!--Add text here-->
+
+			</div>
+
+<!--Waves Container-->
+			<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<defs>
+			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+			</defs>
+			<g class="parallax">
+			<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+			<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+			<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+			<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+			</g>
+			</svg>
+			</div>
+<!--Waves end-->
+			</div>
+			
+				
+	
+				 {{content}}
+			</div>
+  </div>
+  </div>
+ </div>
+  
+
+       {% include scripts.html %}
+</body>
+
+</html>
