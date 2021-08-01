@@ -13,7 +13,6 @@ window.mobileCheck = function() {
 
 
  if(window.mobileCheck() == true){
-  console.log("I'm in.")
   $("input[data-type='currency']").on({
      input: function() {
        document.body.firstElementChild.tabIndex = 1;
@@ -1312,7 +1311,6 @@ function totalTaxCalc(state, year, status, income){
        showWork.totalFica =   roundPenny(ficaController(income * .9235));
       showWork.agi = roundPenny(agi);
       totalFed = fedTaxController(year, status, agi);
-       console.log("if" + totalFed)
       showWork.totalFed = roundPenny(totalFed); 
       totalTax = totalFed + stateTaxController(year, state, status, income);
       showWork.totalState = roundPenny(stateTaxController(year, state,status, income)); 
