@@ -1,4 +1,4 @@
-#
+ #
 # This file contains configuration flags to customize your site
 #
 
@@ -6,9 +6,9 @@
 name: Tax My Gig
 
 # Short bio or description (displayed in the header)
-tagline: The Freelance Tax Calculator for 2021
+tagline: Self-Employment Tax Calculator
 
-description: Tax My Gig's tax calculator for freelancers calculates your self employment tax, federal tax, and state tax. 
+description: Tax My Gig's tax calculator calculates your self employment tax, federal tax, and state tax. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
