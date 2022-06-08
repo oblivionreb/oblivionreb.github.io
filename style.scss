@@ -230,9 +230,17 @@ a:active {
 	 
 }
 
+ul {
+margin-bottom: 30px;
+padding: 8px;
+ @include lg-mobile {
+   	margin-left: 5px;
+  	}
+}
 ol {
   font-size: 17px;
   margin-bottom: 15px;
+  padding: 5px;
 	
 }
 
@@ -241,6 +249,15 @@ ol > li {
 	
 	}
 
+blockquote {
+    margin: 1.8em .8em;
+    border-top: 0.5px solid $lightGray;
+    border-bottom: 0.5px solid $lightGray;
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18.5px;
+  }
 
 .nav {
     width: 100%;
