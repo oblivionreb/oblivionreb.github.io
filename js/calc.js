@@ -568,7 +568,7 @@ function stateTaxController(year,state,status,income){
   
   
   
-  if(year =="2020"){
+  if(year =="2021"){
    if(state =="Ala."){
        if(status =="Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(newalaStateBracketSingle,Math.max(0, income - 2500))
@@ -888,7 +888,7 @@ function stateTaxController(year,state,status,income){
 
     }         
   } 
-else if(year =="2021"){
+else if(year =="2022"){
    if(state =="Ala."){
        if(status =="Single" || status == "Married Filing Seperately"){
         stateTax = taxCalc(newalaStateBracketSingle,Math.max(0, income - 2500))
@@ -1234,7 +1234,7 @@ function fedTaxController(year, status, income){
   let oldfedBracketJointWed = {ten:[0,19900,.10], twelve: [19901, 81050, .12], twentytwo: [81051, 172750, .22], twentyfour: [172751,329850,.24], thirtytwo: [329851,418850, .32], thirtyfive: [418851,628300, .35], thirtyseven: [628300, Infinity , .37] }
   let oldfedBracketSepWed = {ten:[0,9700,.10], twelve: [9701, 39475, .12], twentytwo: [39476, 84200, .22],twentyfour: [84201,160725, .24], thirtytwo: [160726,204100, .32], thirtyfive: [204101,510300, .35], thirtyseven: [510300, Infinity , .37] }
   let oldfedBracketHead = {ten:[0,14200,.10], twelve: [14201, 54200, .12], twentytwo: [54201, 86350, .22],twentyfour: [86351,164900, .24], thirtytwo: [164901, 209400, .32], thirtyfive: [209401,523600, .35], thirtyseven: [523601, Infinity , .37] }
-  if(year == "2020"){
+  if(year == "2021"){
     if(status == "Single"){
       fedTax = taxCalc(oldfedBracketSingle, income);
     }
@@ -1249,7 +1249,7 @@ function fedTaxController(year, status, income){
       fedTax = taxCalc(oldfedBracketHead, income);
     }
   }
-  else if(year == "2021"){
+  else if(year == "2022"){
      if(status == "Single"){
       fedTax = taxCalc(newfedBracketSingle, income);
     }
@@ -1269,7 +1269,7 @@ function fedTaxController(year, status, income){
 
 function stndDeductionController(status, year){
   let deduction = 0;
-  if(year == "2021"){
+  if(year == "2022"){
     if(status == "Single"){
       deduction = 12950;
     }
@@ -1277,13 +1277,13 @@ function stndDeductionController(status, year){
       deduction = 25900;
     }
     else if(status == "Married Filing Seperately"){
-      deduction = 12550;
+      deduction = 12950;
     }
     else if(status == "Head of Household"){
       deduction = 19400;
     }
   }
-  else if(year == "2020"){
+  else if(year == "2021"){
      if(status == "Single"){
       deduction = 12550;
     }
