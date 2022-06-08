@@ -1425,7 +1425,7 @@ $taxButton.onclick = function(e){
   <p>Federal Tax: ${formatter.format(showWork.totalFed)} </p>
   <p>State Tax: ${formatter.format(showWork.totalState)} </p>
   <p>Self-Employment Tax: ${formatter.format(showWork.totalFica)} </p>
- <p><a href="https://www.taxmygig.com/self-employment-tax-explained/#estimated-tax">Estimated Tax</a>: ${formatter.format(divider(myTax *.90, 4))} per quarter </p>
+ <p>Estimated Tax: ${formatter.format(divider(myTax *.90, 4))} per quarter </p>
 <p>Tax Percent: ${myTaxPercent}% </p>
 `
 
