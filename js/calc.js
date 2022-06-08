@@ -372,31 +372,31 @@ function stateTaxController(year,state,status,income){
 
   let alaskaStateBracket = {one:[0,0,0]}
 
-   let newarizStateBracketSingle = {one:[0,27272,.0259], two: [27273, 54544, .0334], three: [54545, 163632, .0417], four: [163633, 250000, .045], five: [250001, Infinity, .08]}
-  let newarizStateBracketJoint = {one:[0,54544,.0259], two: [54545, 109088, .0334], three: [109089, 327263, .0417], four: [327264, 500000, .045], five: [500001, Infinity, .08]}
-  let oldarizStateBracketSingle = {one:[0,26500,.0259], two: [26501, 53000, .0334], three: [53001, 159000, .0417], four: [159001, Infinity , .045] }
-  let oldarizStateBracketJoint = {one:[0,53000,.0259], two: [53001, 106000, .0334], three: [106001, 318000, .0417], four: [318001, Infinity , .045] }
+   let newarizStateBracketSingle = {one:[0,27808,.0259], two: [27809, 55615, .0334], three: [55616, 166843, .0417], four: [166844, Infinity, .045]}
+  let newarizStateBracketJoint = {one:[0,55615,.0259], two: [55616, 111229, .0334], three: [111230, 333684, .0417], four: [333685, Infinity, .045]}
+  let oldarizStateBracketSingle = {one:[0,27272,.0259], two: [27273, 54544, .0334], three: [54545, 163632, .0417], four: [163633, 250000, .045], five: [250001, Infinity, .08]}
+  let oldarizStateBracketJoint = {one:[0,54544,.0259], two: [54545, 109088, .0334], three: [109089, 327263, .0417], four: [327264, 500000, .045], five: [500001, Infinity, .08]}
 
-  let newarkStateBracketSingle = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, Infinity , .059]}
-  let newarkStateBracketJoint = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, Infinity , .059]}
-  let oldarkStateBracketSingle = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, 79300 , .059], four: [79301, Infinity , .066]}
-  let oldarkStateBracketJoint = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, 79300 , .059], four: [79301, Infinity , .066]}
+  let newarkStateBracketSingle = {one:[0,4300,.02], two: [4301, 8500, .04], three: [8501, Infinity , .055]}
+  let newarkStateBracketJoint = {one:[0,4300,.02], two: [4301, 8500, .04], three: [8501, Infinity , .055]}
+  let oldarkStateBracketSingle = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, Infinity , .059]}
+  let oldarkStateBracketJoint = {one:[0,4000,.02], two: [4001, 8000, .04], three: [8001, Infinity , .059]}
 
-  let newcaliStateBracketSingle = {one:[0,8932,.01], two: [8933,21175, .02], three: [21176,33421, .04],four: [33422,46395,.06], five: [46396,58634, .08], six: [58635,299508, .0930], seven: [299509,359407 , .1030], eight: [35408, 599012, .1130], nine: [599013, 1000000, .1230], ten: [1000001, Infinity, .1330] }
-  let newcaliStateBracketJoint = {one:[0,17864,.01], two: [17865, 42350, .02], three: [42351,66842, .04],four: [66843,92788, .06], five: [92789,117268, .08], six: [117269,599016, .0930], seven: [599017, 718814, .1030], eight: [718814, 1000000, .1130], nine: [1000001, 1198024, .1230], ten: [1198025, Infinity, .1330] }
-  let oldcaliStateBracketSingle = {one:[0,8809,.01], two: [8810, 20883, .02], three: [20884, 32960, .04],four: [32961,45753, .06], five: [45754,57824, .08], six: [57825,295373, .0930], seven: [295374, 354445 , .1030], eight: [354446, 590742, .1130], nine: [590743, 1000000, .1230], ten: [1000001, Infinity, .1330] }
-  let oldcaliStateBracketJoint = {one:[0,17618,.01], two: [17619, 41766, .02], three: [41767, 65920, .04],four: [65921,91506, .06], five: [91507,115648, .08], six: [115649,590746, .0930], seven: [590747, 708890, .1030], eight: [708891, 1000000, .1130], nine: [1000001, 1181484, .1230], ten: [1181485, Infinity, .1330] }
+  let newcaliStateBracketSingle = {one:[0,9325,.01], two: [9326,22107, .02], three: [22108,34892, .04],four: [34893,48435,.06], five: [48436,61214, .08], six: [61215,312686, .0930], seven: [312687,375221, .1030], eight: [375222, 625369, .1130], nine: [625370, 1000000, .1230], ten: [1000001, Infinity, .1330] }
+  let newcaliStateBracketJoint = {one:[0,18650,.01], two: [18651, 44214, .02], three: [44215,69784, .04],four: [69785,96870, .06], five: [96871,122428, .08], six: [122429,625372, .0930], seven: [625373, 750442, .1030], eight: [750443, 1000000, .1130], nine: [1000001, 1250738, .1230], ten: [1250739, Infinity, .1330] }
+  let oldcaliStateBracketSingle = {one:[0,8932,.01], two: [8933,21175, .02], three: [21176,33421, .04],four: [33422,46395,.06], five: [46396,58634, .08], six: [58635,299508, .0930], seven: [299509,359407 , .1030], eight: [35408, 599012, .1130], nine: [599013, 1000000, .1230], ten: [1000001, Infinity, .1330] }
+  let oldcaliStateBracketJoint = {one:[0,17864,.01], two: [17865, 42350, .02], three: [42351,66842, .04],four: [66843,92788, .06], five: [92789,117268, .08], six: [117269,599016, .0930], seven: [599017, 718814, .1030], eight: [718814, 1000000, .1130], nine: [1000001, 1198024, .1230], ten: [1198025, Infinity, .1330] }
 
 
-  let coloStateBracket = {one:[0,Infinity,.0463] }
+  let coloStateBracket = {one:[0,Infinity,.0455] }
 
   let newconnStateBracketSingle = {one:[0,10000,.03], two: [10001, 50000, .05], three: [50001, 100000, .055], four: [100001, 200000 , .06], five: [200001, 250000, .065], six: [250001, 500000, .069], seven: [500001, Infinity, .0699] }
   let newconnStateBracketJoint = {one:[0,20000,.03], two: [20001, 100000, .05], three: [100001, 200000, .055], four: [200001, 400000 , .06], five: [400001, 500000, .065], six: [500001, 1000000, .069], seven: [1000001, Infinity, .0699] }
   let oldconnStateBracketSingle = {one:[0,10000,.03], two: [10001, 50000, .05], three: [50001, 100000, .055], four: [100001, 200000 , .06], five: [200001, 250000, .065], six: [250001, 500000, .069], seven: [500001, Infinity, .0699] }
   let oldconnStateBracketJoint = {one:[0,20000,.03], two: [20001, 100000, .05], three: [100001, 200000, .055], four: [200001, 400000 , .06], five: [400001, 500000, .065], six: [500001, 1000000, .069], seven: [1000001, Infinity, .0699] }
 
-  let newdelStateBracketSingle = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
-  let newdelStateBracketJoint = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699]  }
+  let newdelStateBracketSingle = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .066] }
+  let newdelStateBracketJoint = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .066]  }
   let olddelStateBracketSingle = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
   let olddelStateBracketJoint = {one: [2000, 5000, .022], three: [5001, 10000, .039], four: [10001, 20000 , .048], five: [20001, 25000, .052], six: [25001, 60000, .0555], seven: [60001, Infinity, .0699] }
 
@@ -413,19 +413,19 @@ function stateTaxController(year,state,status,income){
   let oldhawaiiStateBracketSingle = {one:[0,2400,.014], two: [2401, 4800, .032], three: [4801, 9600, .055],four: [9601,14400, .064], five: [14401,19200, .068], six: [19201,24000, .072], seven: [24001, 36000 , .076], eight: [36001, 48000, .079], nine: [48001, 150000, .0825], ten: [150001, 175000, .09], eleven: [175001, 200000, .10], twelve: [200000, Infinity, .11] }
   let oldhawaiiStateBracketJoint = {one:[0,4800,.014], two: [4801, 9600, .032], three: [9601, 19200, .055],four: [19201,28800, .064], five: [28801,38400, .068], six: [38401,48000, .072], seven: [48001, 72000 , .076], eight: [72001, 96000, .079], nine: [96001, 300000, .0825], ten: [300001, 350000, .09], eleven: [350001, 400000, .10], twelve: [400000, Infinity, .11] }
 
-  let newidahoStateBracketSingle = {one: [0, 1568, .01125], two: [1569,3136, .03125], three: [3137, 4704 , .03625], four: [4705, 6272, .04625], five: [6273, 7840, .05625], six: [7841, 11760, .06625], seven: [11761, Infinity, .06925] }
-  let newidahoStateBracketJoint = {one: [0, 3136, .01125], three: [3137, 6272, .03125], four: [6273, 9408 , .03625], five: [9409, 12544, .04625], six: [12545, 15680, .05625], seven: [15681, 23520, .06625], eight: [23521, Infinity, .06925] }
-  let oldidahoStateBracketSingle = {one: [0, 1541, .01125], two: [1541, 3081, .03125], three: [3082, 4622 , .03625], four: [4623, 6162, .04625], five: [6163, 7703, .05625], six: [7704, 11554, .06625], seven: [11555, Infinity, .06925] }
-  let oldidahoStateBracketJoint = {one: [0, 3081, .01125], three: [3082, 6162, .03125], four: [6163, 9243 , .03625], five: [9244, 12324, .04625], six: [12325, 15405, .05625], seven: [15406, 23108, .06625], eight: [23109, Infinity, .06925] }
+  let newidahoStateBracketSingle = {one: [0, 1588, .01], two: [1589,4763, .03], three: [4764, 7939, .045], four: [7940, Infinity, .06]}
+  let newidahoStateBracketJoint = {one: [0, 3176, .01], three: [3177, 9526, .03], four: [9527, 15878, .045], five: [15879, Infinity, .06]}
+  let oldidahoStateBracketSingle = {one: [0, 1568, .01125], two: [1569,3136, .03125], three: [3137, 4704 , .03625], four: [4705, 6272, .04625], five: [6273, 7840, .05625], six: [7841, 11760, .06625], seven: [11761, Infinity, .06925] }
+  let oldidahoStateBracketJoint = {one: [0, 3136, .01125], three: [3137, 6272, .03125], four: [6273, 9408 , .03625], five: [9409, 12544, .04625], six: [12545, 15680, .05625], seven: [15681, 23520, .06625], eight: [23521, Infinity, .06925] }
 
 
   let illStateBracket = {one: [0, Infinity, .0495]}
   let indStateBracket = {one: [0, Infinity, .0323]}
 
-  let newiowaStateBracketSingle = {one: [0, 1676, .0033], three: [1677, 3352, .0067], four: [3353, 6704 , .0225], five: [6705, 15084, .0414], six: [15085, 25140, .0562], seven: [25141, 33520, .0596], eight: [33521, 50280, .0625], nine: [50281, 75420, .0744], ten: [75421, Infinity, .0853] }
-  let newiowaStateBracketJoint = {one: [0, 1676, .0033], three: [1677, 3352, .0067], four: [3353, 6704 , .0225], five: [6705, 15084, .0414], six: [15085, 25140, .0562], seven: [25141, 33520, .0596], eight: [33521, 50280, .0625], nine: [50281, 75420, .0744], ten: [75421, Infinity, .0853] }
-  let oldiowaStateBracketSingle = {one: [0, 1638, .0033], three: [1639, 3276, .0067], four: [3277, 6552 , .0225], five: [6553, 14742, .0414], six: [14743, 24570, .0562], seven: [24571, 32760, .0596], eight: [32761, 49140, .0625], nine: [49141, 73710, .0744], ten: [73711, Infinity, .0853] }
-  let oldiowaStateBracketJoint = {one: [0, 1638, .0033], three: [1639, 3276, .0067], four: [3277, 6552 , .0225], five: [6553, 14742, .0414], six: [14743, 24570, .0562], seven: [24571, 32760, .0596], eight: [32761, 49140, .0625], nine: [49141, 73710, .0744], ten: [73711, Infinity, .0853] }
+  let newiowaStateBracketSingle = {one: [0, 1743, .0033], three: [1744, 3486, .0067], four: [3487, 6972, .0225], five: [6973, 15687, .0414], six: [15688, 26145, .0563], seven: [26146, 34860, .0596], eight: [34861, 52290, .0625], nine: [52291, 78435, .0744], ten: [78436, Infinity, .0853] }
+  let newiowaStateBracketJoint = {one: [0, 1743, .0033], three: [1744, 3486, .0067], four: [3487, 6972, .0225], five: [6973, 15687, .0414], six: [15688, 26145, .0563], seven: [26146, 34860, .0596], eight: [34861, 52290, .0625], nine: [52291, 78435, .0744], ten: [78436, Infinity, .0853] }
+  let oldiowaStateBracketSingle = {one: [0, 1676, .0033], three: [1677, 3352, .0067], four: [3353, 6704 , .0225], five: [6705, 15084, .0414], six: [15085, 25140, .0562], seven: [25141, 33520, .0596], eight: [33521, 50280, .0625], nine: [50281, 75420, .0744], ten: [75421, Infinity, .0853] }
+  let oldiowaStateBracketJoint = {one: [0, 1676, .0033], three: [1677, 3352, .0067], four: [3353, 6704 , .0225], five: [6705, 15084, .0414], six: [15085, 25140, .0562], seven: [25141, 33520, .0596], eight: [33521, 50280, .0625], nine: [50281, 75420, .0744], ten: [75421, Infinity, .0853] }
 
 
   let newkansStateBracketSingle = {one: [0, 15000, .031], three: [15001, 30000, .0525], four: [30001, Infinity , .057] }
@@ -435,78 +435,78 @@ function stateTaxController(year,state,status,income){
 
   let kyStateBracket = {one: [0, Infinity, .05]}
 
-  let newlaStateBracketSingle = {one: [0, 12500, .02], three: [12501, 50000, .04], four: [50001, Infinity , .06] }
-  let newlaStateBracketJoint = {one: [0, 25000, .02], three: [25001, 100000, .04], four: [100001, Infinity , .06] }
+  let newlaStateBracketSingle = {one: [0, 12500, .0185], three: [12501, 50000, .035], four: [50001, Infinity , .0425] }
+  let newlaStateBracketJoint = {one: [0, 25000, .0185], three: [25001, 100000, .035], four: [100001, Infinity , .0425] }
   let oldlaStateBracketSingle = {one: [0, 12500, .02], three: [12501, 50000, .04], four: [50001, Infinity , .06] }
   let oldlaStateBracketJoint = {one: [0, 25000, .02], three: [25001, 100000, .04], four: [100001, Infinity , .06] }
 
-  let newmaineStateBracketSingle = {one: [0, 22450, .058], three: [22451, 53150, .0675], four: [53151, Infinity , .0715] }
-  let newmaineStateBracketJoint = {one: [0, 44950, .058], three: [44951, 106350, .0675], four: [106351, Infinity , .0715] }
-  let oldmaineStateBracketSingle = {one: [0, 22200, .058], three: [22201, 52600, .0675], four: [52601, Infinity , .0715] }
-  let oldmaineStateBracketJoint = {one: [0, 44450, .058], three: [44451, 105200, .0675], four: [105201, Infinity , .0715] }
+  let newmaineStateBracketSingle = {one: [0, 23000, .058], three: [23001, 54450, .0675], four: [54450, Infinity , .0715] }
+  let newmaineStateBracketJoint = {one: [0, 46000, .058], three: [46001, 108900, .0675], four: [108901, Infinity , .0715] }
+  let oldmaineStateBracketSingle = {one: [0, 22450, .058], three: [22451, 53150, .0675], four: [53151, Infinity , .0715] }
+  let oldmaineStateBracketJoint = {one: [0, 44950, .058], three: [44951, 106350, .0675], four: [106351, Infinity , .0715] }
 
   let newmdStateBracketSingle = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 100000, .0475], six: [100001, 125000, .05], seven: [125001, 150000, .0525], eight: [150001, 250000, .055], nine: [250001, Infinity, .0575] }
   let newmdStateBracketJoint = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 150000, .0475], six: [150001, 175000, .05], seven: [175001, 225000, .0525], eight: [225001, 300000, .055], nine: [300001, Infinity, .0575] }
   let oldmdStateBracketSingle = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 100000, .0475], six: [100001, 125000, .05], seven: [125001, 150000, .0525], eight: [150001, 250000, .055], nine: [250001, Infinity, .0575] }
   let oldmdStateBracketJoint = {one: [0, 1000, .02], three: [1001, 2000, .03], four: [2001, 3000 , .04], five: [3001, 150000, .0475], six: [150001, 175000, .05], seven: [175001, 225000, .0525], eight: [225001, 300000, .055], nine: [300001, Infinity, .0575] }
 
-  let massStateBracket = {one: [0, Infinity, .0505]}
+  let massStateBracket = {one: [0, Infinity, .05]}
   let michStateBracket = {one: [0, Infinity, .0425]}
 
-  let newminnStateBracketSingle = {one: [0, 27230, .0535], three: [27231, 89440, .0705], four: [89441, 166040, .0785], five: [166041, Infinity, .0985] }
-  let newminnStateBracketJoint = {one: [0, 39810, .0535], three: [39811, 158140, .0705], four: [158141, 276200, .0785], five: [276201, Infinity, .0985] }
-  let oldminnStateBracketSingle = {one: [0, 26960, .0535], three: [26961, 88550, .0705], four: [88551, 164400 , .0785], five: [164401, Infinity, .0985] }
-  let oldminnStateBracketJoint = {one: [0, 39410, .0535], three: [39411, 156570, .0705], four: [156571, 273470, .0785], five: [273470, Infinity, .0985] }
+  let newminnStateBracketSingle = {one: [0, 28080, .0535], three: [28081, 92230, .068], four: [92231, 171220, .0785], five: [171221, Infinity, .0985] }
+  let newminnStateBracketJoint = {one: [0, 41050, .0535], three: [41051, 163060, .068], four: [163061, 284810, .0785], five: [284811, Infinity, .0985] }
+  let oldminnStateBracketSingle = {one: [0, 27230, .0535], three: [27231, 89440, .0705], four: [89441, 166040, .0785], five: [166041, Infinity, .0985] }
+  let oldminnStateBracketJoint = {one: [0, 39810, .0535], three: [39811, 158140, .0705], four: [158141, 276200, .0785], five: [276201, Infinity, .0985] }
 
-  let newmissStateBracketSingle = {one: [4000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
-  let newmissStateBracketJoint = {one: [4000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
-  let oldmissStateBracketSingle = {one: [3000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
-  let oldmissStateBracketJoint = {one:  [3000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .00] }
+  let newmissStateBracketSingle = {one: [5000, 10000, .04], three: [10001, Infinity, .05]}
+  let newmissStateBracketJoint = {one: [5000, 10000, .04], three: [10001, Infinity, .05]}
+  let oldmissStateBracketSingle = {one: [4000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
+  let oldmissStateBracketJoint = {one: [4000, 5000, .03], three: [5001, 10000, .04], four: [10001, Infinity , .05] }
 
-  let newmoStateBracketSingle = {one: [107, 1073, .015], three: [1074, 2146, .02], four: [2147, 3219 , .025], five: [3220, 4292, .03], six: [4293, 5365, .035], seven: [5366, 6438, .04], eight: [6439, 7511, .045], nine: [7512, 8584, .05], ten: [8585, Infinity, .054] }
-  let newmoStateBracketJoint = {one: [107, 1073, .015], three: [1074, 2146, .02], four: [2147, 3219 , .025], five: [3220, 4292, .03], six: [4293, 5365, .035], seven: [5366, 6438, .04], eight: [6439, 7511, .045], nine: [7512, 8584, .05], ten: [8585, Infinity, .054] }
-  let oldmoStateBracketSingle = {one: [105, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
-  let oldmoStateBracketJoint = {one: [105, 1053, .015], three: [1054, 2106, .02], four: [2107, 3159 , .025], five: [3160, 4212, .03], six: [4213, 5265, .035], seven: [5266, 6318, .04], eight: [6319, 7371, .045], nine: [7372, 8424, .05], ten: [8425, Infinity, .054] }
+  let newmoStateBracketSingle = {one: [108, 1088, .015], three: [1089, 2176, .02], four: [2177, 3264, .025], five: [3265, 4352, .03], six: [4353, 5440, .035], seven: [5441, 6528, .04], eight: [6529, 7616, .045], nine: [7617, 8704, .05], ten: [8705, Infinity, .054] }
+  let newmoStateBracketJoint = {one: [108, 1088, .015], three: [1089, 2176, .02], four: [2177, 3264, .025], five: [3265, 4352, .03], six: [4353, 5440, .035], seven: [5441, 6528, .04], eight: [6529, 7616, .045], nine: [7617, 8704, .05], ten: [8705, Infinity, .054] }
+  let oldmoStateBracketSingle = {one: [107, 1073, .015], three: [1074, 2146, .02], four: [2147, 3219 , .025], five: [3220, 4292, .03], six: [4293, 5365, .035], seven: [5366, 6438, .04], eight: [6439, 7511, .045], nine: [7512, 8584, .05], ten: [8585, Infinity, .054] }
+  let oldmoStateBracketJoint = {one: [107, 1073, .015], three: [1074, 2146, .02], four: [2147, 3219 , .025], five: [3220, 4292, .03], six: [4293, 5365, .035], seven: [5366, 6438, .04], eight: [6439, 7511, .045], nine: [7512, 8584, .05], ten: [8585, Infinity, .054] }
 
-  let newmontStateBracketSingle = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11300, .04], six: [11301, 14500, .05], seven: [14501, 18700, .06], eight: [18701, Infinity, .069] }
-  let newmontStateBracketJoint = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11300, .04], six: [11301, 14500, .05], seven: [14501, 18700, .06], eight: [18701, Infinity, .069] }
-  let oldmontStateBracketSingle = {one: [0, 3100, .01], three: [3101, 5400, .02], four: [5401, 8200 , .03], five: [8201, 11100, .04], six: [11101, 14300, .05], seven: [14301, 18400, .06], eight: [18401, Infinity, .069] }
-  let oldmontStateBracketJoint = {one: [0, 3100, .01], three: [3101, 5400, .02], four: [5401, 8200 , .03], five: [8201, 11100, .04], six: [11101, 14300, .05], seven: [14301, 18400, .06], eight: [18401, Infinity, .069] }
+  let newmontStateBracketSingle = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11400, .04], six: [11401, 14600, .05], seven: [14601, 18800, .06], eight: [18801, Infinity, .0675]}
+  let newmontStateBracketJoint = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11400, .04], six: [11401, 14600, .05], seven: [14601, 18800, .06], eight: [18801, Infinity, .0675]}
+  let oldmontStateBracketSingle = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11300, .04], six: [11301, 14500, .05], seven: [14501, 18700, .06], eight: [18701, Infinity, .069] }
+  let oldmontStateBracketJoint = {one: [0, 3100, .01], three: [3101, 5500, .02], four: [5501, 8400 , .03], five: [8401, 11300, .04], six: [11301, 14500, .05], seven: [14501, 18700, .06], eight: [18701, Infinity, .069] }
 
-  let newnebrStateBracketSingle = {one: [0, 3340, .0246], three: [3341, 19990, .0351], four: [19991, 32210, .0501], five: [32211, Infinity, .0684] }
-  let newnebrStateBracketJoint = {one: [0, 6660, .0246], three: [6661, 39990, .0351], four: [39991, 64430, .0501], five: [64431, Infinity, .0684] }
-  let oldnebrStateBracketSingle = {one: [0, 3290, .0246], three: [3291, 19700, .0351], four: [19701, 31750, .0501], five: [31751, Infinity, .0684] }
-  let oldnebrStateBracketJoint = {one: [0, 6570, .0246], three: [6571, 39410, .0351], four: [39411, 63500, .0501], five: [63501, Infinity, .0684] }
+  let newnebrStateBracketSingle = {one: [0, 3340, .0246], three: [3341, 20590, .0351], four: [20591, 33180, .0501], five: [33181, Infinity, .0684] }
+  let newnebrStateBracketJoint = {one: [0, 6860, .0246], three: [6861, 41190, .0351], four: [41191, 66360, .0501], five: [66361, Infinity, .0684] }
+  let oldnebrStateBracketSingle = {one: [0, 3340, .0246], three: [3341, 19990, .0351], four: [19991, 32210, .0501], five: [32211, Infinity, .0684] }
+  let oldnebrStateBracketJoint = {one: [0, 6660, .0246], three: [6661, 39990, .0351], four: [39991, 64430, .0501], five: [64431, Infinity, .0684] }
 
   let nevStateBracket = {one: [0,0,0]}
-  let nhStateBracket = {one: [0, Infinity, .05]}
+  let nhStateBracket = {one: [0, 0, 0]}
 
-  let newnjStateBracketSingle = {one: [0, 20000, .014], three: [20001, 35000, .0175], four: [35001, 40000 , .035], five: [40001, 75000, .05525], six: [75001, 500000, .0637], seven: [500001, 5000000, .0897], eight: [5000001, Infinity, .1075] }
-  let newnjStateBracketJoint = {one: [0, 20000, .014], three: [20001, 50000, .0175], four: [50001, 70000 , .0245], five: [70001, 80000, .035], six: [80001, 150000, .05525], seven: [150001, 500000, .0637], eight: [500001, 5000000, .0897], nine: [5000001, Infinity, .1075] }
-  let oldnjStateBracketSingle = {one: [0, 20000, .014], three: [20001, 35000, .0175], four: [35001, 40000 , .035], five: [40001, 75000, .05525], six: [75001, 500000, .0637], seven: [500001, 5000000, .0897], eight: [5000001, Infinity, .1075] }
-  let oldnjStateBracketJoint = {one: [0, 20000, .014], three: [20001, 50000, .0175], four: [50001, 70000 , .0245], five: [70001, 80000, .035], six: [80001, 150000, .05525], seven: [150001, 500000, .0637], eight: [500001, 5000000, .0897], nine: [5000001, Infinity, .1075] }
+  let newnjStateBracketSingle = {one: [0, 20000, .014], three: [20001, 35000, .0175], four: [35001, 40000 , .035], five: [40001, 75000, .05525], six: [75001, 500000, .0637], seven: [500001, 1000000, .0897], eight: [1000001, Infinity, .1075] }
+  let newnjStateBracketJoint = {one: [0, 20000, .014], three: [20001, 50000, .0175], four: [50001, 70000, .0245], five: [70001, 80000, .035], six: [80001, 150000, .05525], seven: [150001, 500000, .0637], eight: [500001, 1000000, .0897], nine: [1000001, Infinity, .1075] }
+  let oldnjStateBracketSingle = {one: [0, 20000, .014], three: [20001, 35000, .0175], four: [35001, 40000 , .035], five: [40001, 75000, .05525], six: [75001, 500000, .0637], seven: [500001, 1000000, .0897], eight: [1000001, Infinity, .1075] }
+  let oldnjStateBracketJoint = {one: [0, 20000, .014], three: [20001, 50000, .0175], four: [50001, 70000 , .0245], five: [70001, 80000, .035], six: [80001, 150000, .05525], seven: [150001, 500000, .0637], eight: [500001, 1000000, .0897], nine: [1000001, Infinity, .1075] }
 
   let newnmStateBracketSingle = {one: [0, 5500, .017], three: [5501, 11000, .032], four: [11001, 16000, .047], five: [16001, 210000, .049], six: [210001, Infinity, .059] }
-  let newnmStateBracketJoint = {one: [0, 8000, .017], three: [8001, 16000, .032], four: [16001, 24000, .047], five: [24001, Infinity, .049], six: [315000, Infinity, .059] }
+  let newnmStateBracketJoint = {one: [0, 8000, .017], three: [8001, 16000, .032], four: [16001, 24000, .047], five: [24001, 315001, .049], six: [315001, Infinity, .059] }
   let oldnmStateBracketSingle = {one: [0, 5500, .017], three: [5501, 11000, .032], four: [11001, 16000, .047], five: [16001, Infinity, .049] }
   let oldnmStateBracketJoint = {one: [0, 8000, .017], three: [8001, 16000, .032], four: [16001, 24000, .047], five: [24001, Infinity, .049] }
 
-  let newnyStateBracketSingle = {one:[0,8500,.04], two: [8501, 11700, .045], three: [11701, 13900, .0525],four: [13901,21400, .059], five: [21401,80650, .0597], six: [80651,215400, .0633], seven: [215401, 1077550 , .0685], eight: [1077551, Infinity, .0882] }
-  let newnyStateBracketJoint = {one:[0,17150,.04], two: [17151, 23600, .045], three: [23601, 27900, .0525],four: [27901,43000, .059], five: [43001,161550, .0633], six: [161551,323200, .0657], seven: [323201, 2155350 , .0685], eight: [2155351, Infinity, .0882] }
-  let oldnyStateBracketSingle = {one:[0,8500,.04], two: [8501, 11700, .045], three: [11701, 13900, .0525],four: [13901,21400, .059], five: [21401,80650, .0633], six: [80651,215400, .0657], seven: [215401, 1077550 , .0685], eight: [1077551, Infinity, .0882] }
+  let newnyStateBracketSingle = {one:[0,8500,.04], two: [8501, 11700, .045], three: [11701, 13900, .0525],four: [13901,80650, .0585], five: [80651,215400, .0625], six: [215401,1077550, .0685], seven: [1077551, 5000000, .0965], eight: [5000001, 25000000, .1030], nine: [25000001, Infinity, .1090]}
+  let newnyStateBracketJoint = {one:[0,17150,.04], two: [17151, 23600, .045], three: [23601, 27900, .0525],four: [27901,161550, .0585], five: [161551,323200, .0625], six: [323201,2155350, .0685], seven: [2155351, 5000000 , .0965], eight: [5000000, 25000000, .1030], nine: [25000001, Infinity, .1090]}
+  let oldnyStateBracketSingle =  {one:[0,8500,.04], two: [8501, 11700, .045], three: [11701, 13900, .0525],four: [13901,21400, .059], five: [21401,80650, .0597], six: [80651,215400, .0633], seven: [215401, 1077550 , .0685], eight: [1077551, Infinity, .0882] }
   let oldnyStateBracketJoint = {one:[0,17150,.04], two: [17151, 23600, .045], three: [23601, 27900, .0525],four: [27901,43000, .059], five: [43001,161550, .0633], six: [161551,323200, .0657], seven: [323201, 2155350 , .0685], eight: [2155351, Infinity, .0882] }
 
-  let ncStateBracket = {one: [0, Infinity, .0525]}
+  let ncStateBracket = {one: [0, Infinity, .0499]}
 
-  let newndStateBracketSingle = {one: [0, 40125, .011], three: [40126, 97150, .0204], four: [97151, 202650, .0227], five: [202651, 440600, .0264], six: [440601, Infinity, .029] }
-  let newndStateBracketJoint = {one: [0, 67050, .011], three: [67051, 161950, .0204], four: [161951, 246700, .0227], five: [246701, 440600, .0264], six: [440601, Infinity, .029] }
-  let oldndStateBracketSingle = {one: [0, 39450, .011], three: [39451, 95500, .0204], four: [95501, 199250, .0227], five: [199250, 433200, .0264], six: [433201, Infinity, .029] }
-  let oldndStateBracketJoint = {one: [0, 65900, .011], three: [65901, 159200, .0204], four: [159201, 242550, .0227], five: [242551, 433200, .0264], six: [433201, Infinity, .029] }
+  let newndStateBracketSingle = {one: [0, 40525, .011], three: [40526, 98100, .0204], four: [98101, 204675, .0227], five: [204676, 445000, .0264], six: [445001, Infinity, .029] }
+  let newndStateBracketJoint = {one: [0, 67700, .011], three: [67701, 163550, .0204], four: [163551, 249150, .0227], five: [249151, 445000, .0264], six: [445001, Infinity, .029]}
+  let oldndStateBracketSingle = {one: [0, 40125, .011], three: [40126, 97150, .0204], four: [97151, 202650, .0227], five: [202651, 440600, .0264], six: [440601, Infinity, .029] }
+  let oldndStateBracketJoint = {one: [0, 67050, .011], three: [67051, 161950, .0204], four: [161951, 246700, .0227], five: [246701, 440600, .0264], six: [440601, Infinity, .029]}
 
-  let newohioStateBracketSingle = {one:[22150,44250,.0285], two: [44251, 88450, .03326], three: [88451, 110650, .03082],four: [110651,221300, .04413], five: [221301,Infinity, .04797]}
-  let newohioStateBracketJoint = {one:[22150,44250,.0285], two: [44251, 88450, .03326], three: [88451, 110650, .03082],four: [110651,221300, .04413], five: [221301,Infinity, .04797]}
-  let oldohioStateBracketSingle = {one:[21750,43450,.0285], two: [43451, 86900, .03326], three: [86901, 108700, .03082],four: [108701,217400, .04413], five: [217401,Infinity, .04797]}
-  let oldohioStateBracketJoint = {one:[21750,43450,.0285], two: [43451, 86900, .03326], three: [86901, 108700, .03082],four: [108701,217400, .04413], five: [217401,Infinity, .04797]}
+  let newohioStateBracketSingle = {one:[25000,44250,.02765], two: [44251, 88450, .03326], three: [88451, 110650, .03688],four: [110651,Infinity, .0399]}
+  let newohioStateBracketJoint = {one:[25000,44250,.02765], two: [44251, 88450, .03326], three: [88451, 110650, .03688],four: [110651,Infinity, .0399]}
+  let oldohioStateBracketSingle = {one:[22150,44250,.0285], two: [44251, 88450, .03326], three: [88451, 110650, .03082],four: [110651,221300, .04413], five: [221301,Infinity, .04797]}
+  let oldohioStateBracketJoint = {one:[22150,44250,.0285], two: [44251, 88450, .03326], three: [88451, 110650, .03082],four: [110651,221300, .04413], five: [221301,Infinity, .04797]}
 
   let newoklaStateBracketSingle = {one:[0,1000,.005], two: [1001, 2500, .01], three: [2501, 3750, .02],four: [3751,4900, .03], five: [4901,7200, .04], six: [7201,Infinity, .05] }
   let newoklaStateBracketJoint = {one:[0,2000,.005], two: [2001, 5000, .01], three: [5001, 7500, .02],four: [7501,9800, .03], five: [9801,12200, .04], six: [12201,Infinity, .05] }
